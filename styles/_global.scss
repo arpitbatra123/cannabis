@@ -219,7 +219,7 @@ svg.icon {
     display: block;
 }
 
-main .container {
+.homepage .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -228,25 +228,25 @@ main .container {
     border-bottom: 1px solid var(--stroke-color);
 }
 
-main .container > :first-child {
+.homepage .container > :first-child {
     text-align: center;
 }
 
-main .container > :last-child {
+.homepage .container > :last-child {
     height: 100%;
     background: url(/assets/mobile.webp) center/contain no-repeat;
 }
 
-main .logo {
+.homepage .logo {
     height: 150px;
     margin-bottom: 10px;
 }
 
-main h1 {
+.homepage h1 {
     margin: 0 0 15px;
 }
 
-main p {
+.homepage p {
     margin: 0 0 1.5em;
     font-size: 1.5em;
 }
@@ -442,10 +442,10 @@ small {
     .container {
         max-width: 480px;
     }
-    main .container {
+    .homepage .container {
         grid-template-columns: 1fr;
     }
-    main .container > :last-child {
+    .homepage .container > :last-child {
         height: 480px;
     }
     #notes_sec {
@@ -477,7 +477,7 @@ small {
 }
 
 @media (max-width: 400px) {
-    main .container,
+    .homepage .container,
     #notes_sec {
         padding: 15px;
     }

@@ -1,0 +1,12 @@
+@import 'global';
+
+body {
+    background-color: var(--bg);
+    color: var(--fg);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
