@@ -1,0 +1,24 @@
+{
+  "name": "eleventy-blog",
+  "version": "1.0.0",
+  "description": "my personal website",
+  "scripts": {
+    "build": "eleventy && npm run sass && npx prettier --write _site",
+    "serve": "npm run clean && concurrently --success all 'eleventy --serve' 'npm run sass:watch'",
+    "sass": "sass styles:_site/styles --no-source-map --style=compressed --update",
+    "sass:watch": "npm run sass && npm run sass -- --watch",
+    "clean": "rm -rf _site/*",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "npx prettier --write ."
+  },
+  "keywords": [],
+  "author": "Arpit Batra (arpitbatra123@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "concurrently": "^6.4.0",
+    "markdown-it-attrs": "^4.1.0",
+    "markdown-it-image-lazy-loading": "^1.1.0",
+    "sass": "^1.43.5"
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include 'head.html' %}
+</head>
+
+<body>
+    <div id="main_wrapper">
+        {% include 'header' %}
+        <main>
+            <div class="container">
+                Chi siamo?
+
+                Per dare una risposta alle attuali domande di consumo, coltivazione e mutevoli condizioni legali sulla
+                cannabis.
+
+                Attivi dal 2018, Canapa Coltivazione mette a disposizione a coltivatori/consumatori informazioni sulla
+                cannabis. Sono presenti infinite guide, articoli e molteplici risorse per rispondere a qualsiasi domanda
+                legata alla cannabis.
+
+                Note legali ⚠️
+
+                Tutte le informazioni e conversazioni presenti in “Canapa Coltivazione” sono da intendersi
+                esclusivamente al fine di una ampia cultura generale sulla canapa.
+            </div>
+        </main>
+        <div class="grow"></div>
+        <footer class="page-footer">
+            <div class="container">
+                <small>Copyright <b>{{site.author}}</b></small>
+            </div>
+        </footer>
+    </div>
+    <div class="overlay" id="main_overlay" onclick="toggleSidebar()"></div>
+    <aside id="sidebar">
+        <a href="javascript:toggleSidebar()" class="icon-btn" title="Close"><svg class="icon">
+                <use href="/assets/cross.svg#content" />
+            </svg></a>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/blog">Blog</a>
+    </aside>
+</body>
+
+</html>

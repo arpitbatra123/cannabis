@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include 'head.html' %}
+</head>
+
+<body>
+    <div id="main_wrapper">
+        {% include 'header' %}
+        <main>
+            <div class="container">
+                Hai domande, curiosità, dubbi sulla coltivazione di cannabis?
+
+                Vuoi diventare un volontario di clinkpac.com?
+
+                Hai bisogno di materiale di informazione sulla coltivazione o qualsiasi altro materiale legato alla
+                cannabis?
+
+                Email -> canapa@protonmail.com
+
+                Telegram -> t.me/coltivazionelink
+            </div>
+        </main>
+        <div class="grow"></div>
+        <footer class="page-footer">
+            <div class="container">
+                <small>Copyright <b>{{site.author}}</b></small>
+            </div>
+        </footer>
+    </div>
+    <div class="overlay" id="main_overlay" onclick="toggleSidebar()"></div>
+    <aside id="sidebar">
+        <a href="javascript:toggleSidebar()" class="icon-btn" title="Close"><svg class="icon">
+                <use href="/assets/cross.svg#content" />
+            </svg></a>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/blog">Blog</a>
+    </aside>
+</body>
+
+</html>

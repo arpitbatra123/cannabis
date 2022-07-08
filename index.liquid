@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include 'head.html' %}
+    <link rel="stylesheet" href="/styles/homepage.css">
+</head>
+
+<body>
+    <div id="main_wrapper">
+        {% include 'header' %}
+        <main>
+            <div class="container">
+                <div>
+                    <img width="150" height="150" class="logo" src="/assets/logo.svg" alt="">
+                    <h1>Canapa Coltivazione 🇮🇹</h1>
+                    <p>Il piu grande gruppo telegram sulla <strong>coltivazione di cannabis</strong>. La piu grande
+                        community di growers italiani di cannabis.</p>
+                    <a href="https://t.me/p87726" target="_blank" class="tele-logo" title="Telegram">Join Telegram
+                        Channel <svg class="icon">
+                            <use href="/assets/telegram.svg#content" />
+                        </svg></a>
+                </div>
+                <div></div>
+            </div>
+        </main>
+        <section>
+            <div class="container" id="notes_sec">
+                <div>
+                    <svg>
+                        <use href="/assets/search.svg#content" />
+                    </svg>
+                    <h2>Cosa puoi trovare?</h2>
+                    <p>Infinite <strong>guide e contenuti di qualità</strong> concentrati sulla coltivazione della
+                        cannabis. Amministratori e utenti con esperienza per rispondere a <strong>qualsiasi
+                            domanda</strong> in questione.</p>
+                </div>
+                <div>
+                    <svg>
+                        <use href="/assets/person.svg#content" />
+                    </svg>
+                    <h2>A chi è rivolto?</h2>
+                    <p>Per tutti gli amanti della cannabis, se sei alle prime armi e vuoi iniziare a coltivare o se hai
+                        gia esperienza ma vuoi qualche consiglio, questo è il gruppo che fa per te.</p>
+                </div>
+                <div>
+                    <svg>
+                        <use href="/assets/telegram.svg#content" />
+                    </svg>
+                    <h2>Come entro nel gruppo?</h2>
+                    <p>Il gruppo è presente sulla <strong>piattaforma telegram, anonima e sicura</strong>. Puoi entrarci
+                        tramite questo link <a href="http://t.me/canapacoltivazione">t.me/canapacoltivazione</a></p>
+                </div>
+                <div>
+                    <svg>
+                        <use href="/assets/exclamation-triangle.svg#content" />
+                    </svg>
+                    <h2>⚠️ Note legali</h2>
+                    <p><em>"Tutte le informazioni e conversazioni presenti in “Canapa Coltivazione” sono da intendersi
+                            esclusivamente al fine di una ampia cultura generale sulla canapa."</em></p>
+                </div>
+            </div>
+        </section>
+        <div class="grow"></div>
+        <footer class="page-footer">
+            <div class="container">
+                <small>Copyright <b>{{site.author}}</b></small>
+            </div>
+        </footer>
+    </div>
+    <div class="overlay" id="main_overlay" onclick="toggleSidebar()"></div>
+    <aside id="sidebar">
+        <a href="javascript:toggleSidebar()" class="icon-btn" title="Close"><svg class="icon">
+                <use href="/assets/cross.svg#content" />
+            </svg></a>
+        {% include 'menu' %}
+    </aside>
+</body>
+
+</html>
