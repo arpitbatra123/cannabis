@@ -24,4 +24,8 @@ main {
     @media (max-width: $breakpoint-sm) {
         max-width: 480px;
     }
+    
+    p {
+        font-size: 1.15em;
+    }
 }
