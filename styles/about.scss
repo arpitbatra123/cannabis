@@ -10,3 +10,18 @@ body {
 main {
     flex: 1;
 }
+
+.about {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    @media (max-width: $breakpoint-md) {
+        max-width: 800px;
+        padding: 0 2rem;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        max-width: 480px;
+    }
+}
