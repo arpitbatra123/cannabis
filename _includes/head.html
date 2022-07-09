@@ -1,9 +1,5 @@
 {% assign metatitle = site.title %}
 
-{% if type == "note" %}
-{% assign metatitle = site.author | append: "'s Notes" %}
-{% endif %}
-
 {% if title %}
 {% assign metatitle = metatitle | prepend: " • " | prepend: title %}
 {% endif %}

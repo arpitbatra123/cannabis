@@ -12,8 +12,13 @@
             </svg></a>
         <div id="lang_cont">
             <a href="javascript:;" id="lang_switch" title="Change language">
+                {% if locale == "en" %}
                 <img width="24" height="24" src="/assets/english.png" alt="English" />
+                <span>EN</span>
+                {% else %}
+                <img width="24" height="24" src="/assets/italy.png" alt="Italian" />
                 <span>IT</span>
+                {% endif %}
             </a>
             <ul>
                 <li>
