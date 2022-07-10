@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    {% include 'head.html' %}
+    <link rel="stylesheet" href="/styles/blog.css">
+</head>
+
+<body>
+    {% include 'theme' %}
+    {% include 'header' %}
+    <div class="blog-container">
+        <header>
+            <h1>Blog</h1>
+        </header>
+        <div class="content-container">
+            <main>
+                <article class="flow | body-font | about-me">
+                    <ul class="flow | posts">
+                        {% for post in collections.posts reversed %}
+                        <li class="post">
+                            <span class="post-title">
+                                <a href="{{ post.url }}">{{ post.data.title }}</a>
+                            </span>
+                            <div class="lowercase | post-date">
+                                {{ post.date | date: '%b %Y' }}
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </article>
+            </main>
+        </div>
+        <footer class="page-footer">
+            <div class="container">
+                <small>Copyright <b>{{site.author}}</b></small>
+            </div>
+        </footer>
+        <div class="overlay" id="main_overlay" onclick="toggleSidebar()"></div>
+        <aside id="sidebar">
+            <a href="javascript:toggleSidebar()" class="icon-btn" title="Close"><svg class="icon">
+                    <use href="/assets/cross.svg#content" />
+                </svg></a>
+            {% include 'menu' %}
+        </aside>
+</body>
+
+</html>

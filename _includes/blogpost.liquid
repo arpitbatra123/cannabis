@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    {% include 'head.html' %}
+    <link rel="stylesheet" href="/styles/blogpost.css">
+</head>
+
+<body>
+    {% include 'theme' %}
+    {% include 'header' %}
+    <div class="blog-container">
+        <header>
+        </header>
+        <div class="content-container">
+            <main>
+                <article class="post-content">
+                    {{ content }}
+                </article>
+            </main>
+        </div>
+        <footer class="page-footer">
+            <div class="container">
+                <small>Copyright <b>{{site.author}}</b></small>
+            </div>
+        </footer>
+        <div class="overlay" id="main_overlay" onclick="toggleSidebar()"></div>
+        <aside id="sidebar">
+            <a href="javascript:toggleSidebar()" class="icon-btn" title="Close"><svg class="icon">
+                    <use href="/assets/cross.svg#content" />
+                </svg></a>
+            {% include 'menu' %}
+        </aside>
+
+</body>
+
+</html>
