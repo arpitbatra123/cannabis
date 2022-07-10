@@ -152,6 +152,10 @@ svg.icon {
     background-color: #0001;
 }
 
+.menu-item:hover {
+    padding: 20px 15px;
+}
+
 body.dark .page-header .menu-item:hover {
     background-color: #000000;
     color: wheat;
@@ -186,9 +190,12 @@ body.dark .page-header .menu-item:hover {
     position: relative;
 }
 
+#theme_switch {
+    padding: 16px;
+}
+
 #lang_switch {
     gap: 6px;
-    width: 70px;
     padding: 8px;
 }
 
