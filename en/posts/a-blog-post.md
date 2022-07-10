@@ -1,5 +1,5 @@
 ---
-title: This is a sample blog post in Italian
+title: This is a sample blog post in english
 date: '2012-02-02'
 tags:
     - 'prose'
