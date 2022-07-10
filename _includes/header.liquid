@@ -24,33 +24,29 @@
         <div id="lang_cont">
             <a href="javascript:;" id="lang_switch" title="Change language">
                 {% if locale == "en" %}
-                <img width="24" height="24" src="/assets/english.png" alt="English" />
+                <img src="/assets/gb.svg" alt="English" class="flag-img flag-img-english" />
                 <span>EN</span>
                 {% else %}
-                <img width="24" height="24" src="/assets/italy.png" alt="Italian" />
+                <img src="/assets/it.svg" alt="Italian" class="flag-img flag-img-italy" />
                 <span>IT</span>
                 {% endif %}
             </a>
             <ul>
                 {% if locale == "en" %}
                 <li>
-                    <a><img width="24" height="24" src="/assets/english.png" alt="English" />
-                        English</a>
+                    <a><img src="/assets/gb.svg" alt="English" class="flag-img flag-img-english">English</a>
                 </li>
                 <li>
-                    <a href="javascript:onLangChange('en', '{{page.url}}');"><img width="24" height="24"
-                            src="/assets/italy.png" alt="Italian" />
-                        Italian</a>
+                    <a href="javascript:onLangChange('en', '{{page.url}}');"><img src="/assets/it.svg"
+                            class="flag-img flag-img-italy" alt="Italian">Italian</a>
                 </li>
                 {% else %}
                 <li>
-                    <a href="javascript:onLangChange('it', '{{page.url}}');"><img width="24" height="24"
-                            src="/assets/english.png" alt="English" />
-                        English</a>
+                    <a href="javascript:onLangChange('it', '{{page.url}}');"><img src="/assets/gb.svg" alt="English"
+                            class="flag-img flag-img-english">English</a>
                 </li>
                 <li>
-                    <a><img width="24" height="24" src="/assets/italy.png" alt="Italian" />
-                        Italian</a>
+                    <a><img src="/assets/it.svg" alt="Italian" class="flag-img flag-img-italy">Italian</a>
                 </li>
                 {% endif %}
             </ul>

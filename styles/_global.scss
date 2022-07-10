@@ -206,7 +206,7 @@ body.dark .page-header .menu-item:hover {
     background-color: var(--bg2);
     color: var(--fg);
     box-shadow: 0 2px 5px #0003;
-    display: none;
+    // display: none;
     width: 120px;
 }
 
@@ -485,5 +485,18 @@ small {
     .homepage .container,
     #notes_sec {
         padding: 15px;
+    }
+}
+
+.flag-img {
+    border-radius: 4px;
+    overflow: hidden;
+    &-english {
+        width: 24px;
+        height: 20px;
+    }
+    &-italy {
+        width: 24px;
+        height: 20px;
     }
 }
