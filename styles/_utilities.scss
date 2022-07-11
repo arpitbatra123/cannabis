@@ -2,11 +2,3 @@
 .flow > * + * {
     margin-top: 1.5em;
 }
-
-.page-wrapper {
-    margin: 2rem;
-    @media (max-width: $breakpoint-sm) {
-        margin: 2rem 1rem;
-        margin-bottom: 0;
-    }
-}

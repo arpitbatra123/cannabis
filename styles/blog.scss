@@ -10,25 +10,27 @@ body {
 .blog-container {
     display: flex;
     flex-direction: column;
-    margin: 1rem;
     flex: 1;
 }
 
-header {
+.title {
+    margin: 2rem;
+    font-size: 24px;
+    font-weight: normal;
 }
 
 .content-container {
-    margin-top: 32px;
     flex: 1;
 
     main {
+        margin: 0 2rem 2rem;
         .posts {
             width: 60ch;
             .post {
                 &-date {
                     font-size: 12px;
                     line-height: 20px;
-                    color: var(--date-color)
+                    color: var(--date-color);
                 }
 
                 &-title {
