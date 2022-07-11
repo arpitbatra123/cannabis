@@ -153,14 +153,15 @@ svg.icon {
 }
 
 .menu-item:hover {
-    padding: 20px 15px;
+    padding: 18px 15px;
 }
 
 body.dark .page-header .menu-item:hover {
     background-color: #000000;
     color: wheat;
-    padding: 20px 15px;
+    padding: 18px 15px;
 }
+
 
 .page-header h3 {
     margin: 0;
@@ -195,8 +196,7 @@ body.dark .page-header .menu-item:hover {
 }
 
 #lang_switch {
-    gap: 6px;
-    padding: 16px 8px;
+    padding: 18px 16px 18px 16px;
 }
 
 #lang_cont > ul {
@@ -206,7 +206,7 @@ body.dark .page-header .menu-item:hover {
     background-color: var(--bg2);
     color: var(--fg);
     box-shadow: 0 2px 5px #0003;
-    // display: none;
+    display: none;
     width: 120px;
 }
 
@@ -239,7 +239,7 @@ body.dark .page-header .menu-item:hover {
 
 .homepage .container > :last-child {
     height: 100%;
-    background: url(/assets/mobile.webp) center/contain no-repeat;
+    background: url(/assets/mobile_new_medium.webp) center/contain no-repeat;
 }
 
 .homepage .logo {
