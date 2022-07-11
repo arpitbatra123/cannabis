@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    {% include 'head.html' %}
+    <link rel="stylesheet" href="/styles/blog.css">
+</head>
+
+<body>
+    {% include 'theme' %}
+    {% include 'header' %}
+    <div class="blog-container">
+        <h1 class="title">BLOG POSTS</h1>
+        <div class="content-container">
+            <h1 class="posts-heading">{{ renderData.title }}</h1>
+            {{ content }}
+        </div>
+        <footer class="page-footer">
+            <div class="container">
+                <small>Copyright <b>{{site.author}}</b></small>
+            </div>
+        </footer>
+        <div class="overlay" id="main_overlay" onclick="toggleSidebar()"></div>
+        <aside id="sidebar">
+            <a href="javascript:toggleSidebar()" class="icon-btn" title="Close"><svg class="icon">
+                    <use href="/assets/cross.svg#content" />
+                </svg></a>
+            {% include 'menu' %}
+        </aside>
+    </div>
+</body>
+
+</html>

@@ -6,6 +6,7 @@ tags:
     - 'flower'
     - 'nature'
     - 'cultivation'
+imagePath: 'blogImages/blogimage.jpg'
 ---
 
 # Post Title

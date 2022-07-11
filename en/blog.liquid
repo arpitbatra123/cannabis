@@ -23,6 +23,12 @@
                             <span class="post-snippet">
                                 <a href="{{ post.url }}">{{ post.data.snippet }}</a>
                             </span>
+                            <div class="post-tags">
+                                <a href="{{ post.url }}">#tag-1</a>
+                                <a href="{{ post.url }}">#tag-2</a>
+                                <a href="{{ post.url }}">#tag-3</a>
+                                <a href="{{ post.url }}">#tag-4</a>
+                            </div>
                             <div class="post-date">
                                 {{ post.date | date: '%b %Y' }}
                             </div>
@@ -46,4 +52,5 @@
         </aside>
     </div>
 </body>
+
 </html>

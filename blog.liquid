@@ -20,11 +20,24 @@
                             <span class="post-title">
                                 <a href="{{ post.url }}">{{ post.data.title }}</a>
                             </span>
-                            <span class="post-snippet">
-                                <a href="{{ post.url }}">{{ post.data.snippet }}</a>
-                            </span>
-                            <div class="post-date">
-                                {{ post.date | date: '%b %Y' }}
+                            <div>
+                                <div>
+                                    <span class="post-snippet">
+                                        <a href="{{ post.url }}">{{ post.data.snippet }}</a>
+                                    </span>
+                                    <div class="post-tags">
+                                        <a href="{{ post.url }}">#tag-1</a>
+                                        <a href="{{ post.url }}">#tag-2</a>
+                                        <a href="{{ post.url }}">#tag-3</a>
+                                        <a href="{{ post.url }}">#tag-4</a>
+                                    </div>
+                                    <div class="post-date">
+                                        {{ post.date | date: '%b %Y' }}
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="/assets/{{ post.data.imagePath }}" alt="{{ post.data.title }}">
+                                </div>
                             </div>
                         </li>
                         {% endfor %}
