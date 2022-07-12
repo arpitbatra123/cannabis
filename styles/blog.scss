@@ -95,6 +95,26 @@ body {
 }
 
 @media (max-width: $breakpoint-sm) {
+    .blog-image {
+        display: none;
+    }
+    .content-container main {
+        .posts {
+            width: 30ch;
+            .post {
+                &-title {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                &-header {
+                    grid-template-columns: 1fr;
+                }
+                &-date {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
 }
 
 .tag {
@@ -110,4 +130,8 @@ body {
     margin-right: 0.5rem;
     padding: 0.5rem 1rem;
     text-transform: lowercase;
+}
+
+.page-footer {
+    margin-top: 1rem;
 }
