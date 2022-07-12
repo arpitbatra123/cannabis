@@ -13,35 +13,37 @@
         <h1 class="title">BLOG POSTS</h1>
         <div class="content-container">
             <main>
-                <article class="flow | body-font | about-me">
-                    <ul class="flow | posts">
-                        {% for post in collections.posts reversed %}
-                        <li class="post">
-                            <span class="post-title">
-                                <a href="{{ post.url }}">{{ post.data.title }}</a>
-                            </span>
-                            <div class="blog-content">
-                                <div class="blog-content-right">
-                                    <span class="post-snippet">
-                                        <a href="{{ post.url }}">{{ post.data.snippet }}</a>
-                                    </span>
-                                    <div class="post-tags">
-                                        {% for tag in post.data.tags %}
-                                        <a href="/tags/{{tag}}" class="tag">#{{tag}}</a>
-                                        {% endfor %}
-                                    </div>
-                                    <div class="post-date">
-                                        {{ post.date | date: '%b %Y' }}
-                                    </div>
-                                </div>
+                <ul class="flow | posts">
+                    {% for post in collections.posts reversed %}
+                    <li class="post">
+                        <div class="post-header">
+                            <div class="post-header-left">
                                 <div class="blog-image">
                                     <img src="/assets/{{ post.data.imagePath }}" alt="{{ post.data.title }}">
                                 </div>
                             </div>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </article>
+                            <div class="post-header-right">
+                                <h2 class="post-title">
+                                    <a href="{{ post.url }}">{{ post.data.title }}</a>
+                                </h2>
+                                <span class="post-snippet">
+                                    <a href="{{ post.url }}">{{ post.data.snippet }}</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="post-footer">
+                            <div class="post-tags">
+                                {% for tag in post.data.tags %}
+                                <a href="/tags/{{tag}}" class="tag">#{{tag}}</a>
+                                {% endfor %}
+                            </div>
+                            <div class="post-date">
+                                {{ post.date | date: '%B %e, %Y' }}
+                            </div>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
             </main>
         </div>
         <footer class="page-footer">

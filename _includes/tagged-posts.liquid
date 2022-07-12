@@ -11,8 +11,12 @@
     {% include 'header' %}
     <div class="blog-container">
         <div class="content-container">
-            <h1 class="posts-heading">{{ renderData.title }}</h1>
-            {{ content }}
+            <main>
+                <div class="content-container">
+                    <h1 class="posts-heading">{{ renderData.title }}</h1>
+                    {{ content }}
+                </div>
+            </main>
         </div>
         <footer class="page-footer">
             <div class="container">
