@@ -25,7 +25,7 @@ body {
     main {
         margin-left: 2rem;
         .posts {
-            width: 60ch;
+            width: 70vw;
             .post {
                 &-date {
                     color: var(--date-color);
@@ -58,6 +58,11 @@ body {
                     display: grid;
                     grid-template-columns: 200px 1fr;
                     gap: 2rem;
+                    &-right {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                    }
                 }
 
                 &-footer {
