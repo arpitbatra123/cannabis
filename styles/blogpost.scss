@@ -1,77 +1,77 @@
-@import 'global';
+@import "global";
 
 body {
-    background-color: var(--bg);
-    color: var(--fg);
-    display: flex;
-    flex-direction: column;
+  background-color: var(--bg);
+  color: var(--fg);
+  display: flex;
+  flex-direction: column;
 }
 
 .blog-container {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  flex: 1;
 }
 
 header {
 }
 
 .content-container {
+  flex: 1;
+
+  main {
     flex: 1;
-
-    main {
-        flex: 1;
-        .posts {
-            width: 60ch;
-            .post {
-                &-date {
-                    font-size: 12px;
-                    line-height: 20px;
-                    color: var(--date-color);
-                }
-
-                &-title {
-                    font-size: 32px;
-                    line-height: 39px;
-                    a {
-                        text-decoration: none;
-                        &:hover {
-                            text-decoration: underline;
-                        }
-                    }
-                }
-            }
+    .posts {
+      width: 60ch;
+      .post {
+        &-date {
+          font-size: 12px;
+          line-height: 20px;
+          color: var(--date-color);
         }
+
+        &-title {
+          font-size: 32px;
+          line-height: 39px;
+          a {
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 @media (max-width: $breakpoint-md) {
-    header {
-        text-align: center;
-        .title {
-            font-size: 48px;
-        }
+  header {
+    text-align: center;
+    .title {
+      font-size: 48px;
     }
-    .content-container {
-        flex-direction: column-reverse;
-        align-items: center;
-        margin-top: 0;
-        main {
-            margin-top: 2em;
-            .posts {
-                width: 80vw;
-            }
-        }
+  }
+  .content-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 0;
+    main {
+      margin-top: 2em;
+      .posts {
+        width: 80vw;
+      }
     }
+  }
 }
 
 @media (max-width: $breakpoint-sm) {
-    .content-container {
-        main {
-            .posts {
-                width: 85vw;
-            }
-        }
+  .content-container {
+    main {
+      .posts {
+        width: 85vw;
+      }
     }
+  }
 }

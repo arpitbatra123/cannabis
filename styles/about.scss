@@ -1,31 +1,31 @@
-@import 'global';
+@import "global";
 
 body {
-    background-color: var(--bg);
-    color: var(--fg);
-    display: flex;
-    flex-direction: column;
+  background-color: var(--bg);
+  color: var(--fg);
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-    flex: 1;
+  flex: 1;
 }
 
 .about {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
 
-    @media (max-width: $breakpoint-md) {
-        max-width: 800px;
-        padding: 0 2rem;
-    }
+  @media (max-width: $breakpoint-md) {
+    max-width: 800px;
+    padding: 0 2rem;
+  }
 
-    @media (max-width: $breakpoint-sm) {
-        max-width: 480px;
-    }
-    
-    p {
-        font-size: 1.15em;
-    }
+  @media (max-width: $breakpoint-sm) {
+    max-width: 480px;
+  }
+
+  p {
+    font-size: 1.15em;
+  }
 }

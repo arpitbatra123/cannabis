@@ -1,4 +1,4 @@
 {
-    "layout": "blogpost.liquid",
-    "tags": "postsEnglish"
+  "layout": "blogpost.liquid",
+  "tags": "postsEnglish"
 }

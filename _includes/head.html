@@ -1,36 +1,31 @@
-{% assign metatitle = site.title %}
+{% assign metatitle = site.title %} {% if title %} {% assign metatitle =
+metatitle | prepend: " • " | prepend: title %} {% endif %} {% assign metadesc =
+site.desc %} {% if desc %} {% assign metadesc = desc %} {% endif %} {% assign
+metatype = "website" %} {% if type == "note" %} {% assign metatype = "article"
+%} {% endif %}
 
-{% if title %}
-{% assign metatitle = metatitle | prepend: " • " | prepend: title %}
-{% endif %}
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-{% assign metadesc = site.desc %}
-{% if desc %}
-{% assign metadesc = desc %}
-{% endif %}
-
-{% assign metatype = "website" %}
-{% if type == "note" %}
-{% assign metatype = "article" %}
-{% endif %}
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-<link rel="shortcut icon" href="/assets/logo.svg" type="image/x-icon">
+<link rel="shortcut icon" href="/assets/logo.svg" type="image/x-icon" />
 
 <title>{{- metatitle -}}</title>
 
-<meta name="description" content="{{- metadesc -}}">
+<meta name="description" content="{{- metadesc -}}" />
 
-<meta property="og:title" content="{{-metatitle-}}">
-<meta property="og:type" content="{{-metatype-}}">
-<meta property="og:url" content="{{ page.url | prepend: site.baseurl }}">
-<meta property="og:image" content="/assets/avatar.png">
-<meta property="og:description" content="{{- metadesc -}}">
-<meta name="robots" content="noindex">
+<meta property="og:title" content="{{-metatitle-}}" />
+<meta property="og:type" content="{{-metatype-}}" />
+<meta property="og:url" content="{{ page.url | prepend: site.baseurl }}" />
+<meta property="og:image" content="/assets/avatar.png" />
+<meta property="og:description" content="{{- metadesc -}}" />
+<meta name="robots" content="noindex" />
 
-
-<link rel="preload" href="/assets/Graphik-Regular-Web.woff2" as="font" type="font/woff2" crossorigin />
+<link
+  rel="preload"
+  href="/assets/Graphik-Regular-Web.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
 <script src="/assets/main.js" defer></script>
