@@ -1,4 +1,4 @@
 {
-    "layout": "blogpost.liquid",
-    "tags": "posts"
+  "layout": "blogpost.liquid",
+  "tags": "posts"
 }
