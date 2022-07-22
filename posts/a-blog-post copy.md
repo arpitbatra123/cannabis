@@ -2,6 +2,7 @@
 title: BubbleGum Auto Cannabis Strain Guida per Settimana
 snippet: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada facilisis risus. Suspendisse potenti.
 date: "2012-02-02"
+author: "Cannabis Author"
 tags:
   - "flower"
   - "nature"

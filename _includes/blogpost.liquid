@@ -72,9 +72,9 @@
         <div class="body__text">
             {{content}}
             <div class="tags__cont">
-                <p class="tag"> #Reviewed</p>
-                <p class="tag"> #Popular</p>
-                <p class="tag"> #important</p>
+                {% for tag in tags %}
+                    <a href="/tags/{{tag}}" class="tag">#{{tag}}</a>
+                {% endfor %}
             </div>
             <div class="view_all">
                 <a href="#"> <i class="fa fa-angle-double-left" aria-hidden="true"></i> View All Article</a>
