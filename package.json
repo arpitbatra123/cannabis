@@ -13,7 +13,7 @@
     "format": "npx prettier --write ."
   },
   "keywords": [],
-  "author": "Arpit Batra (arpitbatra123@gmail.com)",
+  "author": "kcblack22@gmail.com",
   "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
