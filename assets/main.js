@@ -21,3 +21,4 @@ function toggleSearchBar() {
     x.style.display = "none";
   }
 }
+console.log("Theme:", localStorage.getItem(theme))
