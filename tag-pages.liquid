@@ -10,35 +10,25 @@ renderData:
   title: Posts Tagged Under "{{ tag }}"
 permalink: /tags/{{ tag }}/
 ---
-
-<ul class="flow | posts">
     {% for post in collections.posts reversed %}
-    <li class="post">
-        <div class="post-header">
-            <div class="post-header-left">
-                <div class="blog-image">
-                    <img src="/assets/{{ post.data.imagePath }}" alt="{{ post.data.title }}">
-                </div>
+    <div class="cont">
+        <div class="lef">
+
+            <a id="title" href="{{ post.url }}">
+                <h4> {{ post.data.title }} </h4>
+            </a>
+            <p>{{ post.data.snippet }}</p>
+            <div class="pop">
+                {% for tag in post.data.tags %}
+                <p><a href="/tags/{{tag}}" class="tag">#{{tag}}</a></p>
+                {% endfor %}
+                <p>{{ post.date | date: '%B %e, %Y' }}</p>
             </div>
-            <div class="post-header-right">
-                <h2 class="post-title">
-                    <a href="{{ post.url }}">{{ post.data.title }}</a>
-                </h2>
-                <span class="post-snippet">
-                    <a href="{{ post.url }}">{{ post.data.snippet }}</a>
-                </span>
-                <div class="post-footer">
-                    <div class="post-tags">
-                        {% for tag in post.data.tags %}
-                        <a href="/tags/{{tag}}" class="tag">#{{tag}}</a>
-                        {% endfor %}
-                    </div>
-                    <div class="post-date">
-                        {{ post.date | date: '%B %e, %Y' }}
-                    </div>
-                </div>
-            </div>
+
         </div>
-    </li>
+        <div class="righ" style="background-image: url('/assets/{{ post.data.imagePath }}') ;">
+
+        </div>
+    </div>
+    <hr class="hr" />
     {% endfor %}
-</ul>
