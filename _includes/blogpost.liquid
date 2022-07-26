@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="it">
 
 <head>
@@ -34,5 +34,244 @@
         </aside>
     </div>
 </body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="/assets/logo.svg" type="image/x-icon">
+
+    <title>Canapa Coltivazione</title>
+
+    <meta name="description" content="Community telegram sulla coltivazione della cannabis.">
+    <meta property="og:title" content="Canapa Coltivazione">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/blog/">
+    <meta property="og:image" content="/assets/avatar.png">
+    <meta property="og:description" content="Community telegram sulla coltivazione della cannabis.">
+    <meta name="robots" content="noindex">
+
+    <link rel="preload" href="/assets/Graphik-Regular-Web.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/assets/main.js" defer></script>
+    <link rel="stylesheet" href="/styles/blog.css">
+</head>
+
+<body>
+    <script>
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark') {
+            document.body.classList.add('dark');
+        }
+    </script>
+    <script>
+        const onLangChange = (toLang, pageUrl) => {
+
+            if (pageUrl.includes("en"))
+                pageUrl = pageUrl.split("en").slice(1)
+
+            if (toLang === "en") {
+                window.location.href = new URL(window.location.protocol + "//" + window.location.host + "/en" + pageUrl);
+            }
+            else {
+                window.location.href = new URL(window.location.protocol + "//" + window.location.host + pageUrl);
+            }
+        }
+    </script>
+    <header class="page-header">
+        <div class="container">
+            <a href="javascript:toggleSidebar()" class="icon-btn" title="Menu" id="menu_btn"><svg class="icon">
+                    <use href="/assets/bars.svg#content" />
+                </svg></a>
+            <img width="48" height="48" class="logo" src="/assets/logo.svg" alt="">
+            <nav>
+
+                <a href="/" class="menu-item">Home</a>
+                <a href="/about" class="menu-item">About</a>
+                <a href="/contact" class="menu-item">Contact</a>
+                <a href="/blog" class="menu-item">Blog</a>
+
+            </nav>
+            <input type="search" id="searchbar" class="searchbar" placeholder="Search" />
+            <a href="javascript:toggleSearchBar()">
+                <i class="fa fa-search fa-lg"></i>
+            </a>
+            <a id="theme_switch" class="icon-btn" href="javascript:toggleTheme()" title="Change theme"><svg
+                    class="icon">
+                    <use href="/assets/moon.svg#content" />
+                </svg></a>
+
+        </div>
+    </header>
+
+    <body>
+        <div class="detail__main">
+            <div class="page_title">
+                <h4> Lorem ipsum dolor sit amet consectetur.</h4>
+            </div>
+            <div class="description__column">
+                <img class="profile" src="/assets/logo.svg" alt="">
+                <h6> Dave Clarck</h6>
+                <h6> &#x2022; </h6>
+                <h6> July 10, 2022</h6>
+                <h6> &#x2022; </h6>
+                <h6> 12,39849 Views</h6>
+            </div>
+            <div class="mimage">
+            </div>
+            <div class="body__text">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil impedit soluta itaque quasi,
+                    consequuntur ullam accusamus veritatis optio placeat commodi sequi, necessitatibus eligendi beatae
+                    obcaecati, accusantium rerum. Similique odio beatae placeat suscipit eaque, ea repudiandae
+                    praesentium amet, nemo optio sapiente,
+                    incidunt expedita. Eveniet ullam magnam culpa est impedit quos nam officiis ipsum veritatis
+                    corrupti, ratione similique voluptatem veniam mollitia, optio aliquid laudantium. Corporis cum
+                    voluptates voluptas soluta ipsam itaque accusantium minus perspiciatis repudiandae voluptatum.
+                    Aspernatur, nisi ullam quisquam
+                </p>
+                <p>
+                    rerum veniam reiciendis quas, qui temporibus eaque veritatis, voluptas laudantium porro doloremque!
+                    Molestias aliquam, fugiat dolorum optio obcaecati assumenda ex nesciunt vero nobis? Praesentium
+                    impedit nihil id explicabo doloribus voluptates commodi voluptatibus quaerat error libero hic iure
+                    suscipit, vel natus
+                    ipsum deleniti repudiandae similique porro asperiores laborum debitis minima harum, ipsa tempora?
+                    Perferendis, quia. Reiciendis aut quo a at architecto consectetur, impedit sapiente quod cumque
+                    quidem ut, eveniet pariatur fugiat sint doloribus ipsa error nesciunt quia assumenda consequatur
+                    expedita eos, iste voluptatem
+                    sit! Id repellat quae, quis harum debitis iste at. Sint repudiandae, dicta blanditiis ipsam ex
+                    provident quis voluptates consequatur vel perspiciatis animi assumenda perferendis dignissimos autem
+                    quod placeat at facilis unde iste cum veniam accusantium. Minus enim doloribus velit ut omnis
+                    assumenda nihil architecto est ex vero!
+                </p>
+                <p>
+                    Asperiores hic voluptatibus cumque rem. Natus praesentium ratione nesciunt suscipit ducimus
+                    exercitationem reiciendis veniam ipsam ullam id, quae, odio alias? Error nam cum, distinctio
+                    pariatur molestias explicabo enim dolorem nulla facilis, voluptatibus nesciunt il
+                    lum laudantium sapiente praesentium optio expedita. Perferendis facere blanditiis tenetur quasi,
+                    illum quia. Ad, ipsa totam consectetur nulla rem nostrum vitae,
+                    obcaecati odio quibusdam cumque delectus minima eos inventore libero laborum sed dolorem? Tempora
+                    ipsam a odit doloribus dolorum harum aperiam, quam perspiciatis delectus aliquam atque cupiditate
+                    perferendis consequuntur beatae debitis adipisci dicta culpa, laboriosam nihil saepe, corporis
+                    similique! Id?
+                </p>
+                <div class="tags__cont">
+                    <p class="tag"> #Reviewed</p>
+                    <p class="tag"> #Popular</p>
+                    <p class="tag"> #important</p>
+                </div>
+                <div class="view_all">
+                    <a href="#"> <i class="fa fa-angle-double-left" aria-hidden="true"></i> View All Article</span></a>
+                    <hr class="hr" />
+
+                </div>
+                <div class="corelated__articles">
+                    <h4> CORELLATED ARTICLES</h4>
+                    <div class="corelated__container">
+                        <div class="top">
+                            <div class="left">
+                                <h5> <strong> Lorem ipsum dolor sit amet consectetur </strong> </h5>
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit. </p>
+
+                            </div>
+                            <div class="right">
+                                <!-- <img src="/assets/blogImages/b-image.svg" alt="The blog image" /> -->
+
+                            </div>
+                        </div>
+                        <div class="down">
+                            <div class="corelated__tags">
+                                <p> #popular</p>
+                                <p> #important</p>
+                            </div>
+                            <div class="date">
+                                <p> July 7, 2022</p>
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+
+
+                    <div class="corelated__container">
+                        <div class="top">
+                            <div class="left">
+                                <h5> <strong> Lorem ipsum dolor sit amet consectetur </strong> </h5>
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit. </p>
+
+                            </div>
+                            <div class="right">
+                                <!-- <img src="/assets/blogImages/b-image.svg" alt="The blog image" /> -->
+
+                            </div>
+                        </div>
+                        <div class="down">
+                            <div class="corelated__tags">
+                                <p> #popular</p>
+                                <p> #important</p>
+                            </div>
+                            <div class="date">
+                                <p> July 7, 2022</p>
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+
+                    <div class="corelated__container">
+                        <div class="top">
+                            <div class="left">
+                                <h5> <strong> Lorem ipsum dolor sit amet consectetur </strong> </h5>
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit. </p>
+
+                            </div>
+                            <div class="right">
+                                <!-- <img src="/assets/blogImages/b-image.svg" alt="The blog image" /> -->
+
+                            </div>
+                        </div>
+                        <div class="down">
+                            <div class="corelated__tags">
+                                <p> #popular</p>
+                                <p> #important</p>
+                            </div>
+                            <div class="date">
+                                <p> July 7, 2022</p>
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                    <div class="corelated__container">
+                        <div class="top">
+                            <div class="left">
+                                <h5> <strong> Lorem ipsum dolor sit amet consectetur </strong> </h5>
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit. </p>
+
+                            </div>
+                            <div class="right">
+                                <!-- <img src="/assets/blogImages/b-image.svg" alt="The blog image" /> -->
+
+                            </div>
+                        </div>
+                        <div class="down">
+                            <div class="corelated__tags">
+                                <p> #popular</p>
+                                <p> #important</p>
+                            </div>
+                            <div class="date">
+                                <p> July 7, 2022</p>
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
 
 </html>
