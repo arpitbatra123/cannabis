@@ -301,6 +301,9 @@ hr{
 	
 }
 @media (max-width: $breakpoint-xs) {
+	.main{
+		max-width: 100% !important;
+	}
 .date{
 	font-size: 10px;
 }
@@ -309,7 +312,7 @@ hr{
 	.tag__con{
 		overflow: auto;
 		overflow: auto;
-		max-width: 60%;
+		max-width: 50%;
 		gap: 2px;
 		display: flex;
 		scrollbar-width: none;
