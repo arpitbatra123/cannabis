@@ -7,9 +7,9 @@ body {
 	flex-direction: column;
 }
 
-main {
-	flex: 1;
-}
+// main {
+// 	flex: 1;
+// }
 
 .about {
 	max-width: 1100px;
@@ -22,23 +22,40 @@ main {
 	}
 
 	@media (max-width: $breakpoint-sm) {
-		max-width: 480px;
+		// max-width: 480px;
 	}
 
 	p {
 		// font-size: 1.15em;
 	}
 }
-
+header{
+	width: 100% !important;
+}
 .page-header{
+	width: 100%!important;
 	// max-width: 1000px; 
 	// margin: 0 auto !important; 
 	// color: var(--date-color);
 	// width: 100%;
 	// padding: 0px !important;
 }
+
+.searchbar {
+	border-radius: 5px;
+	padding: 8px;
+	border-width: 0px;
+	color: var(--date-color);
+	background-color: #d9d9d9;
+	// margin-left: 92px;
+	// margin-right: 12px;
+}
 .container {
-	padding: 0px 40px;
+	padding: 0px 72px;
+}
+.bar{
+	display: inline;
+	color: var(--date-color);
 }
 .main{
 	
@@ -82,12 +99,43 @@ main {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			p:nth-child(1){
-				padding: 6px 20px;
-				border-radius: 8px;
-				color: white;
-				background-color: brown;
+			
+
+			.tag__con{
+				display: flex;
+				overflow-x: auto;
+				scrollbar-width: none;
+				-ms-overflow-style: none; 
+  				scrollbar-width: none;
+				gap: 20px;
+				
+				p:nth-child(1){
+					padding: 4px 6px;
+					border-radius: 8px;
+					color: white;
+					background-color: brown;
+				}
+				p:nth-child(2){
+					padding: 4px 6px;
+					border-radius: 8px;
+					color: white;
+					background-color: rgb(42, 71, 165);
+				}
+				p:nth-child(3){
+					padding: 4px 6px;
+					border-radius: 8px;
+					color: white;
+					background-color: rgb(244, 18, 198);
+				}
+				p:nth-child(4){
+					padding: 4px 6px;
+					border-radius: 8px;
+					color: white;
+					background-color: rgb(232, 121, 3);
+				}
 			}
+			
+			
 	}
 }
 .righ{
@@ -97,7 +145,6 @@ main {
 				width: 100%;
 }
 .hr{
-	border-top: 1px dashed red;
 	width: 100%;
 	margin-top: 30px;
 }
@@ -129,7 +176,20 @@ hr{
 
 
 @media (max-width: $breakpoint-md) {
+	.pop{
+		// flex-wrap: wrap;
+	}
+	.searchbar {
+		margin-left: 50px;
+	}
 	.cont{
+		.tag__con{
+			max-width: 60%;
+			overflow: auto;
+		}
+		.tag__con::-webkit-scrollbar {
+			display: none;
+		}
 		gap: 10px;
 		.lef{
 			gap: 10px;
@@ -156,8 +216,20 @@ hr{
 @media (max-width: $breakpoint-sm) {
 .container{
 	padding: 0px 20px;
-	max-width: 100% !important;
+	min-width: 100% !important;
 }
+#searchbar {
+	width: 50% !important;
+	margin-left: 40px;
+}
+.inp{
+	display: flex;
+	width: 100%;
+}
+.searchbar,
+	.searching {
+		display: none;
+	}
 .cont{
 	display: flex;
 	gap: 2px !important;
@@ -175,7 +247,11 @@ hr{
 				margin-top: 15px !important;
 			}
 		}
-		
+		.desc{
+			p{
+				display: none;
+			}
+		}
 		p{
 			font-size: 12px !important;
 			margin-bottom: 0px !important;
@@ -184,14 +260,27 @@ hr{
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			p{
-				font-size: 12px;
+			
+			// gap: 10px;
+			.tag__con{
+				overflow: auto;
+				max-width: 60%;
+				gap: 2px;
+				display: flex;
+				scrollbar-width: none;
+				-ms-overflow-style: none; 
+  				scrollbar-width: none;
 			}
-			p:nth-child(1){
+			p{
+				font-size: 10px;
 				padding: 3px 6px;
-				color: white;
+				// color: white;
 				border-radius: 4px;
 			}
+			// p:nth-child(1){
+				
+			// }
+			
 		}
 		
 	}
@@ -212,6 +301,27 @@ hr{
 	
 }
 @media (max-width: $breakpoint-xs) {
-
+.date{
+	font-size: 10px;
+}
+.pop{
+	max-width: 100% !important;
+	.tag__con{
+		overflow: auto;
+		overflow: auto;
+		max-width: 60%;
+		gap: 2px;
+		display: flex;
+		scrollbar-width: none;
+		-ms-overflow-style: none; 
+		  scrollbar-width: none;
+	}
+}
+#searchbar {
+	width: 60px !important;
+}
+.righ{
+	max-width: 100% !important;
+}
 }
 

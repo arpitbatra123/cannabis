@@ -122,7 +122,7 @@ body {
 		justify-content: space-between;
 		align-items: center;
 		h4 {
-			font-size: 48px;
+			font-size: 38px;
 			color: var(--sharp-color);
 		}
 	}
@@ -141,7 +141,7 @@ body {
 			background-color: white;
 		}
 		h6 {
-			font-size: 32px;
+			font-size: 26px;
 		}
 		.profile {
 			height: 48px;
@@ -163,7 +163,7 @@ body {
 	.body__text {
 		margin-top: 40px;
 		p {
-			font-size: 32px;
+			font-size: 18px;
 			color: var(--sharp-color);
 		}
 	}
@@ -213,7 +213,7 @@ body {
 		flex-direction: column;
 		color: var(--sharp-color);
 		h4 {
-			font-size: 48px;
+			font-size: 38px;
 			font-weight: 400;
 		}
 		hr {
@@ -222,10 +222,10 @@ body {
 		.corelated__container {
 			display: flex;
 			flex-direction: column;
-      margin-bottom: 20px;
+      		margin-bottom: 20px;
 			.top {
 				display: grid;
-				grid-template-columns: 2fr 1fr;
+				grid-template-columns: 3fr 1fr;
 				.left {
 					display: flex;
 
@@ -233,10 +233,10 @@ body {
 					color: var(--sharp-color);
 					h5 {
 						font-weight: 700;
-						font-size: 40px;
+						font-size: 26px;
 					}
 					p {
-						font-size: 32px;
+						font-size: 18px;
 						color: var(--sharp-color);
 					}
 				}
@@ -260,7 +260,7 @@ body {
 					border-radius: 8px;
 					background-color: #046a71;
 					color: white;
-					font-size: 28px;
+					font-size: 18px;
 				}
 				p:nth-child(2) {
 					background-color: #850e87;
@@ -268,7 +268,7 @@ body {
 			}
 			.date {
 				p {
-					font-size: 28px;
+					font-size: 18px;
 				}
 			}
 		}
@@ -363,6 +363,15 @@ body {
 	.desktop {
 		display: none;
 	}
+
+
+	.pop{
+		.date{
+			color: red !important;
+		}
+	}
+
+	
 	#searchbar {
 		width: 50% !important;
 		margin-left: 40px;
@@ -457,6 +466,7 @@ body {
         min-height: 250px;
 			}
 		}
+		
 		.down {
 			.corelated__tags {
 				gap: 16px !important;
@@ -468,11 +478,12 @@ body {
 					font-size: 12px !important;
 				}
 			}
-			.date {
-				p {
-					font-size: 12px !important;
-				}
-			}
+			// .date {
+			// 	p {
+			// 		font-size: 12px !important;
+					
+			// 	}
+			// }
 		}
 	}
 }
