@@ -1,17 +1,17 @@
 function toggleTheme() {
-  document.body.classList.toggle("dark");
-  if (document.body.classList.contains("dark")) {
-    localStorage.setItem("theme", "dark");
-  } else {
-    localStorage.setItem("theme", "light");
-  }
+    document.body.classList.toggle('dark');
+    if (document.body.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
 }
 
 function toggleSidebar() {
-  document.body.classList.toggle("sidebar-open");
+    document.body.classList.toggle('sidebar-open');
 }
 
-let x = document.getElementById("searchbar");
+/** let x = document.getElementById("searchbar");
 x.style.display = "none";
 x.style.transition = "all 2s ease-in";
 function toggleSearchBar() {
@@ -21,4 +21,4 @@ function toggleSearchBar() {
     x.style.display = "none";
   }
 }
-console.log("Theme:", localStorage.getItem(theme))
+console.log("Theme:", localStorage.getItem(theme)) */
