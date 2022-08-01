@@ -1,10 +1,9 @@
 {
-  "name": "eleventy-blog",
+  "name": "cannabis",
   "version": "1.0.0",
-  "description": "my personal website",
+  "description": "blog for cannabis website",
   "scripts": {
     "build": "eleventy && npm run sass",
-    "servewin": "npm run clean && concurrently --success all \"eleventy --serve\" \"npm run sass:watch\"",
     "serve": "npm run clean && concurrently --success all 'eleventy --serve' 'npm run sass:watch'",
     "sass": "sass styles:_site/styles --no-source-map --style=compressed --update",
     "sass:watch": "npm run sass && npm run sass -- --watch",
@@ -13,13 +12,13 @@
     "format": "npx prettier --write ."
   },
   "keywords": [],
-  "author": "kcblack22@gmail.com",
+  "author": "arpitbatra123@gmail.com and kcblack22@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.0",
-    "concurrently": "^6.4.0",
-    "markdown-it-attrs": "^4.1.0",
-    "markdown-it-image-lazy-loading": "^1.1.0",
-    "sass": "^1.43.5"
+    "@11ty/eleventy": "^1.0.1",
+    "concurrently": "^7.3.0",
+    "markdown-it-attrs": "^4.1.4",
+    "markdown-it-image-lazy-loading": "^1.2.0",
+    "sass": "^1.54.0"
   }
 }
