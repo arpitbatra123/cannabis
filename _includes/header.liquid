@@ -1,6 +1,199 @@
+<style>
+    .page-header {
+        background-color: var(--bg2);
+        color: var(--fg);
+        line-height: normal;
+        border-bottom: 2px solid var(--stroke-color);
+        white-space: nowrap;
+    }
+
+    .page-header .container {
+        max-width: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .page-header a {
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .page-header a:hover {
+        background-color: #0001;
+    }
+
+    .menu-item:hover {
+        padding: 18px 15px;
+    }
+
+    body.dark .page-header .menu-item:hover {
+        background-color: #000000;
+        color: wheat;
+        padding: 18px 15px;
+    }
+
+    .page-header h3 {
+        margin: 0;
+    }
+
+    .page-header nav {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .page-header .logo {
+        height: 2.5em;
+        margin: 8px;
+    }
+
+    .icon-btn {
+        font-size: 1.5em;
+    }
+
+    #menu_btn {
+        display: none;
+    }
+
+    #lang_cont {
+        display: flex;
+        position: relative;
+    }
+
+    #theme_switch {
+        padding: 16px;
+    }
+
+    #lang_switch {
+        padding: 18px 16px 18px 16px;
+    }
+
+    #lang_cont>ul {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background-color: var(--bg2);
+        color: var(--fg);
+        box-shadow: 0 2px 5px #0003;
+        display: none;
+        width: 120px;
+    }
+
+    #lang_switch+ul a {
+        display: flex;
+        gap: 10px;
+        padding: 10px 15px;
+    }
+
+    #lang_switch+ul a:hover {
+        background-color: #0001;
+    }
+
+    #lang_cont:focus-within>ul {
+        display: block;
+    }
+
+    .flag-img {
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .flag-img-english {
+        width: 24px;
+        height: 20px;
+    }
+
+    .flag-img-italy {
+        width: 24px;
+        height: 20px;
+    }
+
+    @media (max-width: 580px) {
+        .page-header nav>a {
+            display: none;
+        }
+    }
+
+    .page-footer {
+        text-align: center;
+        padding: 15px;
+        background-color: #212121;
+        color: #ddd;
+    }
+
+    body.dark .page-footer {
+        background-color: #2b2b2b;
+    }
+
+
+
+    #sidebar {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        right: 100%;
+        background-color: var(--bg2);
+        color: var(--fg);
+        z-index: 200;
+        white-space: nowrap;
+        display: none;
+        --display: flex;
+        flex-direction: column;
+        width: 200px;
+        transition: transform 0.3s;
+    }
+
+    #sidebar>a {
+        padding: 10px 15px;
+    }
+
+    #sidebar>a:hover {
+        background-color: #0001;
+    }
+
+    #sidebar>a:first-child {
+        align-self: flex-end;
+    }
+
+    @media (max-width: 580px) {
+
+        #menu_btn,
+        #sidebar {
+            display: var(--display);
+        }
+
+        body.sidebar-open {
+            overflow: hidden;
+        }
+
+        body.sidebar-open #sidebar {
+            transform: translateX(100%);
+            box-shadow: 5px 0 10px #0003;
+        }
+
+        body.sidebar-open #main_wrapper {
+            filter: blur(15px);
+        }
+
+        body.sidebar-open #main_overlay {
+            display: block;
+        }
+    }
+
+    .overlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        display: none;
+    }
+</style>
 <script>
     const onLangChange = (toLang, pageUrl) => {
-        
+
         if (pageUrl.includes("en"))
             pageUrl = pageUrl.split("en").slice(1)
 
