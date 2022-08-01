@@ -1,59 +1,65 @@
-@import 'reset';
-@import 'variables';
-@import 'utilities';
+@import "reset";
+@import "variables";
+@import "utilities";
 
 a {
-    color: currentColor;
+  color: currentColor;
+  text-decoration: none;
+  &:hover {
     text-decoration: none;
-    &:hover {
-        text-decoration: none;
-    }
-    display: inline-block;
+  }
+  display: inline-block;
 }
 
 :focus {
-    outline: 2px dotted;
-    outline-offset: 0.25rem;
+  outline: 2px dotted;
+  outline-offset: 0.25rem;
 }
 
 @font-face {
-    font-family: 'Graphik Regular';
-    src: url('/assets/Graphik-Regular-Web.woff2') format('woff2');
-    font-display: swap;
+  font-family: "Graphik Regular";
+  src: url("/assets/Graphik-Regular-Web.woff2") format("woff2");
+  font-display: swap;
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+}
+
+svg.icon {
+  display: block;
+  height: 1em;
+  width: 1em;
 }
 
 body {
-    font-family: 'Graphik Regular', sans-serif;
-    line-height: 1.65;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
+  font-family: "Graphik Regular", sans-serif;
+  line-height: 1.65;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 :root {
-    --accent: #2d9cdb;
-    --grey: #444;
-    --bg: white;
-    --fg: black;
-    --bg2: white;
-    --stroke-color: #ddd;
-    --date-color: rgba(0, 0, 0, 0.65);
-    --sharp-color: #000;
-    --hov: blue;
+  --accent: #2d9cdb;
+  --grey: #444;
+  --bg: white;
+  --fg: black;
+  --bg2: white;
+  --stroke-color: #ddd;
+  --date-color: rgba(0, 0, 0, 0.65);
+  --sharp-color: #000;
+  --hov: blue;
 }
 
 body.dark {
-    --bg: #212121;
-    --fg: #ccc;
-    --bg2: #2b2b2b;
-    --stroke-color: #555;
-    --date-color: white;
-    --sharp-color: #fff;
-    --hov: white;
+  --bg: #212121;
+  --fg: #ccc;
+  --bg2: #2b2b2b;
+  --stroke-color: #555;
+  --date-color: white;
+  --sharp-color: #fff;
+  --hov: white;
 }

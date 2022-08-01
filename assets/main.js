@@ -1,14 +1,14 @@
 function toggleTheme() {
-    document.body.classList.toggle('dark');
-    if (document.body.classList.contains('dark')) {
-        localStorage.setItem('theme', 'dark');
-    } else {
-        localStorage.setItem('theme', 'light');
-    }
+  document.body.classList.toggle("dark");
+  if (document.body.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
 }
 
 function toggleSidebar() {
-    document.body.classList.toggle('sidebar-open');
+  document.body.classList.toggle("sidebar-open");
 }
 
 /** let x = document.getElementById("searchbar");

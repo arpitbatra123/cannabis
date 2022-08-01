@@ -19,7 +19,7 @@ permalink: /tags/{{ tag }}/
             </a>
             <p>{{ post.data.snippet }}</p>
             <div class="pop">
-                {% for tag in post.data.tags %}
+                {% for tag in post.data.tags | filterTagList %}
                 <p><a href="/tags/{{tag}}" class="tag">#{{tag}}</a></p>
                 {% endfor %}
                 <p>{{ post.date | date: '%B %e, %Y' }}</p>

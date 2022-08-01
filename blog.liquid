@@ -3,70 +3,47 @@
 
 <head>
     {% include 'head.html' %}
-    <link rel="stylesheet" href="/styles/about.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <header class="page-header">
-        <div class="container">
-            <a href="javascript:toggleSidebar()" class="icon-btn" title="Menu" id="menu_btn"><svg class="icon">
-                    <use href="/assets/bars.svg#content" />
-                </svg></a>
-            <img width="48" height="48" class="logo" src="/assets/logo.svg" alt="">
-            <nav>
-
-                <a href="/" class="menu-item">Home</a>
-                <a href="/about" class="menu-item">About</a>
-                <a href="/contact" class="menu-item">Contact</a>
-                <a href="/blog" class="menu-item">Blog</a>
-
-            </nav>
-        
-            
-                    <input type="search" id="searchbar" class="searchbar" placeholder="Search" />
-                <a href="javascript:toggleSearchBar()">
-                    <i class="fa fa-search fa-lg"></i>
-                </a>
-                <a id="theme_switch" class="icon-btn" href="javascript:toggleTheme()" title="Change theme"><svg class="icon">
-                    <use href="/assets/moon.svg#content" />
-                </svg></a>
-               
-
-        </div>
-    </header>
+    <link rel="stylesheet" href="/styles/blog.css">
+</head>
 
 <body>
-
-    <div class="main">
-
+    {% include 'theme' %}
+    {% include 'header' %}
+    <main class="blog-content flow">
+        <h1 class="title"> Blog Posts</h1>
         {% for post in collections.posts reversed %}
-
-        <div class="cont">
-            <div class="lef">
-
-                <div class="desc">
-                <a id="title" href="{{ post.url }}">
-                    <h4> {{ post.data.title }} </h4>
+        <div class="post">
+            <div class="left">
+                <img src="https://picsum.photos/200" alt="">
+                <!-- <img src="/assets/{{ post.data.imagePath }}" alt=""> -->
+                <p class="date">{{ post.date | date: '%B %e, %Y' }}</p>
+            </div>
+            <div class="right">
+                <a href="{{ post.url }}">
+                    <h2>{{ post.data.title }}</h2>
                 </a>
                 <p>{{ post.data.snippet }}</p>
-                </div>
-                <div class="pop">
-                   <div class="tag__con"> 
+                <div class="tags">
                     {% for tag in post.data.tags %}
-                        <p><a href="/tags/{{tag}}" class="tag">#{{tag}}</a></p>
+                    <a href="/tags/{{tag}}" class="tag">#{{tag}}</a>
                     {% endfor %}
-                   </div> 
-                    
-                    <p class="date">{{ post.date | date: '%B %e, %Y' }}</p>
                 </div>
-
-            </div>
-            <div class="righ" style="background-image: url('/assets/{{ post.data.imagePath }}') ;">
-
             </div>
         </div>
-        <hr class="hr" />
         {% endfor %}
-    </div>
-
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <small>Copyright <b>{{site.author}}</b></small>
+        </div>
+    </footer>
+    <div class="overlay" id="main_overlay" onclick="toggleSidebar()"></div>
+    <aside id="sidebar">
+        <a href="javascript:toggleSidebar()" class="icon-btn" title="Close"><svg class="icon">
+                <use href="/assets/cross.svg#content" />
+            </svg></a>
+        {% include 'menu' %}
+    </aside>
 </body>
+
 </html>
