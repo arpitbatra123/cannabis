@@ -71,3 +71,15 @@ body.dark {
     --sharp-color: #fff;
     --hov: white;
 }
+
+blockquote {
+    margin: 16px 0;
+    padding: 1em;
+    background-color: #ffb6c185;
+    color: black;
+}
+
+body.dark blockquote {
+    background-color: grey;
+    color: white;
+}
