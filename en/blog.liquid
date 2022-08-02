@@ -9,56 +9,41 @@
 <body>
     {% include 'theme' %}
     {% include 'header' %}
-    <div class="blog-container">
-        <h1 class="title">BLOG POSTS</h1>
-        <div class="content-container">
-            <main>
-                <ul class="flow | posts">
-                    {% for post in collections.postsEnglish reversed %}
-                    <li class="post">
-                        <div class="post-header">
-                            <div class="post-header-left">
-                                <div class="blog-image">
-                                    <img src="/assets/{{ post.data.imagePath }}" alt="{{ post.data.title }}">
-                                </div>
-                            </div>
-                            <div class="post-header-right">
-                                <h2 class="post-title">
-                                    <a href="{{ post.url }}">{{ post.data.title }}</a>
-                                </h2>
-                                <span class="post-snippet">
-                                    <a href="{{ post.url }}">{{ post.data.snippet }}</a>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="post-footer">
-                            <div class="post-tags">
-                                {% for tag in post.data.tags %}
-                                <a href="/tags/{{tag}}" class="tag">#{{tag}}</a>
-                                {% endfor %}
-                            </div>
-                            <div class="post-date">
-                                {{ post.date | date: '%B %e, %Y' }}
-                            </div>
-                        </div>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </main>
-        </div>
-        <footer class="page-footer">
-            <div class="container">
-                <small>Copyright <b>{{site.author}}</b></small>
+    <main class="blog-content flow">
+        <h1 class="title">All Blog Posts</h1>
+        <p class="subtitle">Browse the following posts</p>
+        {% for post in collections.postsEnglish reversed %}
+        <div class="post">
+            <div class="left">
+                <img src="/assets/{{ post.data.imagePath }}" alt="">
             </div>
-        </footer>
-        <div class="overlay" id="main_overlay" onclick="toggleSidebar()"></div>
-        <aside id="sidebar">
-            <a href="javascript:toggleSidebar()" class="icon-btn" title="Close"><svg class="icon">
-                    <use href="/assets/cross.svg#content" />
-                </svg></a>
-            {% include 'menu' %}
-        </aside>
-    </div>
+            <div class="right">
+                <p class="date">{{ post.date | date: '%B %e, %Y' }}</p>
+                <a href="{{ post.url }}">
+                    <h2>{{ post.data.title }}</h2>
+                </a>
+                <p class="snippet">{{ post.data.snippet }}</p>
+                <div class="tags">
+                    {% for tag in post.data.tags %}
+                    <a href="/tags/{{tag}}" class="tag">#{{tag}}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <small>Copyright <b>{{site.author}}</b></small>
+        </div>
+    </footer>
+    <div class="overlay" id="main_overlay" onclick="toggleSidebar()"></div>
+    <aside id="sidebar">
+        <a href="javascript:toggleSidebar()" class="icon-btn" title="Close"><svg class="icon">
+                <use href="/assets/cross.svg#content" />
+            </svg></a>
+        {% include 'menu' %}
+    </aside>
 </body>
 
 </html>

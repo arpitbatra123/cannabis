@@ -30,7 +30,7 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
     return (tags || []).filter(
-      (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
+      (tag) => ["all", "nav", "post", "posts", "postsEnglish"].indexOf(tag) === -1
     );
   });
 };
