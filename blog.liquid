@@ -10,19 +10,19 @@
     {% include 'theme' %}
     {% include 'header' %}
     <main class="blog-content flow">
-        <h1 class="title"> Blog Posts</h1>
+        <h1 class="title">All Blog Posts</h1>
+        <p class="subtitle">Browse the following posts</p>
         {% for post in collections.posts reversed %}
         <div class="post">
             <div class="left">
-                <img src="https://picsum.photos/200" alt="">
-                <!-- <img src="/assets/{{ post.data.imagePath }}" alt=""> -->
-                <p class="date">{{ post.date | date: '%B %e, %Y' }}</p>
+                <img src="/assets/{{ post.data.imagePath }}" alt="">
             </div>
             <div class="right">
+                <p class="date">{{ post.date | date: '%B %e, %Y' }}</p>
                 <a href="{{ post.url }}">
                     <h2>{{ post.data.title }}</h2>
                 </a>
-                <p>{{ post.data.snippet }}</p>
+                <p class="snippet">{{ post.data.snippet }}</p>
                 <div class="tags">
                     {% for tag in post.data.tags %}
                     <a href="/tags/{{tag}}" class="tag">#{{tag}}</a>
