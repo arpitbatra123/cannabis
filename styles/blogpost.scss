@@ -16,9 +16,45 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 90ch;
-    img{
-      border-radius: 8px;
-      margin: 0.5rem 0 2rem 0;
+
+    .title {
+        font-size: var(--font-size-xxl);
+    }
+
+    img {
+        border-radius: 2px;
+        margin: 0.5rem 0 2rem 0;
+        width: 100vw;
+        aspect-ratio: 16/9;
+    }
+
+    .date {
+        color: #666666;
+        font-size: var(--font-size-xs);
+    }
+
+    .tags {
+        margin-top: 0.5rem;
+        display: flex;
+        gap: 4px;
+        flex-wrap: wrap;
+    }
+
+    .tag {
+        border: 1px solid wheat;
+        padding: 4px;
+        border-radius: 2px;
+        background-color: brown;
+        color: wheat;
+    }
+
+    .tag:nth-child(2n) {
+        background-color: darkslateblue;
+        color: wheat;
+    }
+
+    .text {
+        font-size: var(--font-size-base);
+        margin-top: 1rem;
     }
 }
