@@ -18,11 +18,13 @@
                 <img src="/assets/{{ post.data.imagePath }}" alt="">
             </div>
             <div class="right">
-                <p class="date">{{ post.date | date: '%B %e, %Y' }}</p>
-                <a href="{{ post.url }}">
-                    <h2>{{ post.data.title }}</h2>
-                </a>
-                <p class="snippet">{{ post.data.snippet }}</p>
+                <div class="top">
+                    <p class="date">{{ post.date | date: '%B %e, %Y' }}</p>
+                    <a href="{{ post.url }}">
+                        <h2>{{ post.data.title }}</h2>
+                    </a>
+                    <p class="snippet">{{ post.data.snippet }}</p>
+                </div>
                 <div class="tags">
                     {% for tag in post.data.tags %}
                     <a href="/tags/{{tag}}" class="tag">#{{tag}}</a>
