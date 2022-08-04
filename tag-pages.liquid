@@ -4,31 +4,32 @@ pagination:
   size: 1
   alias: tag
   filter:
-    - posts
+    - all
+    - post
+    - postsEnglish
 layout: tagged-posts.liquid    
 renderData:
   title: Posts Tagged Under "{{ tag }}"
 permalink: /tags/{{ tag }}/
 ---
-    {% for post in collections.posts reversed %}
-    <div class="cont">
-        <div class="lef">
-
-            <a id="title" href="{{ post.url }}">
-                <h4> {{ post.data.title }} </h4>
+{% for post in collections[tag] reversed %}
+<div class="post">
+    <div class="left">
+        <img src="/assets/{{ post.data.imagePath }}" alt="">
+    </div>
+    <div class="right">
+        <div class="top">
+            <p class="date">{{ post.date | date: '%B %e, %Y' }}</p>
+            <a href="{{ post.url }}">
+                <h2>{{ post.data.title }}</h2>
             </a>
-            <p>{{ post.data.snippet }}</p>
-            <div class="pop">
-                {% for tag in post.data.tags | filterTagList %}
-                <p><a href="/tags/{{tag}}" class="tag">#{{tag}}</a></p>
-                {% endfor %}
-                <p>{{ post.date | date: '%B %e, %Y' }}</p>
-            </div>
-
+            <p class="snippet">{{ post.data.snippet }}</p>
         </div>
-        <div class="righ" style="background-image: url('/assets/{{ post.data.imagePath }}') ;">
-
+        <div class="tags">
+            {% for tag in post.data.tags %}
+            <a href="/tags/{{tag}}" class="tag">#{{tag}}</a>
+            {% endfor %}
         </div>
     </div>
-    <hr class="hr" />
-    {% endfor %}
+</div>
+{% endfor %}

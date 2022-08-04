@@ -4,7 +4,6 @@ snippet: I was originally drawn to Tech Twitter when I found a handful of users 
 date: "2012-02-02"
 tags:
   - "flower"
-  - "nature"
   - "cultivation"
 imagePath: "blogImages/blogimage.jpg"
 ---
