@@ -10,9 +10,14 @@ pagination:
 layout: tagged-posts.liquid    
 renderData:
   title: Posts Tagged Under "{{ tag }}"
-permalink: /tags/{{ tag }}/
+eleventyComputed:
+  locale: "en"
+permalink: /en/tags/{{ tag }}/
 ---
-{% assign taggedCollections = collections[tag] |  italianPostsOnly %}
+{% assign taggedCollections = collections[tag] |  englishPostsOnly %}
+
+<!-- Necessary because this page is dynamic -->
+{% assign locale = "en" %}
 {% for post in taggedCollections %}
 <div class="post">
     <div class="left">
@@ -28,8 +33,8 @@ permalink: /tags/{{ tag }}/
         </div>
         <div class="tags">
             {% assign tagsList = post.data.tags | removeDefaultTags %}
-            {% for tag in tagsList %}
-            <a href="/tags/{{tag}}" class="tag">#{{tag}}</a>
+            {% for tag in post.data.tags %}
+            <a href="/en/tags/{{tag}}" class="tag">#{{tag}}</a>
             {% endfor %}
         </div>
     </div>

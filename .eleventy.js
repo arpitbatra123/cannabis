@@ -28,9 +28,28 @@ module.exports = (eleventyConfig) => {
   // return {
   // }
 
-  eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
-    return (tags || []).filter(
-      (tag) => ["all", "nav", "post", "posts", "postsEnglish"].indexOf(tag) === -1
-    );
+  // Receives tagged collection
+  eleventyConfig.addFilter(
+    "englishPostsOnly",
+    function filterTagList(collection) {
+      return collection.filter((post) => {
+        return post.data.tags.includes("postsEnglish");
+      });
+    }
+  );
+
+  eleventyConfig.addFilter(
+    "italianPostsOnly",
+    function filterTagList(collection) {
+      return collection.filter((post) => {
+        return post.data.tags.includes("posts");
+      });
+    }
+  );
+
+  eleventyConfig.addFilter("removeDefaultTags", function filterTagList(tags) {
+    return tags.filter((tag) => {
+      return !["postsEnglish", "posts"].includes(tag);
+    });
   });
 };

@@ -1,7 +1,12 @@
 <!DOCTYPE html>
+{% if locale == "en" %}
+<html lang="en">
+{% else %}
 <html lang="it">
+{% endif %}
 
 <head>
+    <title>{{title}}</title>
     {% include 'head.html' %}
     <link rel="stylesheet" href="/styles/blogpost.css">
 </head>
@@ -15,11 +20,12 @@
             <h1 class="title">{{title}}</h1>
             <img src="/assets/{{imagePath }}" alt="">
             <div class="tags">
-                {% for tag in tags %}
+                {% assign tagsList = tags | removeDefaultTags %}
+                {% for tag in tagsList %}
                 <a href="/tags/{{tag}}" class="tag">#{{tag}}</a>
                 {% endfor %}
             </div>
-            <div class="text">{{content}}</p>
+            <div class="text">{{content}}</div>
         </div>
     </main>
     <footer class="page-footer">

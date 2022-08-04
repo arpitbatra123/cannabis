@@ -1,8 +1,10 @@
----
-permalink: tags-page.html
----
 <!DOCTYPE html>
+
+{% if locale == "en" %}
+<html lang="en">
+{% else %}
 <html lang="it">
+{% endif %}
 
 <head>
     <title>{{ renderData.title }}</title>

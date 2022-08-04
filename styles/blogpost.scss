@@ -1,65 +1,65 @@
-@import 'global';
+@import "global";
 
 body {
-    background-color: var(--bg);
-    color: var(--fg);
-    display: flex;
-    flex-direction: column;
+  background-color: var(--bg);
+  color: var(--fg);
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-    flex: 1;
+  flex: 1;
 }
 
 .content {
-    padding: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 70ch;
+  margin: 0 auto;
+  @media (max-width: $breakpoint-sm) {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: var(--font-size-xxl);
+  }
+
+  img {
+    border-radius: 2px;
+    margin: 0.5rem 0 2rem 0;
+    width: 100vw;
+    aspect-ratio: 16/9;
+  }
+
+  .date {
+    color: #666666;
+    font-size: var(--font-size-xs);
+  }
+
+  .tags {
+    margin-top: 0.5rem;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 70ch;
-    margin: 0 auto;
-    @media (max-width: $breakpoint-sm) {
-        padding: 1rem;
-    }
+    gap: 4px;
+    flex-wrap: wrap;
+  }
 
-    .title {
-        font-size: var(--font-size-xxl);
-    }
+  .tag {
+    border: 1px solid wheat;
+    padding: 4px;
+    border-radius: 2px;
+    background-color: brown;
+    color: wheat;
+  }
 
-    img {
-        border-radius: 2px;
-        margin: 0.5rem 0 2rem 0;
-        width: 100vw;
-        aspect-ratio: 16/9;
-    }
+  .tag:nth-child(2n) {
+    background-color: darkslateblue;
+    color: wheat;
+  }
 
-    .date {
-        color: #666666;
-        font-size: var(--font-size-xs);
-    }
-
-    .tags {
-        margin-top: 0.5rem;
-        display: flex;
-        gap: 4px;
-        flex-wrap: wrap;
-    }
-
-    .tag {
-        border: 1px solid wheat;
-        padding: 4px;
-        border-radius: 2px;
-        background-color: brown;
-        color: wheat;
-    }
-
-    .tag:nth-child(2n) {
-        background-color: darkslateblue;
-        color: wheat;
-    }
-
-    .text {
-        font-size: var(--font-size-base);
-        margin-top: 1rem;
-    }
+  .text {
+    font-size: var(--font-size-base);
+    margin-top: 1rem;
+  }
 }

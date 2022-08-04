@@ -26,7 +26,8 @@
                     <p class="snippet">{{ post.data.snippet }}</p>
                 </div>
                 <div class="tags">
-                    {% for tag in post.data.tags %}
+                    {% assign tagsList = post.data.tags | removeDefaultTags %}
+                    {% for tag in tagsList %}
                     <a href="/tags/{{tag}}" class="tag">#{{tag}}</a>
                     {% endfor %}
                 </div>

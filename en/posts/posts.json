@@ -1,4 +1,5 @@
 {
   "layout": "blogpost.liquid",
-  "tags": "postsEnglish"
+  "tags": "postsEnglish",
+  "locale": "en"
 }
