@@ -6,34 +6,6 @@
   flex-direction: column;
 }
 
-@media (max-width: 400px) {
-  .homepage .container,
-  #notes_sec {
-    padding: 15px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .container {
-    max-width: 800px;
-  }
-}
-
-@media (max-width: 620px) {
-  .container {
-    max-width: 480px;
-  }
-  .homepage .container {
-    grid-template-columns: 1fr;
-  }
-  .homepage .container > :last-child {
-    height: 480px;
-  }
-  #notes_sec {
-    grid-template-columns: 1fr;
-  }
-}
-
 .tele-logo > svg {
   display: inline-block;
   font-size: 1.4em;
@@ -115,4 +87,33 @@
   flex-direction: column;
   background-color: var(--bg);
   color: var(--fg);
+}
+
+@media (max-width: $breakpoint-lg) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+
+@media (max-width: $breakpoint-md) {
+  .container {
+    max-width: 480px;
+  }
+  .homepage .container {
+    grid-template-columns: 1fr;
+  }
+  .homepage .container > :last-child {
+    height: 480px;
+  }
+  #notes_sec {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .homepage .container,
+  #notes_sec {
+    padding: 15px;
+  }
 }
