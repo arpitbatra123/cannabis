@@ -28,7 +28,6 @@ body {
     display: flex;
     gap: 2rem;
     flex-direction: row;
-    padding: 1rem;
     @media (max-width: $breakpoint-sm) {
       flex-direction: column;
       gap: 0.5rem;
