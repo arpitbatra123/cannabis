@@ -18,7 +18,7 @@
         <div class="content">
             <p class="date">{{ date | date: '%B %e, %Y' }}</p>
             <h1 class="title">{{title}}</h1>
-            <img src="/assets/{{imagePath }}" alt="">
+            <img src="/assets/{{imagePath }}" alt="" class="post-image">
             <div class="tags">
                 {% assign tagsList = tags | removeDefaultTags %}
                 {% for tag in tagsList %}
@@ -27,10 +27,38 @@
             </div>
             <div class="text">{{content}}</div>
             {% if locale == "en" %}
-            <a class="backlink" href="/en/blog">← View All Articles</a>
+            <a class="backlink" href="/en/blog"><img src="/assets/back.svg"> View All Articles</a>
             {% else %}
-            <a class="backlink" href="/blog">← View All Articles</a>
+            <a class="backlink" href="/blog"><img src="/assets/back.svg"> View All Articles</a>
             {% endif %}
+            <div class="similar-articles | flow">
+                <!-- <h3 class="similar">Similar Articles:</h3>
+                {% assign tagsListToFilter = post.data.tags %}
+                {{tagsListToFilter}} -->
+                <!-- {% assign relatedPosts = collections.posts | filterRelated: tagsListToFilter %} -->
+                <!-- {% for post in collections.posts %}
+                <div class="post">
+                    <div class="left">
+                        <img src="/assets/{{ post.data.imagePath }}" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="top">
+                            <p class="date">{{ post.date | date: '%B %e, %Y' }}</p>
+                            <a href="{{ post.url }}">
+                                <h2>{{ post.data.title }}</h2>
+                            </a>
+                            <p class="snippet">{{ post.data.snippet }}</p>
+                        </div>
+                        <div class="tags">
+                            {% assign tagsList = post.data.tags | removeDefaultTags %}
+                            {% for tag in tagsList %}
+                            <a href="/tags/{{tag}}" class="tag">#{{tag}}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %} -->
+            </div>
         </div>
     </main>
     <footer class="page-footer">
