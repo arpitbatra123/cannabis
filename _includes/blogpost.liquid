@@ -26,6 +26,11 @@
                 {% endfor %}
             </div>
             <div class="text">{{content}}</div>
+            {% if locale == "en" %}
+            <a class="backlink" href="/en/blog">&leftarrow; View All Articles</a>
+            {% else %}
+            <a class="backlink" href="/blog">&leftarrow; View All Articles</a>
+            {% endif %}
         </div>
     </main>
     <footer class="page-footer">
