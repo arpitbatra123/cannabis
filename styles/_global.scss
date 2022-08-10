@@ -11,7 +11,7 @@ a {
   display: inline-block;
 }
 
-:focus {
+:focus-visible {
   outline: 2px dotted;
   outline-offset: 0.25rem;
 }
