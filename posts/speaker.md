@@ -3,7 +3,7 @@ title: Speaker
 snippet: I was originally drawn to Tech Twitter when I found a handful of users who shared genuinely helpful tips, articles, and resources with their audience. Before Twitter forced me to sign up to view tweets.
 date: "2012-02-02"
 tags:
- - "speaker"
+  - "speaker"
 imagePath: "blogImages/blogimage.jpg"
 ---
 

@@ -1,6 +1,7 @@
 const markdownLazyLoadImages = require("markdown-it-image-lazy-loading"),
   markdownIt = require("markdown-it"),
-  markdownAttrs = require("markdown-it-attrs");
+  markdownAttrs = require("markdown-it-attrs"),
+  SIMILAR_ARTICLES_LIMIT = 4;
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("assets");
@@ -29,27 +30,43 @@ module.exports = (eleventyConfig) => {
   // }
 
   // Receives tagged collection
-  eleventyConfig.addFilter(
-    "englishPostsOnly",
-    function filterTagList(collection) {
-      return collection.filter((post) => {
-        return post.data.tags.includes("postsEnglish");
-      });
-    }
-  );
+  eleventyConfig.addFilter("englishPostsOnly", function (collection) {
+    return collection.filter((post) => {
+      return post.data.tags.includes("postsEnglish");
+    });
+  });
 
-  eleventyConfig.addFilter(
-    "italianPostsOnly",
-    function filterTagList(collection) {
-      return collection.filter((post) => {
-        return post.data.tags.includes("posts");
-      });
-    }
-  );
+  eleventyConfig.addFilter("italianPostsOnly", function (collection) {
+    return collection.filter((post) => {
+      return post.data.tags.includes("posts");
+    });
+  });
 
-  eleventyConfig.addFilter("removeDefaultTags", function filterTagList(tags) {
+  eleventyConfig.addFilter("removeDefaultTags", function (tags) {
     return tags.filter((tag) => {
       return !["postsEnglish", "posts"].includes(tag);
     });
   });
+
+  eleventyConfig.addFilter(
+    "filterRelated",
+    (collection, currentTags, currentUrl) => {
+      let pagesWithCommonTags = collection.filter((page) => {
+        if (page.url == currentUrl) {
+          return false;
+        }
+
+        const first = page.data.tags,
+          second = currentTags,
+          common = first.filter((x) => second.includes(x));
+        return common.length > 1;
+      });
+
+      pagesWithCommonTags = pagesWithCommonTags.slice(
+        0,
+        SIMILAR_ARTICLES_LIMIT
+      );
+      return pagesWithCommonTags;
+    }
+  );
 };

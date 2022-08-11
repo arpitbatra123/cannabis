@@ -32,11 +32,11 @@
             <a class="backlink" href="/blog"><img src="/assets/back.svg"> View All Articles</a>
             {% endif %}
             <div class="similar-articles | flow">
-                <!-- <h3 class="similar">Similar Articles:</h3>
-                {% assign tagsListToFilter = post.data.tags %}
-                {{tagsListToFilter}} -->
-                <!-- {% assign relatedPosts = collections.posts | filterRelated: tagsListToFilter %} -->
-                <!-- {% for post in collections.posts %}
+                {% assign tagsListToFilter = tags %}
+                {% assign relatedPosts = collections.posts | filterRelated: tagsListToFilter, page.url %}
+                {% if relatedPosts.size > 0 %}
+                <h3 class="similar">Similar Articles:</h3>
+                {% for post in relatedPosts %}
                 <div class="post">
                     <div class="left">
                         <img src="/assets/{{ post.data.imagePath }}" alt="">
@@ -57,7 +57,8 @@
                         </div>
                     </div>
                 </div>
-                {% endfor %} -->
+                {% endfor %}
+                {% endif %}
             </div>
         </div>
     </main>
