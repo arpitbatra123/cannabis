@@ -66,6 +66,7 @@ main {
 
   .backlink {
     font-size: var(--font-size-base);
+    font-weight: bold;
     margin-top: 1rem;
     display: flex;
     align-items: center;
@@ -153,6 +154,17 @@ main {
         background-color: darkslateblue;
         color: wheat;
       }
+    }
+  }
+}
+
+body.dark {
+  .backlink {
+    border-bottom: 0.5px solid white;
+    color: white;
+    img {
+      color: white;
+      margin-right: 0.2rem;
     }
   }
 }
