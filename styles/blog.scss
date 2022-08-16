@@ -31,6 +31,8 @@ body {
     display: flex;
     gap: 2rem;
     flex-direction: row;
+    border-bottom: 1px solid var(--lineColor);
+    padding-bottom: 8px;
     @media (max-width: $breakpoint-sm) {
       flex-direction: column;
       gap: 0.5rem;

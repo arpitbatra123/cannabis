@@ -52,6 +52,7 @@ body {
   --date-color: rgba(0, 0, 0, 0.65);
   --sharp-color: #000;
   --hov: blue;
+  --lineColor: #cbcbcb;
 
   --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
   --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
@@ -70,6 +71,7 @@ body.dark {
   --date-color: white;
   --sharp-color: #fff;
   --hov: white;
+  --lineColor: #7f7f7f;
 }
 
 blockquote {
