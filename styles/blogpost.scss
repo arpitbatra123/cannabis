@@ -81,11 +81,15 @@ main {
     .similar {
       font-size: var(--font-size-lg);
     }
+
+    .post:not(:last-child) {
+      border-bottom: 1px solid var(--lineColor);
+    }
+  
     .post {
       display: flex;
       gap: 2rem;
       flex-direction: row;
-      border-bottom: 1px solid var(--lineColor);
       padding-bottom: var(--flow-space, 1.5em);
       @media (max-width: $breakpoint-sm) {
         flex-direction: column;
