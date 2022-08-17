@@ -32,10 +32,11 @@ body {
     gap: 2rem;
     flex-direction: row;
     border-bottom: 1px solid var(--lineColor);
-    padding-bottom: 8px;
+    padding-bottom: var(--flow-space, 1.5em);
     @media (max-width: $breakpoint-sm) {
       flex-direction: column;
       gap: 0.5rem;
+      --flow-space: 1em;
     }
     .left {
       max-width: 300px;
