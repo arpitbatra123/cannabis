@@ -24,7 +24,7 @@ permalink: /tags/{{ tag }}/
             <a href="{{ post.url }}">
                 <h2>{{ post.data.title }}</h2>
             </a>
-            <p class="snippet">{{ post.data.snippet }}</p>
+            <p class="snippet" title="{{ post.data.snippet }}">{{ post.data.snippet }}</p>
         </div>
         <div class="tags">
             {% assign tagsList = post.data.tags | removeDefaultTags %}

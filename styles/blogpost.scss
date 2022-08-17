@@ -130,6 +130,10 @@ main {
         }
         .snippet {
           max-width: 40ch;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;  
+          overflow: hidden;
           @media (max-width: $breakpoint-sm) {
             display: none;
           }
