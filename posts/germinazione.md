@@ -1,9 +1,15 @@
 ---
-title: ''
-snippet: ''
-date: 
-tags: []
-imagePath: ''
+title: Germinazione cannabis
+snippet: 'La pianta di Cannabis è caratterizzata da una germinazione Epigea (fuori
+  dal terreno) per questo il seme si sviluppa come nell''immagine qui sopra: con la
+  corona verso il basso e la punta verso l''alto, da dove poi uscirà la radichetta.
+  Se si invertisse la direzione il seme sprecherebbe preziose energie nel radicare,
+  facendo andare la radice prima in alto per poi tornare verso il basso.'
+date: 2022-08-20T18:30:00Z
+tags:
+- can
+- test
+imagePath: assets/image.png
 
 ---
 # Germinazione cannabis - Tutti i possibili modi per germinare i semi di cannabis.
