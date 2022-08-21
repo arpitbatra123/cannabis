@@ -21,7 +21,7 @@
         <div class="content">
             <p class="date">{{ date | date: '%B %e, %Y' }}</p>
             <h1 class="title">{{title}}</h1>
-            <img src="{{imagePath }}" alt="" class="post-image">
+            <!-- <img src="{{imagePath }}" alt="" class="post-image"> -->
             <div class="tags">
                 {% assign tagsList = tags | removeDefaultTags %}
                 {% for tag in tagsList %}
