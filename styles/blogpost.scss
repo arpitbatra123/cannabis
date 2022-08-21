@@ -76,6 +76,13 @@ main {
             text-decoration: underline;
         }
 
+        img {
+            object-fit: cover;
+            aspect-ratio: 16/8;
+            margin: 0.5em auto;
+            width: 90%;
+        }
+
         .direct-link {
             font-family: sans-serif;
             text-decoration: none;

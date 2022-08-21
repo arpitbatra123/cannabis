@@ -18,6 +18,9 @@ draft: false
 La pianta di Cannabis è caratterizzata da una germinazione **Epigea** (fuori dal terreno) per questo il seme si sviluppa come nell'immagine qui sopra: con la **corona** verso il basso e la **punta** verso l'alto, da dove poi uscirà la radichetta. Se si invertisse la direzione il seme sprecherebbe preziose energie nel radicare, facendo andare la radice prima in alto per poi tornare verso il basso.
 
 
+![image](/assets/use-this.jpg)
+
+
 #### Accorgenze da rispettare sempre nella fase di germinazione
 
 1. E' necessario lavarsi sempre le mani prima di maneggiare il seme per evitare contaminazioni da eventuali agenti patogeni specie quando spunta la radichetta (in caso di problemi, potete immergerli in acqua ossigenata al 3% per disinfettarli)
