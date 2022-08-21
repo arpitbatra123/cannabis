@@ -85,7 +85,7 @@ main {
     .post:not(:last-child) {
       border-bottom: 1px solid var(--lineColor);
     }
-  
+
     .post {
       display: flex;
       gap: 2rem;
@@ -136,7 +136,7 @@ main {
           max-width: 40ch;
           display: -webkit-box;
           -webkit-line-clamp: 3;
-          -webkit-box-orient: vertical;  
+          -webkit-box-orient: vertical;
           overflow: hidden;
           @media (max-width: $breakpoint-sm) {
             display: none;
