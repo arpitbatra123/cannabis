@@ -10,18 +10,11 @@ tags:
 - can
 - test
 imagePath: "/assets/image.png"
-
 ---
 # Germinazione cannabis - Tutti i possibili modi per germinare i semi di cannabis.
 
 
-
-<img align="left" src="/assets/image.png" alt="image-20220714101120490" style="zoom: 80%;" />
-
 La pianta di Cannabis è caratterizzata da una germinazione **Epigea** (fuori dal terreno) per questo il seme si sviluppa come nell'immagine qui sopra: con la **corona** verso il basso e la **punta** verso l'alto, da dove poi uscirà la radichetta. Se si invertisse la direzione il seme sprecherebbe preziose energie nel radicare, facendo andare la radice prima in alto per poi tornare verso il basso.
-
-<img align="left" src="/assets/image.png" alt="image-20220714102216354" style="zoom: 77%; padding-right: 2em;" /><img src="/assets/image.png" alt="image-20220714102301610" style="zoom: 50%;" />
-
 
 
 #### Accorgenze da rispettare sempre nella fase di germinazione
@@ -58,7 +51,6 @@ La germinazione dei semi è uguale per tutti, non c'è una differenza tra semi a
 
 ## Germinazione con mini serra
 
-<img align="left" src="/assets/image.png" alt="image-20220714105028504" style="zoom: 33%;" />
 
 1. Preparare la mini-serra riempiendo tutti gli scomparti con il terriccio poi seguire il [metodo precedente](#Germinazione direttamente in terra). Quando le piantine avranno 2 internodi si può procedere al travaso.
 
@@ -66,7 +58,6 @@ La germinazione dei semi è uguale per tutti, non c'è una differenza tra semi a
 
 ## Germinazione con carta assorbente
 
-<img align="left" src="/assets/image.png" alt="scottex_radice" style="zoom:67%;" />
 
 **Cosa occorre?**
 
@@ -113,7 +104,6 @@ La germinazione dei semi è uguale per tutti, non c'è una differenza tra semi a
 
 ## Germinazione con Jiffy
 
-<img align="left" src="/assets/image.png" alt="jiffy" style="zoom:67%;" />
 
 **Cosa occorre?**
 
