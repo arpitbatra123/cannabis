@@ -32,6 +32,6 @@ fields:
       section: 
       file: 
       path: 
-  label: Should we publish this post?
+  label: Is this a draft post?
 pages:
 - posts/on-burnout-and-writing.md
