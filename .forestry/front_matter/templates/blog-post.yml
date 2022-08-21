@@ -15,9 +15,9 @@ fields:
   name: tags
   label: tags
 - name: imagePath
-  type: text
+  type: file
   config:
-    required: false
+    maxSize: 64
   label: imagePath
 pages:
 - posts/germinazione.md
