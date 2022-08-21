@@ -1,15 +1,14 @@
 ---
 title: On burnout and writing
-snippet:
-  On burnout and writingOn burnout and writingOn burnout and writingOn burnout
+snippet: On burnout and writingOn burnout and writingOn burnout and writingOn burnout
   and writingOn burnout and writingOn burnout and writing
-date: 2022-08-02T18:30:00Z
+date: 2022-08-02T18:30:00.000+00:00
 tags:
-  - hello
+- hello
 imagePath: "/assets/msg.jpg"
+draft: 'no'
+
 ---
-
-
 # Heading 1
 This is the content of heading one
  On burnout and writingOn burnout and writingOn burnout and writingOn burnout
