@@ -179,3 +179,17 @@ body.dark {
     }
   }
 }
+
+ul {
+  margin-left: 1.5em;
+  margin-bottom: 1rem;
+  list-style-type: disc;
+  list-style-position: outside;
+  list-style-image: none;
+}
+
+ol {
+  margin-left: 1.25em;
+  margin-bottom: 1rem;
+  list-style-type: decimal;
+}
