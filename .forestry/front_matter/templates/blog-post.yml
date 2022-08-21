@@ -19,5 +19,19 @@ fields:
   config:
     maxSize: 64
   label: imagePath
+- name: draft
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - 'yes'
+    - 'no'
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Should we publish this post?
 pages:
 - posts/on-burnout-and-writing.md
