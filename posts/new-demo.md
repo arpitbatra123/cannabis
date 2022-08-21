@@ -4,7 +4,7 @@ snippet: This is a demo
 date: 2022-08-16T18:30:00Z
 tags:
 - hello
-imagePath: "/assets/mobile.webp"
+imagePath: image.png
 imagepath: image.png
 
 ---
