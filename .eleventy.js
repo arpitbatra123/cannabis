@@ -16,7 +16,7 @@ module.exports = (eleventyConfig) => {
   const options = {
       html: true,
       breaks: true,
-      linkify: true,
+      linkify: false,
       typographer: true,
     },
     markdownEngine = markdownIt(options);
