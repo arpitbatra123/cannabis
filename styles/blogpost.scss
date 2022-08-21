@@ -128,10 +128,11 @@ main {
                 img {
                     object-fit: cover;
                     border-radius: 2px;
+                    aspect-ratio: 16/10;
+                    height: 200px;
                 }
                 @media (max-width: $breakpoint-sm) {
                     img {
-                        height: 90%;
                         aspect-ratio: 4/3;
                         max-height: 300px;
                     }
