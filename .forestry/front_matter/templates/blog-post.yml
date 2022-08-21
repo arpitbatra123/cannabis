@@ -14,8 +14,10 @@ fields:
 - type: list
   name: tags
   label: tags
-- type: file
-  name: imagePath
+- name: imagepath
+  type: text
+  config:
+    required: false
   label: imagePath
 pages:
 - posts/new-demo.md
