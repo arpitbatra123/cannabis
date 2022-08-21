@@ -14,11 +14,6 @@ fields:
 - type: list
   name: tags
   label: tags
-- name: imagePath
-  type: file
-  config:
-    maxSize: 64
-  label: imagePath
 - name: draft
   type: select
   default: []
@@ -33,5 +28,10 @@ fields:
       file: 
       path: 
   label: Is this a draft post?
+- name: imagePath
+  type: file
+  config:
+    maxSize: 64
+  label: imagePath
 pages:
 - posts/on-burnout-and-writing.md
