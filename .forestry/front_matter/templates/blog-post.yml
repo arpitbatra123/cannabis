@@ -17,3 +17,5 @@ fields:
 - type: file
   name: imagePath
   label: imagePath
+pages:
+- posts/new-demo.md
