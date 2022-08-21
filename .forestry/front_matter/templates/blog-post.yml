@@ -20,5 +20,4 @@ fields:
     maxSize: 64
   label: imagePath
 pages:
-- posts/germinazione.md
 - posts/on-burnout-and-writing.md

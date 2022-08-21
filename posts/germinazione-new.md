@@ -1,18 +1,17 @@
 ---
 title: Germinazione cannabis
-snippet:
-  "La pianta di Cannabis è caratterizzata da una germinazione Epigea (fuori
-  dal terreno) per questo il seme si sviluppa come nell'immagine qui sopra: con la
-  corona verso il basso e la punta verso l'alto, da dove poi uscirà la radichetta.
+snippet: 'La pianta di Cannabis è caratterizzata da una germinazione Epigea (fuori
+  dal terreno) per questo il seme si sviluppa come nell''immagine qui sopra: con la
+  corona verso il basso e la punta verso l''alto, da dove poi uscirà la radichetta.
   Se si invertisse la direzione il seme sprecherebbe preziose energie nel radicare,
-  facendo andare la radice prima in alto per poi tornare verso il basso."
-date: 2022-08-20T18:30:00Z
+  facendo andare la radice prima in alto per poi tornare verso il basso.'
+date: 2022-08-20T18:30:00.000+00:00
 tags:
-  - can
-  - test
-imagePath: /assets/image.png
----
+- can
+- test
+imagePath: "/assets/image.png"
 
+---
 # Germinazione cannabis - Tutti i possibili modi per germinare i semi di cannabis.
 
 La pianta di Cannabis è caratterizzata da una germinazione **Epigea** (fuori dal terreno) per questo il seme si sviluppa come nell'immagine qui sopra: con la **corona** verso il basso e la **punta** verso l'alto, da dove poi uscirà la radichetta. Se si invertisse la direzione il seme sprecherebbe preziose energie nel radicare, facendo andare la radice prima in alto per poi tornare verso il basso.
@@ -32,13 +31,13 @@ La germinazione dei semi è uguale per tutti, non c'è una differenza tra semi a
 
 [Germinazione direttamente in terra](#Germinazione direttamente in terra)
 
-- [Germinazione direttamente in terra](#Germinazione direttamente in terra)
-- [Mini serra per germinazione](#Germinazione con mini serra)
-- [Germinazione su carta assorbente](#Germinazione con carta assorbente)
-- [Germinazione con dischetti di cotone](#Germinazione con dischetti di cotone)
-- [Germinazione in acqua per 12h](#Immersione in acqua 12h)
-- [Germinazione con Jiffy / lana di roccia / dischetti di torba](#)
-- [Germinazione con Jiffy / lana di roccia / dischetti di torba](#d)
+* [Germinazione direttamente in terra](#Germinazione direttamente in terra)
+* [Mini serra per germinazione](#Germinazione con mini serra)
+* [Germinazione su carta assorbente](#Germinazione con carta assorbente)
+* [Germinazione con dischetti di cotone](#Germinazione con dischetti di cotone)
+* [Germinazione in acqua per 12h](#Immersione in acqua 12h)
+* [Germinazione con Jiffy / lana di roccia / dischetti di torba](#)
+* [Germinazione con Jiffy / lana di roccia / dischetti di torba](#d)
 
 > Qualunque sistema vogliate usare una volta posizionati i semi, **devono rimanere al buio fino allo spuntare della radichetta** o alla fuoriuscita dal terreno dei cotiledoni (le prime 2 foglie tonde)
 
@@ -58,8 +57,8 @@ _Opzionale: mettere un bicchiere o una cupola di plastica sopra per mantenere la
 
 **Cosa occorre?**
 
-- Carta assorbente (scottex, etc..)
-- 2 piatti o busta di plastica chiusa.
+* Carta assorbente (scottex, etc..)
+* 2 piatti o busta di plastica chiusa.
 
 **Procedimento**
 
@@ -71,8 +70,8 @@ _Opzionale: mettere un bicchiere o una cupola di plastica sopra per mantenere la
 
 **Cosa occorre?**
 
-- Dischi di cotone
-- Busta di plastica
+* Dischi di cotone
+* Busta di plastica
 
 **Procedimento**
 
@@ -84,8 +83,8 @@ _Opzionale: mettere un bicchiere o una cupola di plastica sopra per mantenere la
 
 **Cosa occorre?**
 
-- Bicchiere
-- Acqua
+* Bicchiere
+* Acqua
 
 **Procedimento**
 
@@ -95,10 +94,10 @@ _Opzionale: mettere un bicchiere o una cupola di plastica sopra per mantenere la
 
 **Cosa occorre?**
 
-- Piatto
-- Semi
-- Jiffy
-- Acqua
+* Piatto
+* Semi
+* Jiffy
+* Acqua
 
 **Procedimento**
 
@@ -115,3 +114,5 @@ _Opzionale: mettere un bicchiere o una cupola di plastica sopra per mantenere la
 **Quale ph deve avere l'acqua per la germinazione?** Controllare il ph non è necessario se si sta in soil (terra). Leggi qua il perchè.
 
 **Quanto tempo occorre per la germinazione dei semi di cannabis?** All'incirca 2-3 giorni ma alcuni semi possono prolungarsi fino a una settimana.
+
+> > ##### ![](/assets/efujk1uc8-u03p8d0rh63-0c3d537dd7ce-512.jpeg)
