@@ -10,6 +10,7 @@ tags:
 - can
 - test
 imagePath: "/assets/image.png"
+draft: no
 ---
 # Germinazione cannabis - Tutti i possibili modi per germinare i semi di cannabis.
 
