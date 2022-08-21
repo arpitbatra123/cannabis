@@ -1,7 +1,8 @@
 const markdownLazyLoadImages = require("markdown-it-image-lazy-loading"),
   markdownIt = require("markdown-it"),
   markdownAttrs = require("markdown-it-attrs"),
-  SIMILAR_ARTICLES_LIMIT = 4;
+  markdownItAnchor = require("markdown-it-anchor");
+SIMILAR_ARTICLES_LIMIT = 4;
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("assets");
@@ -22,6 +23,11 @@ module.exports = (eleventyConfig) => {
 
   markdownEngine.use(markdownLazyLoadImages);
   markdownEngine.use(markdownAttrs);
+  markdownEngine.use(markdownItAnchor, {
+    permalink: true,
+    permalinkClass: "direct-link",
+    permalinkSymbol: "#",
+  });
 
   eleventyConfig.setLibrary("md", markdownEngine);
 

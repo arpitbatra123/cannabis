@@ -1,16 +1,18 @@
 ---
 title: Germinazione cannabis
-snippet: "La pianta di Cannabis è caratterizzata da una germinazione Epigea (fuori
-    dal terreno) per questo il seme si sviluppa come nell'immagine qui sopra: con la
-    corona verso il basso e la punta verso l'alto, da dove poi uscirà la radichetta.
-    Se si invertisse la direzione il seme sprecherebbe preziose energie nel radicare,
-    facendo andare la radice prima in alto per poi tornare verso il basso."
+snippet:
+  "La pianta di Cannabis è caratterizzata da una germinazione Epigea (fuori
+  dal terreno) per questo il seme si sviluppa come nell'immagine qui sopra: con la
+  corona verso il basso e la punta verso l'alto, da dove poi uscirà la radichetta.
+  Se si invertisse la direzione il seme sprecherebbe preziose energie nel radicare,
+  facendo andare la radice prima in alto per poi tornare verso il basso."
 date: 2022-08-20T18:30:00Z
 tags:
-    - can
-    - test
+  - can
+  - test
 imagePath: /assets/image.png
 ---
+
 # Germinazione cannabis - Tutti i possibili modi per germinare i semi di cannabis.
 
 La pianta di Cannabis è caratterizzata da una germinazione **Epigea** (fuori dal terreno) per questo il seme si sviluppa come nell'immagine qui sopra: con la **corona** verso il basso e la **punta** verso l'alto, da dove poi uscirà la radichetta. Se si invertisse la direzione il seme sprecherebbe preziose energie nel radicare, facendo andare la radice prima in alto per poi tornare verso il basso.
@@ -28,12 +30,15 @@ Umidità ideale: **90%**
 
 La germinazione dei semi è uguale per tutti, non c'è una differenza tra semi autofiorenti o feminizzati. Di seguito tutti i modi per germinare i semi di cannabis:
 
--   [Germinazione direttamente in terra](#Germinazione direttamente in terra)
--   [Mini serra per germinazione](#Germinazione con mini serra)
--   [Germinazione su carta assorbente](#Germinazione con carta assorbente)
--   [Germinazione con dischetti di cotone](#Germinazione con dischetti di cotone)
--   [Germinazione in acqua per 12h](#Immersione in acqua 12h)
--   [Germinazione con Jiffy / lana di roccia / dischetti di torba](#Germinazione con Jiffy)
+[Germinazione direttamente in terra](#Germinazione direttamente in terra)
+
+- [Germinazione direttamente in terra](#Germinazione direttamente in terra)
+- [Mini serra per germinazione](#Germinazione con mini serra)
+- [Germinazione su carta assorbente](#Germinazione con carta assorbente)
+- [Germinazione con dischetti di cotone](#Germinazione con dischetti di cotone)
+- [Germinazione in acqua per 12h](#Immersione in acqua 12h)
+- [Germinazione con Jiffy / lana di roccia / dischetti di torba](#)
+- [Germinazione con Jiffy / lana di roccia / dischetti di torba](#d)
 
 > Qualunque sistema vogliate usare una volta posizionati i semi, **devono rimanere al buio fino allo spuntare della radichetta** o alla fuoriuscita dal terreno dei cotiledoni (le prime 2 foglie tonde)
 
@@ -53,8 +58,8 @@ _Opzionale: mettere un bicchiere o una cupola di plastica sopra per mantenere la
 
 **Cosa occorre?**
 
--   Carta assorbente (scottex, etc..)
--   2 piatti o busta di plastica chiusa.
+- Carta assorbente (scottex, etc..)
+- 2 piatti o busta di plastica chiusa.
 
 **Procedimento**
 
@@ -66,8 +71,8 @@ _Opzionale: mettere un bicchiere o una cupola di plastica sopra per mantenere la
 
 **Cosa occorre?**
 
--   Dischi di cotone
--   Busta di plastica
+- Dischi di cotone
+- Busta di plastica
 
 **Procedimento**
 
@@ -79,8 +84,8 @@ _Opzionale: mettere un bicchiere o una cupola di plastica sopra per mantenere la
 
 **Cosa occorre?**
 
--   Bicchiere
--   Acqua
+- Bicchiere
+- Acqua
 
 **Procedimento**
 
@@ -90,10 +95,10 @@ _Opzionale: mettere un bicchiere o una cupola di plastica sopra per mantenere la
 
 **Cosa occorre?**
 
--   Piatto
--   Semi
--   Jiffy
--   Acqua
+- Piatto
+- Semi
+- Jiffy
+- Acqua
 
 **Procedimento**
 
