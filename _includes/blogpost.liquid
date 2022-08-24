@@ -9,7 +9,9 @@
     <title>{{title}}</title>
     {% include 'head.html' %}
     {% if noIndex == true %}
-        <meta name="robots" content="noindex" />
+    <meta name="robots" content="noindex" />
+    {% else %}
+    <meta name="robots" content="index, follow" />
     {% endif %}
     <link rel="stylesheet" href="/styles/blogpost.css">
 </head>
