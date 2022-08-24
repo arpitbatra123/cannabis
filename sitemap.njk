@@ -1,13 +1,24 @@
 ---
-permalink: /sitemap.xml
-eleventyExcludeFromCollections: true
+noIndex: true
+permalink: "/sitemap.xml"
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for page in collections.posts %}
-        <url>
-            <loc>{{ site.url }}{{ page.url | url }}</loc>
-            <lastmod>{{ page.date.toISOString() }}</lastmod>
-        </url>
-    {% endfor %}
+{%- for page in collections.all %}
+{%- if not page.data.noIndex and not page.data.draft %}
+  {# Verify that the page has a permalink so we don't pull in things like #}
+  {# the service worker partial. #}
+  {# Use the page's canonicalUrl which ignores the language directories. #}
+  {%- if page.url %}
+  {% set fullUrl %}{{ site.baseurl }}{{ page.url }}{% endset %}
+  <url>
+    <loc>{{ fullUrl }}</loc>
+    {%- set lastMod = page.date.toISOString() -%}
+    {%- if lastMod %}
+    <lastmod>{{ lastMod }}</lastmod>
+    {%- endif %}
+  </url>
+  {%- endif %}
+{%- endif %}
+{%- endfor %}
 </urlset>

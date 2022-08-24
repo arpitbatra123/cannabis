@@ -10,6 +10,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("manifest.json");
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("admin");
+  eleventyConfig.addPassthroughCopy("robots.txt");
 
   eleventyConfig.setDataDeepMerge(true);
 

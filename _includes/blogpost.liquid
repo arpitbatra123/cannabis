@@ -8,7 +8,7 @@
 <head>
     <title>{{title}}</title>
     {% include 'head.html' %}
-    {% if draft == "yes" %}
+    {% if noIndex == true %}
         <meta name="robots" content="noindex" />
     {% endif %}
     <link rel="stylesheet" href="/styles/blogpost.css">
