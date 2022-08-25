@@ -12,6 +12,7 @@
     <meta name="robots" content="noindex" />
     {% else %}
     <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="{{ page.url | prepend: site.baseurl }}" />
     {% endif %}
     <link rel="stylesheet" href="/styles/blogpost.css">
 </head>
