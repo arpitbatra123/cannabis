@@ -10,7 +10,6 @@ noIndex: true
 {% endif %}
 
 <head>
-    <title>{{ renderData.title }}</title>
     {% include 'head.html' %}
     <link rel="stylesheet" href="/styles/tagged-posts.css">
 </head>
@@ -19,7 +18,7 @@ noIndex: true
     {% include 'theme' %}
     {% include 'header' %}
     <main class="blog-content flow">
-        <h1 class="title">{{ renderData.title }}</h1>
+        <h1 class="title">{{ title }}</h1>
         <p class="subtitle">Browse the following posts</p>
         {{content}}
     </main>
