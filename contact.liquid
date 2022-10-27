@@ -1,50 +1,62 @@
 ---
-desc: Contact Desc
-title: Contact
+desc: Vuoi contattare il team di canapacoltivazione.com ? Puoi farlo contattando canapacoltivazione@protonmail.com
+title: Contatti
+noIndex: false
 ---
+
 <!DOCTYPE html>
 <html lang="it">
 
-<head>
+  <head>
     {% include 'head.html' %}
     <link rel="stylesheet" href="/styles/contact.css">
-    <link rel="canonical" href="{{ page.url | prepend: site.baseurl }}" />
-    <meta name="robots" content="noindex" />
-</head>
+    <meta name="robots" content="index"/>
+    <link rel="canonical" href="{{ page.url | prepend: site.baseurl }}"/>
+  </head>
 
-<body>
+  <body>
     {% include 'theme' %}
     {% include 'header' %}
     <main>
-        <div class="contact">
-            <h1>Contatti</h1>
-            <div class="flow">
-                <p>
-                    Hai domande, curiosità, dubbi sulla coltivazione di cannabis?</p>
+      <div class="contact">
+        <h1>Contatti</h1>
+        <div class="flow">
+          <p>
+            Hai domande, curiosità, dubbi sulla coltivazione di cannabis?</p>
 
-                <p> Vuoi diventare un volontario di clinkpac.com?</p>
+          <p>
+            Vuoi diventare un volontario di canapacoltivazione.com?</p>
 
-                <p> Hai bisogno di materiale di informazione sulla coltivazione o qualsiasi altro materiale legato alla
-                    cannabis?</p>
-            </div>
-            <div class="details flow">
-                <p class="email">Email → <a href="mailto:canapa@protonmail.com">canapa@protonmail.com</a></p>
-                <p class="tele">Telegram → <a href="https://t.me/coltivazionelink">t.me/coltivazionelink</a></p>
-            </div>
+          <p>
+            Hai bisogno di materiale di informazione sulla coltivazione o qualsiasi altro materiale legato alla
+            cannabis?</p>
         </div>
+        <div class="details flow">
+          <p class="email">Email →
+            <a href="mailto:canapacoltivazione@protonmail.com">canapacoltivazione@protonmail.com</a>
+          </p>
+          <p class="tele">Telegram →
+            <a href="https://t.me/coltivazionecanapa" rel="nofollow">t.me/coltivazionecanapa</a>
+          </p>
+        </div>
+      </div>
     </main>
     <footer class="page-footer">
-        <div class="container">
-            <small>Copyright <b>{{site.author}}</b></small>
-        </div>
+      <div class="container">
+        <small>Copyright
+          <b>{{site.author}}</b>
+        </small>
+      </div>
     </footer>
     <div class="overlay" id="main_overlay" onclick="toggleSidebar()"></div>
     <aside id="sidebar">
-        <a href="javascript:toggleSidebar()" class="icon-btn" title="Close"><svg class="icon">
-                <use href="/assets/cross.svg#content" />
-            </svg></a>
-        {% include 'menu' %}
+      <a href="javascript:toggleSidebar()" class="icon-btn" title="Close">
+        <svg class="icon">
+          <use href="/assets/cross.svg#content"/>
+        </svg>
+      </a>
+      {% include 'menu' %}
     </aside>
-</body>
+  </body>
 
 </html>

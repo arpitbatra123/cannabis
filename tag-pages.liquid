@@ -9,7 +9,7 @@ pagination:
     - postsEnglish
 layout: tagged-posts.liquid    
 eleventyComputed:
-  title: Posts Tagged Under "{{ tag }}"
+  title: Tutti gli articoli di "{{ tag }}"
 permalink: /tags/{{ tag }}/
 ---
 {% assign taggedCollections = collections[tag] |  italianPostsOnly %}

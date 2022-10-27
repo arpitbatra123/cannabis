@@ -1,6 +1,7 @@
 ---
 noIndex: true
 ---
+
 <!DOCTYPE html>
 
 {% if locale == "en" %}
@@ -11,6 +12,7 @@ noIndex: true
 
 <head>
     {% include 'head.html' %}
+    <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="/styles/tagged-posts.css">
 </head>
 
@@ -19,7 +21,7 @@ noIndex: true
     {% include 'header' %}
     <main class="blog-content flow">
         <h1 class="title">{{ title }}</h1>
-        <p class="subtitle">Browse the following posts</p>
+        <p class="subtitle">Vedi i seguenti articoli</p>
         {{content}}
     </main>
     <footer class="page-footer">

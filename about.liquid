@@ -1,50 +1,56 @@
 ---
-desc: About Desc
-title: About
+snipept: Attivi dal 2018, Canapa Coltivazione mette a disposizione a coltivatori/consumatori informazioni sulla cannabis.
+title: Chi siamo?
+noIndex: false
 ---
+
 <!DOCTYPE html>
 <html lang="it">
 
-<head>
+  <head>
     {% include 'head.html' %}
     <link rel="stylesheet" href="/styles/about.css">
-    <link rel="canonical" href="{{ page.url | prepend: site.baseurl }}" />
-    <meta name="robots" content="noindex" />
-</head>
+    <meta name="robots" content="index"/>
+    <link rel="canonical" href="{{ page.url | prepend: site.baseurl }}"/>
+  </head>
 
-<body>
+  <body>
     {% include 'theme' %}
     {% include 'header' %}
     <main>
-        <div class="about">
-            <h2>Chi siamo?</h2>
+      <div class="about">
+        <h2>Chi siamo?</h2>
 
-            <p>Per dare una risposta alle attuali domande di consumo, coltivazione e mutevoli condizioni legali sulla
-                cannabis.
+        <p>Per dare una risposta alle attuali domande di consumo, coltivazione e mutevoli condizioni legali sulla
+          cannabis.
+                                                            
+                                                                            Attivi dal 2018, Canapa Coltivazione mette a disposizione a coltivatori/consumatori informazioni sulla
+                                                                            cannabis. Sono presenti infinite guide, articoli e molteplici risorse per rispondere a qualsiasi domanda
+                                                                            legata alla cannabis.
+        </p>
 
-                Attivi dal 2018, Canapa Coltivazione mette a disposizione a coltivatori/consumatori informazioni sulla
-                cannabis. Sono presenti infinite guide, articoli e molteplici risorse per rispondere a qualsiasi domanda
-                legata alla cannabis.
-            </p>
+        <h2>Note legali ⚠️</h2>
 
-            <h2>Note legali ⚠️</h2>
-
-            <p>Tutte le informazioni e conversazioni presenti in “Canapa Coltivazione” sono da intendersi
-                esclusivamente al fine di una ampia cultura generale sulla canapa.</p>
-        </div>
+        <p>Tutte le informazioni e conversazioni presenti in “Canapa Coltivazione” sono da intendersi
+          esclusivamente al fine di una ampia cultura generale sulla canapa.</p>
+      </div>
     </main>
     <footer class="page-footer">
-        <div class="container">
-            <small>Copyright <b>{{site.author}}</b></small>
-        </div>
+      <div class="container">
+        <small>Copyright
+          <b>{{site.author}}</b>
+        </small>
+      </div>
     </footer>
     <div class="overlay" id="main_overlay" onclick="toggleSidebar()"></div>
     <aside id="sidebar">
-        <a href="javascript:toggleSidebar()" class="icon-btn" title="Close"><svg class="icon">
-                <use href="/assets/cross.svg#content" />
-            </svg></a>
-            {% include 'menu' %}
+      <a href="javascript:toggleSidebar()" class="icon-btn" title="Close">
+        <svg class="icon">
+          <use href="/assets/cross.svg#content"/>
+        </svg>
+      </a>
+      {% include 'menu' %}
     </aside>
-</body>
+  </body>
 
 </html>
