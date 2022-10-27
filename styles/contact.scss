@@ -19,13 +19,12 @@ main {
   .breadcrumbs {
     display: inline-flex;
     overflow: hidden;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
   
     li {
         display: inline-flex;
         a {
-            background: #fff;
-            color: #333;
+                        color: var(--fg);
             outline: none;
             position: relative;
             text-decoration: none;
