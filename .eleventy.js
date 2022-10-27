@@ -1,10 +1,13 @@
 const markdownLazyLoadImages = require("markdown-it-image-lazy-loading"),
   markdownIt = require("markdown-it"),
   markdownAttrs = require("markdown-it-attrs"),
-  markdownItAnchor = require("markdown-it-anchor");
+  markdownItAnchor = require("markdown-it-anchor"),
+  eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 SIMILAR_ARTICLES_LIMIT = 4;
 
 module.exports = (eleventyConfig) => {
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("manifest.json");

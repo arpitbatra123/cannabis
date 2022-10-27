@@ -2,6 +2,11 @@
 desc: Vuoi contattare il team di canapacoltivazione.com ? Puoi farlo contattando canapacoltivazione@protonmail.com
 title: Contatti
 noIndex: false
+eleventyNavigation:
+  key: Contact
+  parent: Home
+navOptions:
+  includeSelf: true
 ---
 
 <!DOCTYPE html>
@@ -19,6 +24,16 @@ noIndex: false
     {% include 'header' %}
     <main>
       <div class="contact">
+        <div class="breadcrumbs">
+          {% assign navPages = collections.all | eleventyNavigationBreadcrumb: "Contact", navOptions %}
+          <ul>
+          {%- for entry in navPages %}
+            <li{% if entry.url == page.url %} class="breadcrumb-active"{% endif %}>
+              <a href="{{ entry.url }}">{{ entry.title }}</a>
+            </li>
+          {%- endfor %}
+          </ul>
+        </div>
         <h1>Contatti</h1>
         <div class="flow">
           <p>
@@ -33,10 +48,10 @@ noIndex: false
         </div>
         <div class="details flow">
           <p class="email">Email →
-            <a href="mailto:canapacoltivazione@protonmail.com">canapacoltivazione@protonmail.com</a>
+            <a href="mailto:canapacoltivazione@protonmail.com" class="link">canapacoltivazione@protonmail.com</a>
           </p>
           <p class="tele">Telegram →
-            <a href="https://t.me/coltivazionecanapa" rel="nofollow">t.me/coltivazionecanapa</a>
+            <a href="https://t.me/coltivazionecanapa" rel="nofollow" class="link">t.me/coltivazionecanapa</a>
           </p>
         </div>
       </div>

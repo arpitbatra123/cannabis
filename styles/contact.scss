@@ -16,6 +16,33 @@ main {
   margin: 32px auto;
   padding: 0 1rem;
 
+  .breadcrumbs {
+    display: inline-flex;
+    overflow: hidden;
+    padding: 0.5rem;
+  
+    li {
+        display: inline-flex;
+        a {
+            background: #fff;
+            color: #333;
+            outline: none;
+            position: relative;
+            text-decoration: none;
+            padding: 0.5rem 0.5rem 0.5rem 0;
+        }
+        &:not(:last-child) a::after {
+            content: '→';
+            padding-left: 0.5rem;
+            display: inline-block;
+        }
+    }
+  
+    .breadcrumb-active a {
+        text-decoration: underline;
+    }
+  }
+
   @media (max-width: $breakpoint-md) {
     max-width: 800px;
     padding: 0 2rem;
@@ -25,7 +52,7 @@ main {
     max-width: 480px;
   }
 
-  a {
+  .link {
     color: purple;
     border-bottom: 0.5px solid gray;
   }
@@ -42,7 +69,7 @@ main {
 }
 
 body.dark .contact {
-  a {
+  .link {
     color: #ff75ff;
   }
 }

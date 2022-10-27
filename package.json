@@ -17,12 +17,15 @@
   "author": "arpitbatra123@gmail.com and kcblack22@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.1",
-    "concurrently": "^7.3.0",
+    "@11ty/eleventy": "^1.0.2",
+    "concurrently": "^7.5.0",
     "markdown-it": "^13.0.1",
-    "markdown-it-anchor": "^8.6.4",
+    "markdown-it-anchor": "^8.6.5",
     "markdown-it-attrs": "^4.1.4",
     "markdown-it-image-lazy-loading": "^1.2.0",
-    "sass": "^1.54.0"
+    "sass": "^1.55.0",
+    "@11ty/eleventy-navigation": "^0.3.5"
+  },
+  "devDependencies": {
   }
 }

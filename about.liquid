@@ -1,7 +1,12 @@
 ---
-snipept: Attivi dal 2018, Canapa Coltivazione mette a disposizione a coltivatori/consumatori informazioni sulla cannabis.
+snippet: Attivi dal 2018, Canapa Coltivazione mette a disposizione a coltivatori/consumatori informazioni sulla cannabis.
 title: Chi siamo?
 noIndex: false
+eleventyNavigation:
+  key: About
+  parent: Home
+navOptions:
+  includeSelf: true
 ---
 
 <!DOCTYPE html>
@@ -19,6 +24,16 @@ noIndex: false
     {% include 'header' %}
     <main>
       <div class="about">
+        <div class="breadcrumbs">
+          {% assign navPages = collections.all | eleventyNavigationBreadcrumb: "About", navOptions %}
+          <ul>
+          {%- for entry in navPages %}
+            <li{% if entry.url == page.url %} class="breadcrumb-active"{% endif %}>
+              <a href="{{ entry.url }}">{{ entry.title }}</a>
+            </li>
+          {%- endfor %}
+          </ul>
+        </div>
         <h2>Chi siamo?</h2>
 
         <p>Per dare una risposta alle attuali domande di consumo, coltivazione e mutevoli condizioni legali sulla

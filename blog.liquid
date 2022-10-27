@@ -2,6 +2,11 @@
 snippet: Tutti gli articoli e guide di Canapa Coltivazione sulla coltivazione di cannabis.
 title: Blog 
 noIndex: false
+eleventyNavigation:
+  key: Blog
+  parent: Home
+navOptions:
+  includeSelf: true
 ---
 
 <!DOCTYPE html>
@@ -17,7 +22,17 @@ noIndex: false
   <body>
     {% include 'theme' %}
     {% include 'header' %}
-    <main class="blog-content flow">
+    <main class="blog-content">
+      <div class="breadcrumbs">
+        {% assign navPages = collections.all | eleventyNavigationBreadcrumb: "Blog", navOptions %}
+        <ul>
+        {%- for entry in navPages %}
+          <li{% if entry.url == page.url %} class="breadcrumb-active"{% endif %}>
+            <a href="{{ entry.url }}">{{ entry.title }}</a>
+          </li>
+        {%- endfor %}
+        </ul>
+      </div>
       <h1 class="title">Tutti gli articoli</h1>
       <p class="subtitle">Vedi i seguenti articoli</p>
       {% for post in collections.posts reversed %}
