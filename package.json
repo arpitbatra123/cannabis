@@ -26,6 +26,5 @@
     "sass": "^1.55.0",
     "@11ty/eleventy-navigation": "^0.3.5"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }

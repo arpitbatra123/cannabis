@@ -20,6 +20,18 @@
     {% include 'header' %}
     <main>
         <div class="content">
+            {% if permalink %}
+            <div class="breadcrumbs">
+                {% assign navPages = collections.all | eleventyNavigationBreadcrumb: title, navOptions %}
+                <ul>
+                {%- for entry in navPages %}
+                  <li{% if entry.url == page.url %} class="breadcrumb-active"{% endif %}>
+                    <a href="{{ entry.url }}">{{ entry.title }}</a>
+                  </li>
+                {%- endfor %}
+                </ul>
+              </div>
+            {% endif %}
             <p class="date">{{ date | date: '%B %e, %Y' }}</p>
             <h1 class="title">{{title}}</h1>
             <!-- <img src="{{imagePath }}" alt="" class="post-image"> -->

@@ -3,7 +3,7 @@ snippet: Tutti gli articoli e guide di Canapa Coltivazione sulla coltivazione di
 title: Blog 
 noIndex: false
 eleventyNavigation:
-  key: Blog
+  key: Posts
   parent: Home
 navOptions:
   includeSelf: true
@@ -24,7 +24,7 @@ navOptions:
     {% include 'header' %}
     <main class="blog-content">
       <div class="breadcrumbs">
-        {% assign navPages = collections.all | eleventyNavigationBreadcrumb: "Blog", navOptions %}
+        {% assign navPages = collections.all | eleventyNavigationBreadcrumb: "Posts", navOptions %}
         <ul>
         {%- for entry in navPages %}
           <li{% if entry.url == page.url %} class="breadcrumb-active"{% endif %}>

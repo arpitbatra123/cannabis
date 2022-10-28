@@ -1,5 +1,8 @@
 module.exports = {
   eleventyComputed: {
+    eleventyNavigation(data) {
+      return { key: data.title, parent: "Posts" };
+    },
     permalink(data) {
       // If the page is in `draft:true` mode, don't write it to disk...
       if (data.draft) {
@@ -16,6 +19,6 @@ module.exports = {
         return true;
       }
       return data.eleventyExcludeFromCollections;
-    },
+    }
   },
 };

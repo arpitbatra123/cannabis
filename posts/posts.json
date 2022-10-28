@@ -1,4 +1,7 @@
 {
   "layout": "blogpost.liquid",
-  "tags": "posts"
+  "tags": "posts",
+  "navOptions": {
+    "includeSelf": true
+  }
 }
