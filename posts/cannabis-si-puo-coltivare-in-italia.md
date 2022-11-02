@@ -6,6 +6,7 @@ date: 2022-08-31T22:00:00Z
 tags:
 - news
 - coltivazione
+- Tecniche di coltivazione
 imagePath: "/assets/cannabis-polizia.jpg"
 draft: false
 

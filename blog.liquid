@@ -1,9 +1,9 @@
 ---
 snippet: Tutti gli articoli e guide di Canapa Coltivazione sulla coltivazione di cannabis.
-title: Blog 
+title: Blog
 noIndex: false
 eleventyNavigation:
-  key: Posts
+  key: Blog
   parent: Home
 navOptions:
   includeSelf: true
@@ -12,68 +12,96 @@ navOptions:
 <!DOCTYPE html>
 <html lang="it">
 
-  <head>
-    {% include 'head.html' %}
-    <link rel="stylesheet" href="/styles/blog.css">
-    <meta name="robots" content="index, follow"/>
-    <link rel="canonical" href="{{ page.url | prepend: site.baseurl }}"/>
-  </head>
+<head>
+  {% include 'head.html' %}
+  <link rel="stylesheet" href="/styles/blog.css">
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="{{ page.url | prepend: site.baseurl }}" />
+</head>
 
-  <body>
-    {% include 'theme' %}
-    {% include 'header' %}
-    <main class="blog-content">
+<body>
+  {% include 'theme' %}
+  {% include 'header' %}
+  <main class="blog-content">
+    <div class="categories">
+      <h2>CATEGORIES</h2>
+      <ul>
+        <li><a href="/tags/coltivazione" class="category">Coltivazione</a></li>
+        <li>
+          <ul>
+            <li><a href="/tags/Tecniche di coltivazione" class="category">Tecniche di coltivazione</a></li>
+            <li><a href="/tags/Substrato" class="category">Substrato</a></li>
+            <li><a href="/tags/Fasi cannabis" class="category">Fasi cannabis</a></li>
+            <li><a href="/tags/Carenze e eccessi nutrizionali" class="category">Carenze e eccessi nutrizionali</a></li>
+            <li><a href="/tags/Raccolto" class="category">Raccolto</a> </li>
+            <li><a href="/tags/Parassiti, Insetti e problemi vari" class="category">Parassiti, Insetti e problemi vari</a></li>
+          </ul>
+        </li>
+        <li><a href="/tags/Consumo" class="category">Consumo</a></li>
+        <li><a href="/tags/Scienza" class="category">Scienza</a></li>
+        <li><a href="/tags/Cbd" class="category">Cbd</a></li>
+        <li><a href="/tags/Guide e ricette" class="category">Guide e ricette</a></li>
+        <li><a href="/tags/Notizie" class="category">Notizie</a></li>
+      </ul>
+      <!-- <ul>
+        {% for tag in collections.tagsListGlobal %}
+        <li><a href="/tags/{{tag}}" class="tag">{{tag}}</a></li>
+        {% endfor %}
+      </ul> -->
+    </div>
+    <div class="blog-content-right">
       <div class="breadcrumbs">
-        {% assign navPages = collections.all | eleventyNavigationBreadcrumb: "Posts", navOptions %}
+        {% assign navPages = collections.all | eleventyNavigationBreadcrumb: "Blog", navOptions %}
         <ul>
-        {%- for entry in navPages %}
-          <li{% if entry.url == page.url %} class="breadcrumb-active"{% endif %}>
+          {%- for entry in navPages %}
+          <li{% if entry.url==page.url %} class="breadcrumb-active" {% endif %}>
             <a href="{{ entry.url }}">{{ entry.title }}</a>
-          </li>
-        {%- endfor %}
+            </li>
+            {%- endfor %}
         </ul>
       </div>
       <h1 class="title">Tutti gli articoli</h1>
       <p class="subtitle">Vedi i seguenti articoli</p>
       {% for post in collections.posts reversed %}
-        <div class="post">
-          <div class="left">
-            <img src="{{ post.data.imagePath }}" alt="">
+      <div class="post">
+        <div class="left">
+          <img src="{{ post.data.imagePath }}" alt="">
+        </div>
+        <div class="right">
+          <div class="top">
+            <p class="date">{{ post.date | date: '%B %e, %Y' }}</p>
+            <a href="{{ post.url }}">
+              <h2>{{ post.data.title }}</h2>
+            </a>
+            <p class="snippet" title="{{ post.data.snippet }}">{{ post.data.snippet }}</p>
           </div>
-          <div class="right">
-            <div class="top">
-              <p class="date">{{ post.date | date: '%B %e, %Y' }}</p>
-              <a href="{{ post.url }}">
-                <h2>{{ post.data.title }}</h2>
-              </a>
-              <p class="snippet" title="{{ post.data.snippet }}">{{ post.data.snippet }}</p>
-            </div>
-            <div class="tags">
-              {% assign tagsList = post.data.tags | removeDefaultTags %}
-              {% for tag in tagsList %}
-                <a href="/tags/{{tag}}" class="tag">#{{tag}}</a>
-              {% endfor %}
-            </div>
+          <div class="tags">
+            {% assign tagsList = post.data.tags | removeDefaultTags %}
+            {% for tag in tagsList %}
+            <a href="/tags/{{tag}}" class="tag">#{{tag}}</a>
+            {% endfor %}
           </div>
         </div>
-      {% endfor %}
-    </main>
-    <footer class="page-footer">
-      <div class="container">
-        <small>Copyright
-          <b>{{site.author}}</b>
-        </small>
       </div>
-    </footer>
-    <div class="overlay" id="main_overlay" onclick="toggleSidebar()"></div>
-    <aside id="sidebar">
-      <a href="javascript:toggleSidebar()" class="icon-btn" title="Close">
-        <svg class="icon">
-          <use href="/assets/cross.svg#content"/>
-        </svg>
-      </a>
-      {% include 'menu' %}
-    </aside>
-  </body>
+      {% endfor %}
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="container">
+      <small>Copyright
+        <b>{{site.author}}</b>
+      </small>
+    </div>
+  </footer>
+  <div class="overlay" id="main_overlay" onclick="toggleSidebar()"></div>
+  <aside id="sidebar">
+    <a href="javascript:toggleSidebar()" class="icon-btn" title="Close">
+      <svg class="icon">
+        <use href="/assets/cross.svg#content" />
+      </svg>
+    </a>
+    {% include 'menu' %}
+  </aside>
+</body>
 
 </html>

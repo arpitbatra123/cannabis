@@ -1,61 +1,62 @@
-@import 'global';
+@import "global";
 
 body {
-    background-color: var(--bg);
-    color: var(--fg);
-    display: flex;
-    flex-direction: column;
+  background-color: var(--bg);
+  color: var(--fg);
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-    flex: 1;
+  flex: 1;
 }
 
 .about {
-    max-width: 1100px;
-    margin: 32px auto;
-    padding: 0 1rem;
+  max-width: 1100px;
+  margin: 32px auto;
+  padding: 0 1rem;
 
-    .breadcrumbs {
-        display: inline-flex;
-        overflow: hidden;
-        padding: 0.5rem 0;
-      
-        li {
-            display: inline-flex;
-            a {
-                                color: var(--fg);
-                outline: none;
-                position: relative;
-                text-decoration: none;
-                padding: 0.5rem 0.5rem 0.5rem 0;
-            }
-            &:not(:last-child) a::after {
-                content: '→';
-                padding-left: 0.5rem;
-                display: inline-block;
-            }
-        }
-      
-        .breadcrumb-active a {
-            text-decoration: underline;
-        }
+  .breadcrumbs {
+    display: inline-flex;
+    overflow: hidden;
+    padding: 0.5rem 0;
+
+    li {
+      display: inline-flex;
+      a {
+        color: var(--fg);
+        outline: none;
+        position: relative;
+        text-decoration: none;
+        padding: 0.5rem 0.5rem 0.5rem 0;
+        color: #37be72;
       }
-
-    @media (max-width: $breakpoint-md) {
-        max-width: 800px;
-        padding: 0 2rem;
+      &:not(:last-child) a::after {
+        content: "→";
+        padding-left: 0.5rem;
+        display: inline-block;
+      }
     }
 
-    @media (max-width: $breakpoint-sm) {
-        max-width: 480px;
+    .breadcrumb-active a {
+      text-decoration: underline;
     }
+  }
 
-    p {
-        font-size: 1.15em;
-    }
+  @media (max-width: $breakpoint-md) {
+    max-width: 800px;
+    padding: 0 2rem;
+  }
 
-    h2 {
-        margin-top: 16px;
-    }
+  @media (max-width: $breakpoint-sm) {
+    max-width: 480px;
+  }
+
+  p {
+    font-size: 1.15em;
+  }
+
+  h2 {
+    margin-top: 16px;
+  }
 }

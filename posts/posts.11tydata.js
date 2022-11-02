@@ -1,7 +1,7 @@
 module.exports = {
   eleventyComputed: {
     eleventyNavigation(data) {
-      return { key: data.title, parent: "Posts" };
+      return { key: data.title, parent: "Blog" };
     },
     permalink(data) {
       // If the page is in `draft:true` mode, don't write it to disk...
