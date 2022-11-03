@@ -23,32 +23,7 @@ navOptions:
   {% include 'theme' %}
   {% include 'header' %}
   <main class="blog-content">
-    <div class="categories">
-      <h2>CATEGORIES</h2>
-      <ul>
-        <li><a href="/tags/coltivazione" class="category">Coltivazione</a></li>
-        <li>
-          <ul>
-            <li><a href="/tags/Tecniche di coltivazione" class="category">Tecniche di coltivazione</a></li>
-            <li><a href="/tags/Substrato" class="category">Substrato</a></li>
-            <li><a href="/tags/Fasi cannabis" class="category">Fasi cannabis</a></li>
-            <li><a href="/tags/Carenze e eccessi nutrizionali" class="category">Carenze e eccessi nutrizionali</a></li>
-            <li><a href="/tags/Raccolto" class="category">Raccolto</a> </li>
-            <li><a href="/tags/Parassiti, Insetti e problemi vari" class="category">Parassiti, Insetti e problemi vari</a></li>
-          </ul>
-        </li>
-        <li><a href="/tags/Consumo" class="category">Consumo</a></li>
-        <li><a href="/tags/Scienza" class="category">Scienza</a></li>
-        <li><a href="/tags/Cbd" class="category">Cbd</a></li>
-        <li><a href="/tags/Guide e ricette" class="category">Guide e ricette</a></li>
-        <li><a href="/tags/Notizie" class="category">Notizie</a></li>
-      </ul>
-      <!-- <ul>
-        {% for tag in collections.tagsListGlobal %}
-        <li><a href="/tags/{{tag}}" class="tag">{{tag}}</a></li>
-        {% endfor %}
-      </ul> -->
-    </div>
+    {% include 'categories' %}
     <div class="blog-content-right">
       <div class="breadcrumbs">
         {% assign navPages = collections.all | eleventyNavigationBreadcrumb: "Blog", navOptions %}
@@ -78,7 +53,7 @@ navOptions:
           <div class="tags">
             {% assign tagsList = post.data.tags | removeDefaultTags %}
             {% for tag in tagsList %}
-            <a href="/tags/{{tag}}" class="tag">#{{tag}}</a>
+            <a href="/category/{{tag | slugify}}" class="tag">#{{tag}}</a>
             {% endfor %}
           </div>
         </div>

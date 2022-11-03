@@ -11,7 +11,7 @@ pagination:
 layout: tagged-posts.liquid    
 eleventyComputed:
   title: Tutti gli articoli di "{{ tag }}"
-permalink: /tags/{{ tag }}/
+permalink: /category/{{ tag | slugify }}/
 ---
 {% assign taggedCollections = collections[tag] |  italianPostsOnly %}
 {% for post in taggedCollections %}
@@ -30,7 +30,7 @@ permalink: /tags/{{ tag }}/
         <div class="tags">
             {% assign tagsList = post.data.tags | removeDefaultTags %}
             {% for tag in tagsList %}
-            <a href="/tags/{{tag}}" class="tag">#{{tag}}</a>
+            <a href="/category/{{tag | slugify}}" class="tag">#{{tag}}</a>
             {% endfor %}
         </div>
     </div>

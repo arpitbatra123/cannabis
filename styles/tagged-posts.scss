@@ -9,10 +9,32 @@ body {
 
 .blog-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 1rem;
   margin: 0 auto;
   flex: 1;
+
+  .categories {
+    ul {
+        list-style: none;
+        padding: 0 1em;
+    }
+    width: 20%;
+    margin-top: 5rem;
+    .category {
+        color: #37be72;
+        font-size: var(--font-size-sm);
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @media (max-width: $breakpoint-md) {
+        display: none;
+    }
+}
 
   .title {
     font-size: var(--font-size-xl);

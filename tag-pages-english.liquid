@@ -9,10 +9,10 @@ pagination:
     - postsEnglish
 layout: tagged-posts.liquid    
 renderData:
-  title: Posts Tagged Under "{{ tag }}"
+  title: Posts Tagged Under "{{ tag | slugify }}"
 eleventyComputed:
   locale: "en"
-permalink: /en/tags/{{ tag }}/
+permalink: /en/category/{{ tag | slugify }}/
 ---
 {% assign taggedCollections = collections[tag] |  englishPostsOnly %}
 
@@ -34,7 +34,7 @@ permalink: /en/tags/{{ tag }}/
         <div class="tags">
             {% assign tagsList = post.data.tags | removeDefaultTags %}
             {% for tag in post.data.tags %}
-            <a href="/en/tags/{{tag}}" class="tag">#{{tag}}</a>
+            <a href="/en/category/{{tag | slugify}}" class="tag">#{{tag}}</a>
             {% endfor %}
         </div>
     </div>

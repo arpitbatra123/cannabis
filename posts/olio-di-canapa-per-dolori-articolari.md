@@ -5,6 +5,7 @@ snippet: L'olio di canapa, un'alternativa naturale ai dolori articolari. Un anti
 date: 2022-08-24T22:00:00.000+00:00
 tags:
 - cbd
+- Parassiti, Insetti e problemi vari
 imagePath: "/assets/photo_2022-08-25_22-16-31.jpg"
 draft: false
 

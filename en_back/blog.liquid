@@ -28,7 +28,7 @@
                 <div class="tags">
                     {% assign tagsList = post.data.tags | removeDefaultTags %}
                     {% for tag in tagsList %}
-                    <a href="/en/tags/{{tag}}" class="tag">#{{tag}}</a>
+                    <a href="/en/category/{{tag | slugify}}" class="tag">#{{tag}}</a>
                     {% endfor %}
                 </div>
             </div>
