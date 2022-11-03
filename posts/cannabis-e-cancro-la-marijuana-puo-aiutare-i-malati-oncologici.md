@@ -14,6 +14,12 @@ Il termine _marijuana_ denota un composto di foglie e infiorescenze derivanti da
 Per quello che invece riguarda il cancro, le ricerche finora svolte sono state condotte con cellule di coltura, come riportato dal sito ufficiale dell'[AIRC](https://www.airc.it/cancro/informazioni-tumori/corretta-informazione/marijuana-cura-cancro#:\~:text=I%20medici%20possono%20prescrivere%20ai,appetito%20nei%20pazienti%20in%20chemioterapia. "AIRC") (Associazione Italiana per la Ricerca sul Cancro): gli studi hanno evidenziato un'attività **citostatica**, ovvero di rallentamento della crescita cellulare.
 Effetti più "tangibili" sono quelli dell'accelerazione metabolica e dell'aumento di appetito, oltre al sollievo dalla nausea, che sono estremamente apprezzati da malati oncologici che affrontano le controindicazioni di radio e chemioterapia. In una delle sue forme più attive a livello farmacologico, la **delta-9-THC**, la marijuana è considerata dalla FDA nordamericana uno _strumento efficace contro i distrubi derivanti dal cancro e le controindicazioni da trattamenti chemioterapici_. Per questo e per le altre motivazioni elencate, l'American Cancer Society ha caldamente invocato alla semplificazione dell'iter necessario a prescrivere i derivati cannabinoidi ai pazienti affetti da cancro.
 
+| Title | Quantity |
+|-------|----------|
+| Max   | 1        |
+| Phi   | 10       |
+| Yo    | 20       |
+
 ## Cosa dicono gli studi clinici?
 
 A dare indicazioni più chiare è la dottoressa Cristina Sánchez, professoressa di biochimica e biologia molecolare presso l'ateneo Complutense di Madrid, in passato segretaria scientifica della Società spagnola di ricerca sui cannabinoidi e attualmente membro del suo consiglio direttivo. Inoltre, la dottoressa è stata tra i fondatori dell'Osservatiorio Spagnolo della Cannabis Medicinale, di cui è adesso segretaria. La Sánchez sta conducendo un'importante ricerca sul ruolo del sistema endocannabinoide nel trattamento dei malati oncologici.
