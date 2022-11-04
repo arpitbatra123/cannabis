@@ -11,7 +11,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
   padding: 1rem;
   margin: 0 auto;
   flex: 1;
@@ -22,7 +21,7 @@ body {
         padding: 0 1em;
     }
     width: 20%;
-    margin-top: 5rem;
+    margin-top: 2rem;
     .category {
         color: #37be72;
         font-size: var(--font-size-sm);
@@ -58,7 +57,7 @@ body {
     display: flex;
     gap: 2rem;
     flex-direction: row;
-    padding-bottom: var(--flow-space, 1.5em);
+    padding: var(--flow-space, 1.5em) 0;
     @media (max-width: $breakpoint-sm) {
       flex-direction: column;
       gap: 0.5rem;
