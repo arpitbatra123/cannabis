@@ -4,8 +4,11 @@
 <a href="/en/contact" class="menu-item">Contact</a>
 <a href="/en/blog" class="menu-item">Blog</a>
 {% else %}
-<a href="/" class="menu-item">Home</a>
-<a href="/about" class="menu-item">About</a>
-<a href="/contact" class="menu-item">Contact</a>
-<a href="/blog" class="menu-item">Blog</a>
+<ul class="list">
+    <li><a href="/" class="menu-item">Home</a></li>
+    <li><a href="/about" class="menu-item">About</a></li>
+    <li><a href="/contact" class="menu-item">Contact</a></li>
+    <li><a href="/blog" class="menu-item">Blog</a></li>
+    {% include 'sidebarCategories' %}
+</ul>
 {% endif %}

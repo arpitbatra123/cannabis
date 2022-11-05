@@ -23,14 +23,9 @@
         background-color: #0001;
     }
 
-    .menu-item:hover {
-        padding: 18px 15px;
-    }
-
     body.dark .page-header .menu-item:hover {
         background-color: #000000;
         color: wheat;
-        padding: 18px 15px;
     }
 
     .page-header h3 {
@@ -127,8 +122,6 @@
         background-color: #2b2b2b;
     }
 
-
-
     #sidebar {
         position: fixed;
         top: 0;
@@ -139,22 +132,36 @@
         z-index: 200;
         white-space: nowrap;
         display: none;
-        --display: flex;
         flex-direction: column;
-        width: 200px;
+        width: 300px;
         transition: transform 0.3s;
     }
 
-    #sidebar>a {
-        padding: 10px 15px;
+    #sidebar .icon-btn {
+        font-size: 1.5em;
+        align-self: flex-start;
+        padding: 1rem;
     }
 
-    #sidebar>a:hover {
-        background-color: #0001;
+    #sidebar .list {
+        margin: 0;
+        padding: 0.5rem;
+        list-style: none;
+        margin-left: 0.5rem;
     }
 
-    #sidebar>a:first-child {
-        align-self: flex-end;
+    #sidebar li a {
+        padding: 0.4rem;
+        width: 100%;
+        border-radius: 4px;
+    }
+
+    #sidebar a:hover {
+        background: #ffdbc7;
+    }
+
+    body.dark #sidebar a:hover {
+        background:  #0001;
     }
 
     /* Can't use scss variable */
@@ -162,7 +169,7 @@
 
         #menu_btn,
         #sidebar {
-            display: var(--display);
+            display: flex;
         }
 
         body.sidebar-open {
@@ -214,7 +221,7 @@
             </svg></a>
         <img width="48" height="48" class="logo" src="/assets/logo.svg" alt="">
         <nav>
-            {% include 'menu' %}
+            {% include 'desktopMenu' %}
         </nav>
         <a id="theme_switch" class="icon-btn" href="javascript:toggleTheme()" title="Change theme"><svg class="icon">
                 <use href="/assets/moon.svg#content" />

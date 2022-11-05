@@ -3,5 +3,6 @@
   "tags": "posts",
   "navOptions": {
     "includeSelf": true
-  }
+  },
+  "addStructuredData": true
 }

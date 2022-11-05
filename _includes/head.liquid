@@ -1,0 +1,73 @@
+{% assign metatitle = site.title %}
+{% if title %}
+  {% assign metatitle = metatitle | prepend: " • " | prepend: title %}
+{% endif %}
+{% assign metadesc = site.desc %}
+{% if snippet %}
+  {% assign metadesc = snippet %}
+{% endif %}
+{% assign metatype = "article" %}
+
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+<link rel="shortcut icon" href="/assets/logo.svg" type="image/x-icon"/>
+
+<title>{{- metatitle -}}</title>
+
+<meta name="description" content="{{- metadesc -}}"/>
+<link rel="canonical" href="{{ page.url | prepend: site.baseurl }}"/>
+
+<meta property="og:title" content="{{-metatitle-}}"/>
+<meta property="og:type" content="{{-metatype-}}"/>
+<meta property="og:url" content="{{ page.url | prepend: site.baseurl }}"/>
+<meta property="og:image" content="/assets/avatar.png"/>
+<meta property="og:description" content="{{- metadesc -}}"/>
+
+
+{% if addStructuredData %}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{title}}",
+    "image": [
+      "/assets/avatar.png"
+     ],
+    "datePublished": "{{ date | date: '%B %e, %Y' }}",
+    "dateModified": "{{ date | date: '%B %e, %Y' }}",
+    "author": [{
+        "@type": "Person",
+        "name": "Canapa"
+      }]
+  }
+  </script>
+{% endif %}
+
+<link rel="preload" href="/assets/Graphik-Regular-Web.woff2" as="font" type="font/woff2" crossorigin/>
+<script src="/assets/main.js" defer></script>
+
+<!-- Cloudflare Web Analytics -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "94c95a1f843c4ac3b80268dc2cc78e68"}'></script>
+<!-- End Cloudflare Web Analytics -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2WYM3Z4CY5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-2WYM3Z4CY5');
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function(event) {
+    if (window.location.hostname != 'canapacoltivazione.com') { // window.location.href = "https://canapacoltivazione.com"
+      document.getElementsByTagName('head')[0].appendChild('<meta http-equiv="refresh" content="0; url=https://canapacoltivazione.com/" />');
+    }
+  });
+</script>
