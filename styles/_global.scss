@@ -22,6 +22,12 @@ a {
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Graphik Regular';
+    font-weight: bold;
+    src: url("path/GraphikBold.otf") format("opentype");
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
