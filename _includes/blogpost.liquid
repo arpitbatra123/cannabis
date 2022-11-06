@@ -23,13 +23,7 @@
             {% if permalink %}
             <div class="breadcrumbs">
                 {% assign navPages = collections.all | eleventyNavigationBreadcrumb: title, navOptions %}
-                <ul>
-                {%- for entry in navPages %}
-                  <li{% if entry.url == page.url %} class="breadcrumb-active"{% endif %}>
-                    <a href="{{ entry.url }}">{{ entry.title }}</a>
-                  </li>
-                {%- endfor %}
-                </ul>
+                {% include 'breadcrumbs' %}
               </div>
             {% endif %}
             <p class="date">{{ date | date: '%B %e, %Y' }}</p>

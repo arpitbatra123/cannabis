@@ -26,13 +26,7 @@ navOptions:
       <div class="contact">
         <div class="breadcrumbs">
           {% assign navPages = collections.all | eleventyNavigationBreadcrumb: "Contact", navOptions %}
-          <ul>
-          {%- for entry in navPages %}
-            <li{% if entry.url == page.url %} class="breadcrumb-active"{% endif %}>
-              <a href="{{ entry.url }}">{{ entry.title }}</a>
-            </li>
-          {%- endfor %}
-          </ul>
+          {% include 'breadcrumbs' %}
         </div>
         <h1>Contatti</h1>
         <div class="flow">

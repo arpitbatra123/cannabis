@@ -12,6 +12,10 @@ body {
     flex-direction: row;
     justify-content: space-between;
     flex: 1;
+    margin: 0 auto;
+    @media (max-width: $breakpoint-md) {
+        margin: 1rem;
+    }
 
     @import 'categories';
 

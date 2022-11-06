@@ -1,0 +1,10 @@
+<ol itemscope itemtype="http://schema.org/BreadcrumbList">
+    {%- for entry in navPages %}
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" {% if entry.url==page.url %}
+        class="breadcrumb-active" {% endif %}>
+        <a href="{{ entry.url }}" itemtype="http://schema.org/Thing" itemprop="item"><span itemprop="name">{{
+                entry.title }}</span></a>
+        <meta itemprop="position" content="{{forloop.index}}" />
+    </li>
+    {%- endfor %}
+</ol>
