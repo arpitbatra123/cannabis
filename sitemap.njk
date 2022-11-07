@@ -2,23 +2,32 @@
 noIndex: true
 permalink: "/sitemap.xml"
 ---
+
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{%- for page in collections.all %}
-{%- if not page.data.noIndex and not page.data.draft %}
-  {# Verify that the page has a permalink so we don't pull in things like #}
-  {# the service worker partial. #}
-  {# Use the page's canonicalUrl which ignores the language directories. #}
-  {%- if page.url %}
-  {% set fullUrl %}{{ site.baseurl }}{{ page.url }}{% endset %}
-  <url>
-    <loc>{{ fullUrl }}</loc>
-    {%- set lastMod = page.date.toISOString() -%}
-    {%- if lastMod %}
-    <lastmod>{{ lastMod }}</lastmod>
+  {%- for page in collections.all %}
+    {%- if not page.data.noIndex and not page.data.draft %}
+      {# Verify that the page has a permalink so we don't pull in things like #}
+      {# the service worker partial. #}
+      {# Use the page's canonicalUrl which ignores the language directories. #}
+        {%- if page.url %}{% set fullUrl %}
+        {{ site.baseurl }}
+        {{ page.url }}
+        {% endset %}
+          <url>
+            <loc>
+          {{ fullUrl }}
+          </loc>
+          {%- set pageDate = page.date.toISOString() -%}
+          {%- set pageModifiedDate = page.data.dateModified -%}
+            {%- if pageModifiedDate %}<lastmod>
+            {{ pageModifiedDate.toISOString() }}
+            </lastmod>
+          {%- elif pageDate %}
+            <lastmod>{{ pageDate }}</lastmod>
+          {%- endif %}
+        </url>
+      {%- endif %}
     {%- endif %}
-  </url>
-  {%- endif %}
-{%- endif %}
-{%- endfor %}
+  {%- endfor %}
 </urlset>

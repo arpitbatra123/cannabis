@@ -4,6 +4,7 @@ snippet: 'Gli obiettivi della cannabis nei pazienti oncologi sono: ottenere soll
   dagli effetti delle terapie oncologiche, quali radio e chemioterapia e combattere
   l''avanzamento del tumore.'
 date: 2022-10-12T22:00:00Z
+dateModified: 2023-10-12T22:00:00Z
 tags:
 - scienza
 imagePath: "/assets/cannabis-terapeutica.jpg"
