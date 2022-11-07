@@ -67,7 +67,7 @@ POSSIBILI QUANTITÀ 1-4-5-9-16-25-36-49-64-81-100-121-144
 
 Un ulteriore sistema per decidere la quantità di piante è contarle in base alla potenza della vostra lampada:
 
-> Ricordiamo che esistono varie lampade con diverse efficienze luminose, pertanto questa è soltanto una misura indicativa che vale per lampade HID (HPS, CMH, etc.etc.)
+Ricordiamo che esistono varie lampade con diverse efficienze luminose, pertanto questa è soltanto una misura indicativa che vale per lampade HID (HPS, CMH, etc.etc.) {.emphasis}
 
 * **150W =** 2 piante
 * **250W =** 4 o 5 piante

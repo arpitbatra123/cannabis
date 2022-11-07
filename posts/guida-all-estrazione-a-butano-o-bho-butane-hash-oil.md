@@ -11,9 +11,9 @@ draft: false
 ---
 ![](/assets/94d3da25-6145-4638-825b-225fed2cc4bc-1.jpg)
 
-> **IL GRUPPO CANAPA COLTIVAZIONE E I SUOI AMMINISTRATORI SCONSIGLIANO VIVAMENTE DI TENTARE DI METTERE IN PRATICA QUESTA TECNICA PERCHÉ MOLTO PERICOLOSA, CHIUNQUE SIA INTENZIONATO AD APPROCCIARSI DEVE ESSERE CONSAPEVOLE DEI RISCHI E PREMURARSI ALMENO DI FARE TUTTO ALL'APERTO IN UN LUOGO VENTILATO.**  
->   
-> Nessuna procedura o idea sviluppata in questi scritti dovrebbe essere messa in atto senza le stesse precauzioni di sicurezza che impiegherebbe un lavoratore in una industria chimica o in un laboratorio accademico.
+**IL GRUPPO CANAPA COLTIVAZIONE E I SUOI AMMINISTRATORI SCONSIGLIANO VIVAMENTE DI TENTARE DI METTERE IN PRATICA QUESTA TECNICA PERCHÉ MOLTO PERICOLOSA, CHIUNQUE SIA INTENZIONATO AD APPROCCIARSI DEVE ESSERE CONSAPEVOLE DEI RISCHI E PREMURARSI ALMENO DI FARE TUTTO ALL'APERTO IN UN LUOGO VENTILATO.**   {.emphasis}
+   {.emphasis}
+Nessuna procedura o idea sviluppata in questi scritti dovrebbe essere messa in atto senza le stesse precauzioni di sicurezza che impiegherebbe un lavoratore in una industria chimica o in un laboratorio accademico. {.emphasis}
 
 ### Pericoli:
 
@@ -137,9 +137,9 @@ po' (1 o 2 chicchi di riso come quantità) spatolato su una cartina di una bella
 cannetta non è male. si parte con poco per capire la propria tolleranza e si  
 sale.
 
-> **N.B.** La cannabis utilizzata per fare l'estrazione non è riutilizzabile, non è  
-> fumabile è solo pattume!  
-> Prima di intraprendere questa folle pratica consigliamo di guardarsi più video  
-> possibile su Youtube e cercare "BHO explosion" "Professional BHO" "Butane  
-> extraction" così da capire i pericoli e la differenza tra un tubo con le  
-> bombolette e un impianto professionale di estrazione.
+**N.B.** La cannabis utilizzata per fare l'estrazione non è riutilizzabile, non è   {.emphasis}
+fumabile è solo pattume!   {.emphasis}
+Prima di intraprendere questa folle pratica consigliamo di guardarsi più video   {.emphasis}
+possibile su Youtube e cercare "BHO explosion" "Professional BHO" "Butane   {.emphasis}
+extraction" così da capire i pericoli e la differenza tra un tubo con le   {.emphasis}
+bombolette e un impianto professionale di estrazione. {.emphasis}

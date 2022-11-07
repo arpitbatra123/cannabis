@@ -80,14 +80,14 @@ body.dark {
     --lineColor: #7f7f7f;
 }
 
-blockquote {
+.emphasis {
     margin: 16px 0;
     padding: 1em;
     background-color: #ffb6c185;
     color: black;
 }
 
-body.dark blockquote {
+body.dark .emphasis {
     background-color: grey;
     color: white;
 }

@@ -15,7 +15,7 @@ draft: true
 
 La tecnica di LST sta per low stress training e serve a massimizzare il raccolto di cannabis facendo prendere più luce possibile alle cime di cannabis.
 
-> Questa tecnica per massimizzare la rete non comporta un elevato stress alla pianta, ragione per cui **può essere applicata anche alle piante autofiorenti** senza alcun problema.
+Questa tecnica per massimizzare la rete non comporta un elevato stress alla pianta, ragione per cui **può essere applicata anche alle piante autofiorenti** senza alcun problema. {.emphasis}
 
 #### Quando si può cominciare a fare LST?
 
@@ -40,7 +40,7 @@ Dopo aver fatto l'asola, prendere la raffia e legarla alla stessa, dopodiché, v
 
 ![lst legature cannabis](/assets/3.jpg "lst legature cannabis")
 
-> IMPORTANTE! Per evitare di croppare la pianta, **NON BISOGNA tirare l'apicale dalla corda**, ma fletterlo col dito fino al 70-80% della sua resistenza, in questo modo avremmo la quasi sicurezza che non si romperà, non è essenziale piegare in una sola volta se si ha paura di cropparla.
+IMPORTANTE! Per evitare di croppare la pianta, **NON BISOGNA tirare l'apicale dalla corda**, ma fletterlo col dito fino al 70-80% della sua resistenza, in questo modo avremmo la quasi sicurezza che non si romperà, non è essenziale piegare in una sola volta se si ha paura di cropparla. {.emphasis}
 
 Nei prossimi 2 giorni, **i rami laterali si allungheranno verso la luce** e li inizierà il vero  
 lavoro di LST.
@@ -86,7 +86,7 @@ Continuate a piegare l'apicale e continuate ad aggiungere le legature quando cre
 
 ![cannabis internodi](/assets/13.jpg "cannabis internodi")
 
-> Importante: i rami laterali più vecchi, saranno sempre i primi a scappare verso la luce, legateli subito, anche un paio di volte, altrimenti avranno troppa dominanza rispetto agli altri che, smetteranno di crescere o comunque rallenteranno vistosamente.
+Importante: i rami laterali più vecchi, saranno sempre i primi a scappare verso la luce, legateli subito, anche un paio di volte, altrimenti avranno troppa dominanza rispetto agli altri che, smetteranno di crescere o comunque rallenteranno vistosamente. {.emphasis}
 
 In questo caso, i vasi sono da 16 litri, per cui si potrà andare avanti ancora un po' con la fase vegetativa, ma chi per chi ha quelli da 11L, si potrebbero già mandare in fioritura.  
 La cosa importante prima di farlo, è:

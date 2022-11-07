@@ -47,15 +47,15 @@ Il corretto bilanciamento dei minerali che affluiranno nella pianta, ammonio, am
 
 Il terreno è un macro-universo con molteplici elementi e viventi in continua attività e mutazione. La composizione della vita microbica nel terreno può variare a seconda del livello di acidi presenti e può essere certamente variata con un nostro intervento preciso e costante.
 
-> L'utilizzo di humus dei lombrichi, o della leonardite potrà portare ad una reale stabilizzazione del pH di coltivazione, specialmente in terreno outdoor.
+L'utilizzo di humus dei lombrichi, o della leonardite potrà portare ad una reale stabilizzazione del pH di coltivazione, specialmente in terreno outdoor. {.emphasis}
 
 Consigliamo, specialmente agli home growers di investire in prodotti come Micorrize, Rizobatteri, Microorganismi effettivi M1 e compost T da aggiungere ad un humus adatto, di alta qualità e nell’insieme tutto dovrà avere il pH utile della pianta.
 
 Insistiamo a consigliare l’impiego dei migliori elementi nutritivi nel terreno, in modo che ci sia un vero e persistente equilibrio che potrà favorire la perfetta crescita di una pianta di alta qualità. Le Micorrize liberano il fosforo e lo fanno assorbire perfettamente alla pianta, mantiene bianche le radici favorendone la buona trazione della linfa.
 
-> **È importante non avere solo il pH come riferimento principale**
+**È importante non avere solo il pH come riferimento principale** {.emphasis}
 >
-> Tutto il ciclo vitale della coltivazione è importante, **bisogna mantenere un giusto rapporto degli elementi** che sono nel nostro terreno e nelle nostre piante. E’ da evitare ogni minima sollecitazione al terreno.
+Tutto il ciclo vitale della coltivazione è importante, **bisogna mantenere un giusto rapporto degli elementi** che sono nel nostro terreno e nelle nostre piante. E’ da evitare ogni minima sollecitazione al terreno. {.emphasis}
 
 **Un giusto equilibrio da mantenere nel tempo grazie alla creazione di un buon terreno**
 

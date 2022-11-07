@@ -52,7 +52,7 @@ Esistono **3 fasi principali di sviluppo per i tricomi**. Questi cambiano di str
 
 **N.B** _Se invece, quasi tutti i tricomi diventano di questo colore, significa che il tempo di raccolto ideale è stato perso, con conseguenze sul risultato finale in cui il THC risulterà ormai degradato._
 
-> **Il momento giusto per tagliare** è quando le “teste” dei tricomi sono lattiginosi con pochi ambrati, noi consigliamo un minimo di 10% ambrati fino ad un massimo di 30%. Più alta è la percentuale di ambrati e più l'effetto è corporeo e duraturo, più è bassa più è rapido e mentale.
+**Il momento giusto per tagliare** è quando le “teste” dei tricomi sono lattiginosi con pochi ambrati, noi consigliamo un minimo di 10% ambrati fino ad un massimo di 30%. Più alta è la percentuale di ambrati e più l'effetto è corporeo e duraturo, più è bassa più è rapido e mentale. {.emphasis}
 
 ## Le foglie più grandi ingialliscono
 

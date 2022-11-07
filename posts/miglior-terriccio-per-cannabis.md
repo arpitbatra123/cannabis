@@ -44,7 +44,7 @@ Ricapitolando, un vaso da 10L sarà composto da:
 * **1g di calce dolomitica**
 * **8L di terriccio** tra quelli sopra indicati.
 
-> Tutto questo mix va accuratamente mescolato all'interno di un recipiente idoneo e NON va assolutamente compattato, un terreno soffice e areato permette alle radici di penetrare più agevolmente e raggiungere più in fretta il fondo del vaso per iniziare a sviluppare al meglio la pianta.
+Tutto questo mix va accuratamente mescolato all'interno di un recipiente idoneo e NON va assolutamente compattato, un terreno soffice e areato permette alle radici di penetrare più agevolmente e raggiungere più in fretta il fondo del vaso per iniziare a sviluppare al meglio la pianta. {.emphasis}
 
 #### In generale le caratteristiche di un buon terriccio da tenere in considerazione sono
 

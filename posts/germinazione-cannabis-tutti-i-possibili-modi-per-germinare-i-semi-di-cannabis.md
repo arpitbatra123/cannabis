@@ -41,7 +41,7 @@ La germinazione dei semi è uguale per tutti, non c'è una differenza tra semi a
 * [Germinazione in acqua per 12h](#immersione-in-acqua-12h)
 * [Germinazione con Jiffy / lana di roccia / dischetti di torba](#germinazione-con-jiffy)
 
-> Qualunque sistema vogliate usare una volta posizionati i semi, **devono rimanere al buio fino allo spuntare della radichetta** o alla fuoriuscita dal terreno dei cotiledoni (le prime 2 foglie tonde)
+Qualunque sistema vogliate usare una volta posizionati i semi, **devono rimanere al buio fino allo spuntare della radichetta** o alla fuoriuscita dal terreno dei cotiledoni (le prime 2 foglie tonde) {.emphasis}
 
 ## Germinazione direttamente in terra
 
