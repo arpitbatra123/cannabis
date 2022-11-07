@@ -9,7 +9,11 @@ tags:
 - scienza
 imagePath: "/assets/cannabis-terapeutica.jpg"
 draft: false
-
+faqs:
+    - question: How are you?
+      answerText: <p>I am great</p>
+    - question: What are we doing?
+      answerText: Adding Questions
 ---
 Il termine _marijuana_ denota un composto di foglie e infiorescenze derivanti dalla _cannabis sativa_, pianta che contiene due sostanze attive che negli ultimi anni sono entrate nel vocabolario comune, il **tetracannabinolo** (THC) e il **cannabidiolo** (CBD): da un lato la prima ha effetti psicoattivi, stupefacenti e (sebbene in misura minore rispetto ad altre droghe) crea dipendenza, e la sua commercializzazione libera è per questo vietata; dall'altro, il CBD non crea dipendenze né sonnolenza e lo si può per ciò trovare nelle normali erboristerie, nelle farmacie e in molte altre forme liberamente commercializzate. Questo perché i suoi effetti sono stati studiati per trattare malattie del sistema nervoso, quali l'epilessia, la sclerosi multipla, le lesioni del midollo spinale, la fibromilgia e la sindrome di Gilles de la Tourette, oltre ad avere dimostrati effetti antidepressivi.
 Per quello che invece riguarda il cancro, le ricerche finora svolte sono state condotte con cellule di coltura, come riportato dal sito ufficiale dell'[AIRC](https://www.airc.it/cancro/informazioni-tumori/corretta-informazione/marijuana-cura-cancro#:\~:text=I%20medici%20possono%20prescrivere%20ai,appetito%20nei%20pazienti%20in%20chemioterapia. "AIRC") (Associazione Italiana per la Ricerca sul Cancro): gli studi hanno evidenziato un'attività **citostatica**, ovvero di rallentamento della crescita cellulare.

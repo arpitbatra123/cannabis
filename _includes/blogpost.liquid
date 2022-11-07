@@ -8,11 +8,31 @@
 <head>
     {% include 'head' %}
     {% if noIndex == true %}
-        <meta name="robots" content="noindex" />
+    <meta name="robots" content="noindex" />
     {% else %}
-        <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow" />
     {% endif %}
     <link rel="stylesheet" href="/styles/blogpost.css">
+    {% if faqs %}
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+          {% for faq in faqs %}
+            {
+                "@type": "Question",
+                "name": "{{faq.question}}",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "{{faq.answerText}}"
+                }
+            }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+          ]
+        }
+        </script>
+    {% endif %}
 </head>
 
 <body>
@@ -24,7 +44,7 @@
             <div class="breadcrumbs">
                 {% assign navPages = collections.all | eleventyNavigationBreadcrumb: title, navOptions %}
                 {% include 'breadcrumbs' %}
-              </div>
+            </div>
             {% endif %}
             <p class="date">{{ date | date: '%B %e, %Y' }}</p>
             <h1 class="title">{{title}}</h1>
