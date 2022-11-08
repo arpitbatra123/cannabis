@@ -26,6 +26,14 @@
 <meta property="og:description" content="{{- metadesc -}}"/>
 
 
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="{{ page.url | prepend: site.baseurl }}" />
+<meta property="twitter:title" content="{{-metatitle-}}" />
+<meta property="twitter:description" content="{{- metadesc -}}" />
+<meta property="twitter:image" content="/assets/avatar.png" />
+
+
 {% if addStructuredData %}
 <script type="application/ld+json">
   {
