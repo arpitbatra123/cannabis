@@ -22,5 +22,12 @@ fields:
 - name: draft
   type: boolean
   label: Is Draft Post?
-pages:
-- posts/on-burnout-and-writing.md
+- name: dateModified
+  type: datetime
+  label: Modified Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
