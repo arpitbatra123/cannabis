@@ -48,14 +48,16 @@
             {% endif %}
             <p class="date">{{ date | date: '%B %e, %Y' }}</p>
             <h1 class="title">{{title}}</h1>
-            <!-- <img src="{{imagePath }}" alt="" class="post-image"> -->
             <div class="tags">
                 {% assign tagsList = tags | removeDefaultTags %}
                 {% for tag in tagsList %}
                 <a href="/category/{{tag | slugify}}" class="tag">#{{tag}}</a>
                 {% endfor %}
             </div>
-            <article class="text">{{content}}</article>
+            <article class="text">
+                {{ content | toc }}
+                {{content}}
+            </article>
             {% if locale == "en" %}
             <a class="backlink" href="/en/blog"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                     fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
