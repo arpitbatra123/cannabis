@@ -27,11 +27,7 @@ noIndex: true
             {{content}}
         </div>
     </main>
-    <footer class="page-footer">
-        <div class="container">
-            <small>Copyright <b>{{site.author}}</b></small>
-        </div>
-    </footer>
+    {% include 'footer' %}
     <div class="overlay" id="main_overlay" onclick="toggleSidebar()"></div>
     <aside id="sidebar">
         <a href="javascript:toggleSidebar()" class="icon-btn" title="Close"><svg class="icon">
