@@ -1,5 +1,8 @@
 ---
 noIndex: true
+navOptions:
+  allowMissing: false
+  includeSelf: true
 ---
 
 <!DOCTYPE html>
@@ -22,6 +25,10 @@ noIndex: true
     <main class="blog-content flow">
         {% include 'categories' %}
         <div class="blog-content-right">
+            <div class="breadcrumbs">
+                {% assign navPages = collections.all | eleventyNavigationBreadcrumb: title, navOptions %}
+                {% include 'breadcrumbs' %}
+            </div>
             <h1 class="title">{{ title }}</h1>
             <p class="subtitle">Vedi i seguenti articoli</p>
             {{content}}

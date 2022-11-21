@@ -2,6 +2,7 @@
 pagination:
   data: collections.blogCategories
   size: 1
+  addAllPagesToCollections: true
   alias: category
   filter:
     - all
@@ -12,6 +13,10 @@ pagination:
 layout: tagged-posts.liquid    
 eleventyComputed:
   title: Articles with category "{{ category.title }}"
+  eleventyNavigation:
+   title: Articles with category "{{ category.title }}"
+   key: Articles with category "{{ category.title }}"
+   parent: "Home"
 permalink: /category/{{ category.slug }}/
 ---
 {% assign taggedCollections = collections[category] %}

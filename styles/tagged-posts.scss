@@ -1,4 +1,4 @@
-@import 'global';
+@import "global";
 
 body {
     background-color: var(--bg);
@@ -13,11 +13,39 @@ body {
     justify-content: space-between;
     flex: 1;
     margin: 0 auto;
+
+    .breadcrumbs {
+        display: inline-flex;
+        overflow: hidden;
+        padding: 0.5rem 0;
+
+        li {
+            display: inline-flex;
+            a {
+                color: var(--fg);
+                outline: none;
+                position: relative;
+                text-decoration: none;
+                padding: 0.5rem 0.5rem 0.5rem 0;
+                color: #37be72;
+            }
+            &:not(:last-child) a::after {
+                content: "→";
+                padding-left: 0.5rem;
+                display: inline-block;
+            }
+        }
+
+        .breadcrumb-active a {
+            text-decoration: underline;
+        }
+    }
+
     @media (max-width: $breakpoint-md) {
         margin: 1rem;
     }
 
-    @import 'categories';
+    @import "categories";
 
     &-right {
         flex: 1;
