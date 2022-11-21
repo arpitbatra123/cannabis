@@ -5,6 +5,8 @@ snippet: 'Guida alla temperatura e umidità ideali durante tutte le fasi di colt
 date: 2022-08-20T22:00:00.000+00:00
 tags:
 - coltivazione
+categories:
+- tecniche di coltivazione
 imagePath: "/assets/cola_macro.jpg"
 draft: false
 
