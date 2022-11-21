@@ -7,7 +7,7 @@ tags:
 - cbd
 categories:
 - cbd
-- colvitazione
+- coltivazione
 imagePath: "/assets/cannabinoidi-thc-cbd.jpg"
 draft: false
 
