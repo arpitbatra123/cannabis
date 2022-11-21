@@ -12,7 +12,7 @@ renderData:
   title: Posts Tagged Under "{{ tag | slugify }}"
 eleventyComputed:
   locale: "en"
-permalink: /en/category/{{ tag | slugify }}/
+permalink: /en/tag/{{ tag | slugify }}/
 ---
 {% assign taggedCollections = collections[tag] |  englishPostsOnly %}
 
@@ -34,7 +34,7 @@ permalink: /en/category/{{ tag | slugify }}/
         <div class="tags">
             {% assign tagsList = post.data.tags | removeDefaultTags %}
             {% for tag in post.data.tags %}
-            <a href="/en/category/{{tag | slugify}}" class="tag">#{{tag}}</a>
+            <a href="/en/tag/{{tag | slugify}}" class="tag">#{{tag}}</a>
             {% endfor %}
         </div>
     </div>

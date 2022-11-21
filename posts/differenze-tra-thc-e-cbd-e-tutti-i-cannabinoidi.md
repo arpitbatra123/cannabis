@@ -5,6 +5,9 @@ snippet: Tutti i cannabinoidi della cannabis e le loro caratteristiche. In parti
 date: 2022-09-04T22:00:00Z
 tags:
 - cbd
+categories:
+- cbd
+- colvitazione
 imagePath: "/assets/cannabinoidi-thc-cbd.jpg"
 draft: false
 

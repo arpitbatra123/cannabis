@@ -8,63 +8,62 @@ eleventyNavigation:
 navOptions:
   includeSelf: true
 ---
-
 <!DOCTYPE html>
 <html lang="it">
 
-<head>
-  {% include 'head' %}
-  <link rel="stylesheet" href="/styles/blog.css">
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="{{ page.url | prepend: site.baseurl }}" />
-</head>
+  <head>
+    {% include 'head' %}
+    <link rel="stylesheet" href="/styles/blog.css">
+    <meta name="robots" content="index, follow"/>
+    <link rel="canonical" href="{{ page.url | prepend: site.baseurl }}"/>
+  </head>
 
-<body>
-  {% include 'theme' %}
-  {% include 'header' %}
-  <main class="blog-content">
-    {% include 'categories' %}
-    <div class="blog-content-right">
-      <div class="breadcrumbs">
-        {% assign navPages = collections.all | eleventyNavigationBreadcrumb: "Blog", navOptions %}
-        {% include 'breadcrumbs' %}
-      </div>
-      <h1 class="title">Tutti gli articoli</h1>
-      <p class="subtitle">Vedi i seguenti articoli</p>
-      {% for post in collections.posts reversed %}
-      <div class="post">
-        <div class="left">
-          <img src="{{ post.data.imagePath }}" alt="">
+  <body>
+    {% include 'theme' %}
+    {% include 'header' %}
+    <main class="blog-content">
+      {% include 'categories' %}
+      <div class="blog-content-right">
+        <div class="breadcrumbs">
+          {% assign navPages = collections.all | eleventyNavigationBreadcrumb: "Blog", navOptions %}
+          {% include 'breadcrumbs' %}
         </div>
-        <div class="right">
-          <div class="top">
-            <p class="date">{{ post.date | date: '%B %e, %Y' }}</p>
-            <a href="{{ post.url }}">
-              <h2>{{ post.data.title }}</h2>
-            </a>
-            <p class="snippet" title="{{ post.data.snippet }}">{{ post.data.snippet }}</p>
+        <h1 class="title">Tutti gli articoli</h1>
+        <p class="subtitle">Vedi i seguenti articoli</p>
+        {% for post in collections.posts reversed %}
+          <div class="post">
+            <div class="left">
+              <img src="{{ post.data.imagePath }}" alt="">
+            </div>
+            <div class="right">
+              <div class="top">
+                <p class="date">{{ post.date | date: '%B %e, %Y' }}</p>
+                <a href="{{ post.url }}">
+                  <h2>{{ post.data.title }}</h2>
+                </a>
+                <p class="snippet" title="{{ post.data.snippet }}">{{ post.data.snippet }}</p>
+              </div>
+              <div class="tags">
+                {% assign tagsList = post.data.tags | removeDefaultTags %}
+                {% for tag in tagsList %}
+                  <a href="/tag/{{tag | slugify}}" class="tag">#{{tag}}</a>
+                {% endfor %}
+              </div>
+            </div>
           </div>
-          <div class="tags">
-            {% assign tagsList = post.data.tags | removeDefaultTags %}
-            {% for tag in tagsList %}
-            <a href="/category/{{tag | slugify}}" class="tag">#{{tag}}</a>
-            {% endfor %}
-          </div>
-        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
-    </div>
-  </main>
-{% include 'footer' %}
-  <div class="overlay" id="main_overlay" onclick="toggleSidebar()"></div>
-  <aside id="sidebar">
-    <a href="javascript:toggleSidebar()" class="icon-btn" title="Close">
-      <svg class="icon">
-        <use href="/assets/cross.svg#content" />
-      </svg>
-    </a>
-    {% include 'menu' %}
-  </aside>
-</body>
+    </main>
+    {% include 'footer' %}
+    <div class="overlay" id="main_overlay" onclick="toggleSidebar()"></div>
+    <aside id="sidebar">
+      <a href="javascript:toggleSidebar()" class="icon-btn" title="Close">
+        <svg class="icon">
+          <use href="/assets/cross.svg#content"/>
+        </svg>
+      </a>
+      {% include 'menu' %}
+    </aside>
+  </body>
 
 </html>

@@ -1,0 +1,40 @@
+---
+pagination:
+  data: collections.blogCategories
+  size: 1
+  alias: category
+  filter:
+    - all
+    - post
+    - postsEnglish
+    - tagsListGlobal
+    - blogCategories
+layout: tagged-posts.liquid    
+eleventyComputed:
+  title: Articles with category "{{ category.title }}"
+permalink: /category/{{ category.slug }}/
+---
+{% assign taggedCollections = collections[category] %}
+{% assign posts = collections.blogposts | include: "data.categories", category.title %}
+{% for post in posts %}
+  <div class="post">
+    <div class="left">
+      <img src="{{ post.data.imagePath }}" alt="">
+    </div>
+    <div class="right">
+      <div class="top">
+        <p class="date">{{ post.date | date: '%B %e, %Y' }}</p>
+        <a href="{{ post.url }}">
+          <h2>{{ post.data.title }}</h2>
+        </a>
+        <p class="snippet" title="{{ post.data.snippet }}">{{ post.data.snippet }}</p>
+      </div>
+      <div class="tags">
+        {% assign tagsList = post.data.tags | removeDefaultTags %}
+        {% for tag in tagsList %}
+          <a href="/tag/{{tag | slugify}}" class="tag">#{{tag}}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endfor %}

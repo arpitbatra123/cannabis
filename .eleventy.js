@@ -3,8 +3,25 @@ const markdownLazyLoadImages = require("markdown-it-image-lazy-loading"),
     markdownAttrs = require("markdown-it-attrs"),
     markdownItAnchor = require("markdown-it-anchor"),
     eleventyNavigationPlugin = require("@11ty/eleventy-navigation"),
-    eleventyPluginTOC = require("eleventy-plugin-toc");
+    eleventyPluginTOC = require("eleventy-plugin-toc"),
+    slugify = require("slugify"),
+    { getAllKeyValues } = require("./getAllKeyValues");
 
+/**
+ * Transform a string into a slug
+ * Uses slugify package
+ *
+ * @param {String} str - string to slugify
+ */
+function strToSlug(str) {
+    const options = {
+        replacement: "-",
+        remove: /[&,+()$~%.'":*?<>{}]/g,
+        lower: true,
+    };
+
+    return slugify(str, options);
+}
 SIMILAR_ARTICLES_LIMIT = 4;
 
 module.exports = (eleventyConfig) => {
@@ -90,6 +107,28 @@ module.exports = (eleventyConfig) => {
         });
     });
 
+    // create blog collection
+    eleventyConfig.addCollection("blogposts", function (collection) {
+        return collection.getFilteredByGlob("./posts/*.md").reverse();
+    });
+
+    // create blog categories collection
+    eleventyConfig.addCollection("blogCategories", function (collection) {
+        let allCategories = getAllKeyValues(
+            collection.getFilteredByGlob("./posts/*.md"),
+            "categories"
+        );
+
+        let blogCategories = allCategories.map((category) => ({
+            title: category,
+            slug: strToSlug(category),
+        }));
+
+        return blogCategories;
+    });
+
+    // filters
+    eleventyConfig.addFilter("include", require("./filters/include.js"));
     // For extra config options
     // return {
     // }
