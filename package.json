@@ -11,7 +11,7 @@
     "clean": "rm -rf _site/*",
     "cleanwin": "rmdir /S _site",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "npx prettier --write ."
+    "format": "npx prettier --write _site"
   },
   "keywords": [],
   "author": "arpitbatra123@gmail.com and kcblack22@gmail.com",
