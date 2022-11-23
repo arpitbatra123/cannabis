@@ -9,14 +9,9 @@ permalink: "/sitemap.xml"
       {# Verify that the page has a permalink so we don't pull in things like #}
       {# the service worker partial. #}
       {# Use the page's canonicalUrl which ignores the language directories. #}
-        {%- if page.url %}{% set fullUrl %}
-        {{ site.baseurl }}
-        {{ page.url }}
-        {% endset %}
+        {%- if page.url %}{% set fullUrl %}{{ site.baseurl }}{{ page.url }}{% endset %}
           <url>
-            <loc>
-          {{ fullUrl }}
-          </loc>
+            <loc>{{ fullUrl }}</loc>
           {%- set pageDate = page.date.toISOString() -%}
           {%- set pageModifiedDate = page.data.dateModified -%}
             {%- if pageModifiedDate %}<lastmod>
