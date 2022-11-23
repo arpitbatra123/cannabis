@@ -30,33 +30,34 @@
 
 
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="{{ page.url | prepend: site.baseurl }}" />
-<meta property="twitter:title" content="{{-metatitle-}}" />
-<meta property="twitter:description" content="{{- metadesc -}}" />
-<meta property="twitter:image" content="/assets/avatar.png" />
+<meta property="twitter:card" content="summary_large_image"/>
+<meta property="twitter:url" content="{{ page.url | prepend: site.baseurl }}"/>
+<meta property="twitter:title" content="{{-metatitle-}}"/>
+<meta property="twitter:description" content="{{- metadesc -}}"/>
+<meta property="twitter:image" content="/assets/avatar.png"/>
 
 
 {% if addStructuredData %}
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "{{title}}",
-    "image": [
-      "{{ imagePath }}"
-     ],
-    "datePublished": "{{ date | date: '%B %e, %Y' }}",
-    "dateModified": "{{ date | date: '%B %e, %Y' }}",
-    "author": [{
-        "@type": "Person",
-        "name": "Canapa"
-      }]
-  }
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "{{title}}",
+      "image": ["{{ imagePath }}"],
+      "datePublished": "{{ date | date: '%B %e, %Y' }}",
+      "dateModified": "{{ date | date: '%B %e, %Y' }}",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Canapa"
+        }
+      ]
+    }
   </script>
 {% endif %}
 
 <link rel="preload" href="/assets/Graphik-Regular-Web.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="stylesheet" href="/styles/footer.css">
 <script src="/assets/main.js" defer></script>
 
 <!-- Cloudflare Web Analytics -->

@@ -1,258 +1,251 @@
 <style>
-    .page-header {
-        background-color: var(--bg2);
-        color: var(--fg);
-        line-height: normal;
-        border-bottom: 2px solid var(--stroke-color);
-        white-space: nowrap;
-    }
+  .page-header {
+    background-color: var(--bg2);
+    color: var(--fg);
+    line-height: normal;
+    border-bottom: 2px solid var(--stroke-color);
+    white-space: nowrap;
+  }
 
-    .page-header .container {
-        max-width: none;
-        display: flex;
-        align-items: center;
-    }
+  .page-header .container {
+    max-width: none;
+    display: flex;
+    align-items: center;
+  }
 
-    .page-header a {
-        padding: 10px 15px;
-        display: flex;
-        align-items: center;
-    }
+  .page-header a {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+  }
 
-    .page-header a:hover {
-        background-color: #0001;
-    }
+  .page-header a:hover {
+    background-color: #0001;
+  }
 
-    body.dark .page-header .menu-item:hover {
-        background-color: #000000;
-        color: wheat;
-    }
+  body.dark .page-header .menu-item:hover {
+    background-color: #000000;
+    color: wheat;
+  }
 
-    .page-header h3 {
-        margin: 0;
-    }
+  .page-header h3 {
+    margin: 0;
+  }
 
-    .page-header nav {
-        flex-grow: 1;
-        display: flex;
-        justify-content: center;
-    }
+  .page-header nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
 
-    .page-header .logo {
-        height: 2.5em;
-        margin: 8px;
-    }
+  .page-header .logo {
+    height: 2.5em;
+    margin: 8px;
+  }
 
-    .icon-btn {
-        font-size: 1.5em;
-    }
+  .icon-btn {
+    font-size: 1.5em;
+  }
 
-    #menu_btn {
-        display: none;
-    }
+  #menu_btn {
+    display: none;
+  }
 
-    #lang_cont {
-        display: flex;
-        position: relative;
-    }
+  #lang_cont {
+    display: flex;
+    position: relative;
+  }
 
-    #theme_switch {
-        padding: 16px;
-    }
+  #theme_switch {
+    padding: 16px;
+  }
 
-    #lang_switch {
-        padding: 18px 16px 18px 16px;
-    }
+  #lang_switch {
+    padding: 18px 16px;
+  }
 
-    #lang_cont>ul {
-        position: absolute;
-        right: 0;
-        top: 100%;
-        background-color: var(--bg2);
-        color: var(--fg);
-        box-shadow: 0 2px 5px #0003;
-        display: none;
-        width: 120px;
-    }
+  #lang_cont > ul {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: var(--bg2);
+    color: var(--fg);
+    box-shadow: 0 2px 5px #0003;
+    display: none;
+    width: 120px;
+  }
 
-    #lang_switch+ul a {
-        display: flex;
-        gap: 10px;
-        padding: 10px 15px;
-    }
+  #lang_switch + ul a {
+    display: flex;
+    gap: 10px;
+    padding: 10px 15px;
+  }
 
-    #lang_switch+ul a:hover {
-        background-color: #0001;
-    }
+  #lang_switch + ul a:hover {
+    background-color: #0001;
+  }
 
-    #lang_cont:focus-within>ul {
-        display: block;
-    }
+  #lang_cont:focus-within > ul {
+    display: block;
+  }
 
-    .flag-img {
-        border-radius: 4px;
-        overflow: hidden;
-    }
+  .flag-img {
+    border-radius: 4px;
+    overflow: hidden;
+  }
 
-    .flag-img-english {
-        width: 24px;
-        height: 20px;
-    }
+  .flag-img-english {
+    width: 24px;
+    height: 20px;
+  }
 
-    .flag-img-italy {
-        width: 24px;
-        height: 20px;
-    }
+  .flag-img-italy {
+    width: 24px;
+    height: 20px;
+  }
 
-    /* Can't use scss variable */
-    @media (max-width: 640px) {
-        .page-header nav>a {
-            display: none;
-        }
+  /* Can't use scss variable */
+  @media(max-width: 640px) {
+    .page-header nav > a {
+      display: none;
     }
+  }
 
-    .page-footer {
-        text-align: center;
-        padding: 15px;
-        background-color: #212121;
-        color: #ddd;
-    }
+  #sidebar {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    right: 100%;
+    background-color: var(--bg2);
+    color: var(--fg);
+    z-index: 200;
+    white-space: nowrap;
+    display: none;
+    flex-direction: column;
+    width: 300px;
+    transition: transform 0.3s;
+  }
 
-    body.dark .page-footer {
-        background-color: #2b2b2b;
-    }
+  #sidebar .icon-btn {
+    font-size: 1.5em;
+    align-self: flex-start;
+    padding: 1rem;
+  }
 
+  #sidebar .list {
+    margin: 0 0 0 0.5rem;
+    padding: 0.5rem;
+    list-style: none;
+  }
+
+  #sidebar li a {
+    padding: 0.4rem;
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  #sidebar a:hover {
+    background: #ffdbc7;
+  }
+
+  body.dark #sidebar a:hover {
+    background: #0001;
+  }
+
+  /* Can't use scss variable */
+  @media(max-width: 640px) {
+    #menu_btn,
     #sidebar {
-        position: fixed;
-        top: 0;
-        height: 100%;
-        right: 100%;
-        background-color: var(--bg2);
-        color: var(--fg);
-        z-index: 200;
-        white-space: nowrap;
-        display: none;
-        flex-direction: column;
-        width: 300px;
-        transition: transform 0.3s;
+      display: flex;
     }
 
-    #sidebar .icon-btn {
-        font-size: 1.5em;
-        align-self: flex-start;
-        padding: 1rem;
+    body.sidebar-open {
+      overflow: hidden;
     }
 
-    #sidebar .list {
-        margin: 0;
-        padding: 0.5rem;
-        list-style: none;
-        margin-left: 0.5rem;
+    body.sidebar-open #sidebar {
+      transform: translateX(100%);
+      box-shadow: 5px 0 10px #0003;
     }
 
-    #sidebar li a {
-        padding: 0.4rem;
-        width: 100%;
-        border-radius: 4px;
+    body.sidebar-open #main_wrapper {
+      filter: blur(15px);
     }
 
-    #sidebar a:hover {
-        background: #ffdbc7;
+    body.sidebar-open #main_overlay {
+      display: block;
     }
+  }
 
-    body.dark #sidebar a:hover {
-        background:  #0001;
-    }
-
-    /* Can't use scss variable */
-    @media (max-width: 640px) {
-
-        #menu_btn,
-        #sidebar {
-            display: flex;
-        }
-
-        body.sidebar-open {
-            overflow: hidden;
-        }
-
-        body.sidebar-open #sidebar {
-            transform: translateX(100%);
-            box-shadow: 5px 0 10px #0003;
-        }
-
-        body.sidebar-open #main_wrapper {
-            filter: blur(15px);
-        }
-
-        body.sidebar-open #main_overlay {
-            display: block;
-        }
-    }
-
-    .overlay {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 100;
-        display: none;
-    }
+  .overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+  }
 </style>
 <script>
-    const onLangChange = (toLang, pageUrl) => {
+  const onLangChange = (toLang, pageUrl) => {
+    if (pageUrl.includes('en')) 
+      pageUrl = pageUrl.split('en').slice(1);
+    
 
-        if (pageUrl.includes("en"))
-            pageUrl = pageUrl.split("en").slice(1)
 
-        if (toLang === "en") {
-            window.location.href = new URL(window.location.protocol + "//" + window.location.host + "/en" + pageUrl);
-        }
-        else {
-            window.location.href = new URL(window.location.protocol + "//" + window.location.host + pageUrl);
-        }
+
+    if (toLang === 'en') {
+      window.location.href = new URL(window.location.protocol + '//' + window.location.host + '/en' + pageUrl);
+    } else {
+      window.location.href = new URL(window.location.protocol + '//' + window.location.host + pageUrl);
     }
+  };
 </script>
 <header class="page-header">
-    <div class="container">
-        <a href="javascript:toggleSidebar()" class="icon-btn" title="Menu" id="menu_btn"><svg class="icon">
-                <use href="/assets/bars.svg#content" />
-            </svg></a>
-        <img width="48" height="48" class="logo" src="/assets/logo.svg" alt="">
-        <nav>
-            {% include 'desktopMenu' %}
-        </nav>
-        <a id="theme_switch" class="icon-btn" href="javascript:toggleTheme()" title="Change theme"><svg class="icon">
-                <use href="/assets/moon.svg#content" />
-            </svg></a>
-        <!-- <div id="lang_cont">
-            <a href="javascript:;" id="lang_switch" title="Change language">
-                {% if locale == "en" %}
-                <img src="/assets/gb.svg" alt="English" class="flag-img flag-img-english" />
-                {% else %}
-                <img src="/assets/it.svg" alt="Italian" class="flag-img flag-img-italy" />
-                {% endif %}
-            </a>
-            <ul>
-                {% if locale == "en" %}
-                <li>
-                    <a href=""><img src="/assets/gb.svg" alt="English" class="flag-img flag-img-english">English</a>
-                </li>
-                <li>
-                    <a href="javascript:onLangChange('it', '{{page.url}}');"><img src="/assets/it.svg"
-                            class="flag-img flag-img-italy" alt="Italian">Italian</a>
-                </li>
-                {% else %}
-                <li>
-                    <a href="javascript:onLangChange('en', '{{page.url}}');"><img src="/assets/gb.svg" alt="English"
-                            class="flag-img flag-img-english">English</a>
-                </li>
-                <li>
-                    <a href=""><img src="/assets/it.svg" alt="Italian" class="flag-img flag-img-italy">Italian</a>
-                </li>
-                {% endif %}
-            </ul>
-        </div> -->
+  <div class="container">
+    <a href="javascript:toggleSidebar()" class="icon-btn" title="Menu" id="menu_btn">
+      <svg class="icon">
+        <use href="/assets/bars.svg#content"/>
+      </svg>
+    </a>
+    <img width="48" height="48" class="logo" src="/assets/logo.svg" alt="">
+    <nav>
+      {% include 'desktopMenu' %}
+    </nav>
+    <a id="theme_switch" class="icon-btn" href="javascript:toggleTheme()" title="Change theme">
+      <svg class="icon">
+        <use href="/assets/moon.svg#content"/>
+      </svg>
+    </a>
+    <!--
+    <div id="lang_cont">
+    <a href="javascript:;" id="lang_switch" title="Change language">
+    {% if locale == "en" %}
+    <img src="/assets/gb.svg" alt="English" class="flag-img flag-img-english" />
+    {% else %}
+    <img src="/assets/it.svg" alt="Italian" class="flag-img flag-img-italy" />
+    {% endif %}
+    </a>
+    <ul>
+    {% if locale == "en" %}
+    <li>
+    <a href=""><img src="/assets/gb.svg" alt="English" class="flag-img flag-img-english">English</a>
+    </li>
+    <li>
+    <a href="javascript:onLangChange('it', '{{page.url}}');"><img src="/assets/it.svg"
+    class="flag-img flag-img-italy" alt="Italian">Italian</a>
+    </li>
+    {% else %}
+    <li>
+    <a href="javascript:onLangChange('en', '{{page.url}}');"><img src="/assets/gb.svg" alt="English"
+    class="flag-img flag-img-english">English</a>
+    </li>
+    <li>
+    <a href=""><img src="/assets/it.svg" alt="Italian" class="flag-img flag-img-italy">Italian</a>
+    </li>
+    {% endif %}
+    </ul>
     </div>
+    --></div>
 </header>

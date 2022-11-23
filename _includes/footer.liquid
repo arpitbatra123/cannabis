@@ -1,7 +1,65 @@
 <footer class="page-footer">
-<div class="container">
-  <small>Copyright
-    <b>{{site.author}}</b>
-  </small>
-</div>
+  <div class="lists">
+    <ul class="socials">
+      <h2>Social</h2>
+      <li class="telegram">
+        <a href="">Telegram</a>
+      </li>
+      <li class="instagram">
+        <a href="">Instagram</a>
+      </li>
+      <li class="facebook">
+        <a href="">Facebook</a>
+      </li>
+    </ul>
+
+    <ul class="info">
+      <h2>Info</h2>
+      <li class="home">
+        <a href="">Home</a>
+      </li>
+      <li class="contact">
+        <a href="">Contact</a>
+      </li>
+      <li class="about">
+        <a href="">About Us</a>
+      </li>
+
+      <li class="blog">
+        <a href="">Blog</a>
+      </li>
+    </ul>
+
+    <ul class="categories">
+      <h2>Blog categories</h2>
+      {% for category in categoriesData.categories %}
+        <li>
+          <a href="/category/{{category.title | slugify }}" class=" category">
+            {{category.title}}
+          </a>
+        </li>
+
+        <li>
+          {% if category.subcategories %}
+            <ul>
+              {%- assign subcats = category.subcategories -%}
+              {% for category in subcats %}
+                <li>
+                  <a href="/category/{{category.title | slugify }}" class=" category">
+                    {{category.title}}
+                  </a>
+                </li>
+              {% endfor%}
+            </ul>
+          {% endif %}
+        </li>
+      {% endfor%}
+    </ul>
+  </div>
+
+  <div class="container">
+    <small>Copyright
+      <b>{{site.author}}</b>
+    </small>
+  </div>
 </footer>

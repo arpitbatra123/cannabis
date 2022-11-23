@@ -27,5 +27,9 @@
     "markdown-it-attrs": "^4.1.4",
     "markdown-it-image-lazy-loading": "^1.2.0",
     "sass": "^1.56.1"
+  },
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^0.4.1",
+    "prettier": "^2.8.0"
   }
 }
