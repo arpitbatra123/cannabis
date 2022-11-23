@@ -12,10 +12,10 @@ pagination:
     - blogCategories
 layout: tagged-posts.liquid    
 eleventyComputed:
-  title: Articles with category "{{ category.title }}"
+  title: "{{ category.title }}"
   eleventyNavigation:
-   title: Articles with category "{{ category.title }}"
-   key: Articles with category "{{ category.title }}"
+   title: "{{ category.title }}"
+   key: "{{ category.title }}"
    parent: "Home"
 permalink: /category/{{ category.slug }}/
 ---
