@@ -21,6 +21,27 @@
             width: 95vw;
         }
 
+        .socials li {
+            display: flex;
+            gap: 1em;
+        }
+
+        svg {
+            height: 1.5em;
+        }
+
+        .telegram svg {
+            fill: #26a5e4;
+        }
+
+        .instagram svg {
+            fill: #E4405F;
+        }
+
+        .facebook svg {
+            fill: #1877F2;
+        }
+
         margin: 0 auto;
         width: 80vw;
         .categories ul {
