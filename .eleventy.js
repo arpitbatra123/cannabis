@@ -14,13 +14,13 @@ const markdownLazyLoadImages = require("markdown-it-image-lazy-loading"),
  * @param {String} str - string to slugify
  */
 function strToSlug(str) {
-    const options = {
-        replacement: "-",
-        remove: /[&,+()$~%.'":*?<>{}]/g,
-        lower: true,
-    };
+    // const options = {
+    //     replacement: "-",
+    //     remove: /[&,+()$~%.'":*?<>{}]/g,
+    //     lower: false,
+    // };
 
-    return slugify(str, options);
+    return slugify(str);
 }
 SIMILAR_ARTICLES_LIMIT = 4;
 

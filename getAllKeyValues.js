@@ -15,8 +15,7 @@ function getAllKeyValues(collectionArray, key) {
 
   // flatten values array
   allValues = lodash.flattenDeep(allValues);
-  // to lowercase
-  allValues = allValues.map((item) => item.toLowerCase());
+  
   // remove duplicates
   allValues = [...new Set(allValues)];
   // order alphabetically

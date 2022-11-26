@@ -6,7 +6,7 @@ date: 2022-08-20T22:00:00.000+00:00
 tags:
 - coltivazione
 categories:
-- tecniche di coltivazione
+- Tecniche di coltivazione
 imagePath: "/assets/cola_macro.jpg"
 draft: false
 
