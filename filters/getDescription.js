@@ -1,5 +1,5 @@
 const lodash = require("lodash");
 
-module.exports = function (array, title) {
-    return lodash.get(lodash.find(array, { title: title }), "description");
+module.exports = function (title, defaultTitle) {
+    return lodash.size(title) > 0 ? title : defaultTitle;
 };

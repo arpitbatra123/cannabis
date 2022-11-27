@@ -2,7 +2,6 @@ module.exports = {
   categories: [
     {
       title: "Coltivazione",
-      description: "Meta Description",
       subcategories: [
         { title: "Tecniche di coltivazione" },
         { title: "Substrato" },

@@ -3,7 +3,12 @@
   {% assign metatitle = metatitle | prepend: " • " | prepend: title %}
 {% endif %}
 {% if isCategoryPage %}
-  {% assign metatitle = categoriesData.categories | getDescription: title %}
+  {% assign defaultTitle = metatitle %}
+  {% assign metatitle = categoriesDescriptions[title] | getDescription: defaultTitle %}
+{% endif %}
+{% if isTagsPage %}
+  {% assign defaultTitle = metatitle %}
+  {% assign metatitle = tagsDescriptions[tag] | getDescription: defaultTitle %}
 {% endif %}
 {% if isHomepage %}
   {% assign metatitle = homeTitle %}
