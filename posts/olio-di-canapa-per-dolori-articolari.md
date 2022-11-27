@@ -7,7 +7,7 @@ tags:
 - cbd
 - Parassiti, Insetti e problemi vari
 categories:
-- cbd
+- Cbd
 imagePath: "/assets/photo_2022-08-25_22-16-31.jpg"
 draft: false
 ---

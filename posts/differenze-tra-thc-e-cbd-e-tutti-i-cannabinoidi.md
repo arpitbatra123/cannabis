@@ -6,8 +6,8 @@ date: 2022-09-04T22:00:00Z
 tags:
 - cbd
 categories:
-- cbd
-- coltivazione
+- Cbd
+- Coltivazione
 imagePath: "/assets/cannabinoidi-thc-cbd.jpg"
 draft: false
 

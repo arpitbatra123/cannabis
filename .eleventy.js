@@ -129,6 +129,7 @@ module.exports = (eleventyConfig) => {
 
     // filters
     eleventyConfig.addFilter("include", require("./filters/include.js"));
+    eleventyConfig.addFilter("getDescription", require("./filters/getDescription.js"));
     // For extra config options
     // return {
     // }

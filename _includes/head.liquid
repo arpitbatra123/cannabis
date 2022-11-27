@@ -2,6 +2,9 @@
 {% if title %}
   {% assign metatitle = metatitle | prepend: " • " | prepend: title %}
 {% endif %}
+{% if isCategoryPage %}
+  {% assign metatitle = categoriesData.categories | getDescription: title %}
+{% endif %}
 {% if isHomepage %}
   {% assign metatitle = homeTitle %}
 {% endif %}

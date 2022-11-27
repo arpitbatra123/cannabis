@@ -2,6 +2,7 @@ module.exports = {
   categories: [
     {
       title: "Coltivazione",
+      description: "Meta Description",
       subcategories: [
         { title: "Tecniche di coltivazione" },
         { title: "Substrato" },
@@ -13,7 +14,7 @@ module.exports = {
     },
     { title: "Consumo" },
     { title: "Scienza" },
-    { title: "Cbd" },
+    { title: "Cbd", description: "CBD" },
     { title: "Guide e ricette" },
     { title: "Notizie" },
   ],
