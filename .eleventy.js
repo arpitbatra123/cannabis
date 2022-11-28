@@ -7,21 +7,6 @@ const markdownLazyLoadImages = require("markdown-it-image-lazy-loading"),
     slugify = require("slugify"),
     { getAllKeyValues } = require("./getAllKeyValues");
 
-/**
- * Transform a string into a slug
- * Uses slugify package
- *
- * @param {String} str - string to slugify
- */
-function strToSlug(str) {
-    // const options = {
-    //     replacement: "-",
-    //     remove: /[&,+()$~%.'":*?<>{}]/g,
-    //     lower: false,
-    // };
-
-    return slugify(str);
-}
 SIMILAR_ARTICLES_LIMIT = 4;
 
 module.exports = (eleventyConfig) => {
@@ -121,7 +106,6 @@ module.exports = (eleventyConfig) => {
 
         let blogCategories = allCategories.map((category) => ({
             title: category,
-            slug: strToSlug(category),
         }));
 
         return blogCategories;
@@ -129,9 +113,14 @@ module.exports = (eleventyConfig) => {
 
     // filters
     eleventyConfig.addFilter("include", require("./filters/include.js"));
-    eleventyConfig.addFilter("getDescription", require("./filters/getDescription.js"));
-    eleventyConfig.addFilter("getDescription", require("./filters/getDescription.js"));
-
+    eleventyConfig.addFilter(
+        "getDescription",
+        require("./filters/getDescription.js")
+    );
+    eleventyConfig.addFilter(
+        "getDescription",
+        require("./filters/getDescription.js")
+    );
 
     // For extra config options
     // return {

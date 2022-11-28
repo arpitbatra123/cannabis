@@ -18,7 +18,7 @@ eleventyComputed:
    title: "{{ category.title }}"
    key: "{{ category.title }}"
    parent: "Home"
-permalink: /category/{{ category.slug }}/
+permalink: /category/{{ category.title | slugify }}/
 ---
 {% assign taggedCollections = collections[category] %}
 {% assign posts = collections.blogposts
