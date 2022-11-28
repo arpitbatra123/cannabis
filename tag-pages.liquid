@@ -17,7 +17,7 @@ eleventyComputed:
   eleventyNavigation:
    title: Tutti gli articoli di "{{ tag }}"
    key: Tutti gli articoli di "{{ tag }}"
-   parent: "Home"
+   parent: "Blog"
 permalink: /tag/{{ tag | slugify }}/
 ---
 {% assign taggedCollections = collections[tag] |  italianPostsOnly %}

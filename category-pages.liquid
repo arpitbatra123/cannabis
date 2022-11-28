@@ -17,7 +17,7 @@ eleventyComputed:
   eleventyNavigation:
    title: "{{ category.title }}"
    key: "{{ category.title }}"
-   parent: "Home"
+   parent: "Blog"
 permalink: /category/{{ category.title | slugify }}/
 ---
 {% assign taggedCollections = collections[category] %}
