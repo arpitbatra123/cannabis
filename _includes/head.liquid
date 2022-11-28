@@ -2,14 +2,16 @@
 {% if title %}
   {% assign metatitle = metatitle | prepend: " • " | prepend: title %}
 {% endif %}
+
 {% if isCategoryPage %}
-  {% assign defaultTitle = metatitle %}
-  {% assign metatitle = categoriesDescriptions[title] | getDescription: defaultTitle %}
+  {%- comment -%} Title is category name {%- endcomment -%}
+  {% assign metatitle = title | append: " - Tutti gli articoli - " | append: site.title  %}
 {% endif %}
+
 {% if isTagsPage %}
-  {% assign defaultTitle = metatitle %}
-  {% assign metatitle = tagsDescriptions[tag] | getDescription: defaultTitle %}
+  {% assign metatitle = title | append: " - Tutti gli articoli - " | append: site.title  %}
 {% endif %}
+
 {% if isHomepage %}
   {% assign metatitle = homeTitle %}
 {% endif %}
@@ -17,14 +19,19 @@
 {% if snippet %}
   {% assign metadesc = snippet %}
 {% endif %}
+
 {% if isCategoryPage %}
   {% assign defaultDesc = metadesc %}
   {% assign metadesc = categoriesDescriptions[title] | getDescription: defaultDesc %}
+  {% assign metadesc = metadesc | append: " - Tutti gli articoli - " | append: site.title  %}
 {% endif %}
+
 {% if isTagsPage %}
   {% assign defaultDesc = metadesc %}
   {% assign metadesc = tagsDescriptions[tag] | getDescription: defaultDesc %}
+  {% assign metadesc = metadesc | append: " - Tutti gli articoli - " | append: site.title  %}
 {% endif %}
+
 {% assign metatype = "article" %}
 
 <meta charset="UTF-8"/>

@@ -1,3 +1,3 @@
 module.exports = {
-    Coltivazione: "Post with category Coltivazione",
+    Coltivazione: "This is custom description for Coltivazione",
 };
