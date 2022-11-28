@@ -23,13 +23,11 @@
 {% if isCategoryPage %}
   {% assign defaultDesc = metadesc %}
   {% assign metadesc = categoriesDescriptions[title] | getDescription: defaultDesc %}
-  {% assign metadesc = metadesc | append: " - Tutti gli articoli - " | append: site.title  %}
 {% endif %}
 
 {% if isTagsPage %}
   {% assign defaultDesc = metadesc %}
   {% assign metadesc = tagsDescriptions[tag] | getDescription: defaultDesc %}
-  {% assign metadesc = metadesc | append: " - Tutti gli articoli - " | append: site.title  %}
 {% endif %}
 
 {% assign metatype = "article" %}
