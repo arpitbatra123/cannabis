@@ -17,6 +17,14 @@
 {% if snippet %}
   {% assign metadesc = snippet %}
 {% endif %}
+{% if isCategoryPage %}
+  {% assign defaultDesc = metadesc %}
+  {% assign metadesc = categoriesDescriptions[title] | getDescription: defaultDesc %}
+{% endif %}
+{% if isTagsPage %}
+  {% assign defaultDesc = metadesc %}
+  {% assign metadesc = tagsDescriptions[tag] | getDescription: defaultDesc %}
+{% endif %}
 {% assign metatype = "article" %}
 
 <meta charset="UTF-8"/>
