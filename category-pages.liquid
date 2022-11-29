@@ -21,7 +21,7 @@ eleventyComputed:
 permalink: /category/{{ category.title | slugify }}/
 ---
 {% assign taggedCollections = collections[category] %}
-{% assign posts = collections.blogposts
+{% assign posts = collections.posts
     | include: 'data.categories', category.title
 %}
 {% for post in posts %}

@@ -74,7 +74,7 @@
             <div class="similar-articles | flow">
                 {% assign tagsListToFilter = tags %}
                 {% assign categoriesToFilter = categories %}
-                {% assign relatedPosts = collections.posts | filterRelated: tagsListToFilter, categoriesToFilter, page.url %}
+                {% assign relatedPosts = collections.posts | reverse | filterRelated: tagsListToFilter, categoriesToFilter, page.url %}
                 {% if relatedPosts.size > 0 %}
                 <h3 class="similar">Articoli correlati:</h3>
                 {% for post in relatedPosts %}
