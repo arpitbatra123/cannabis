@@ -4,7 +4,6 @@ const markdownLazyLoadImages = require("markdown-it-image-lazy-loading"),
     markdownItAnchor = require("markdown-it-anchor"),
     eleventyNavigationPlugin = require("@11ty/eleventy-navigation"),
     eleventyPluginTOC = require("eleventy-plugin-toc"),
-    slugify = require("slugify"),
     { getAllKeyValues } = require("./getAllKeyValues");
 
 SIMILAR_ARTICLES_LIMIT = 4;
@@ -76,7 +75,7 @@ module.exports = (eleventyConfig) => {
                     commonCategories = pageCategories.filter((x) =>
                         categoriesOfPage.includes(x)
                     );
-                return commonTags.length > 1 && commonCategories.length > 0;
+                return commonTags.length > 1 || commonCategories.length > 0;
             });
 
             pagesWithCommonTags = pagesWithCommonTags.slice(
