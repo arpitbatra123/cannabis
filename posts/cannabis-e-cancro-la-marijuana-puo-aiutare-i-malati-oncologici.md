@@ -7,6 +7,8 @@ date: 2022-10-12T22:00:00Z
 dateModified: 2023-10-12T22:00:00Z
 tags:
 - scienza
+categories:
+- Raccolto
 imagePath: "/assets/cannabis-terapeutica.jpg"
 draft: false
 faqs:

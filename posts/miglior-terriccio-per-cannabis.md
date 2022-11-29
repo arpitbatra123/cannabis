@@ -5,9 +5,9 @@ snippet: Guida sulla scelta del miglior terriccio per cannabis, come riconoscere
   per creare il miglior substrato
 date: 2022-08-23T22:00:00.000+00:00
 tags:
-- coltivazione
-- terriccio
-- terra
+- scienzas
+categories:
+- Raccolto
 imagePath: "/assets/297718635_594860728661535_7795235285196374309_n.jpg"
 draft: false
 
