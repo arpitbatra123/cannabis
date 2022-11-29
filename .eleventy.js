@@ -61,16 +61,22 @@ module.exports = (eleventyConfig) => {
 
     eleventyConfig.addFilter(
         "filterRelated",
-        (collection, currentTags, currentUrl) => {
+        (collection, currentTags, currentCategories, currentUrl) => {
             let pagesWithCommonTags = collection.filter((page) => {
                 if (page.url == currentUrl) {
                     return false;
                 }
 
-                const first = page.data.tags,
-                    second = currentTags,
-                    common = first.filter((x) => second.includes(x));
-                return common.length > 1;
+                const pageTags = page.data.tags,
+                    pageCategories = page.data.categories || [],
+                    categoriesOfPage = currentCategories || [],
+                    commonTags = pageTags.filter((x) =>
+                        currentTags.includes(x)
+                    ), 
+                    commonCategories = pageCategories.filter((x) =>
+                        categoriesOfPage.includes(x)
+                    );
+                return commonTags.length > 1 && commonCategories.length > 0;
             });
 
             pagesWithCommonTags = pagesWithCommonTags.slice(

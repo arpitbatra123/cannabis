@@ -6,6 +6,8 @@ snippet:
 date: 2022-08-27T22:00:00Z
 tags:
   - cbd
+categories:
+  - Cbd
 imagePath: "/assets/cbd-oil-for-dogs-featured-image-_1_.jpg"
 draft: false
 ---

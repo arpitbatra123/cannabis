@@ -73,7 +73,10 @@
             {% endif %}
             <div class="similar-articles | flow">
                 {% assign tagsListToFilter = tags %}
-                {% assign relatedPosts = collections.posts | filterRelated: tagsListToFilter, page.url %}
+                {% assign categoriesToFilter = categories %}
+                {% assign relatedPosts = collections.posts | filterRelated: tagsListToFilter, categoriesToFilter, page.url %}
+                {{tagsListToFilter | json}}
+                {{categoriesToFilter | json}}
                 {% if relatedPosts.size > 0 %}
                 <h3 class="similar">Articoli correlati:</h3>
                 {% for post in relatedPosts %}
